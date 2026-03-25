@@ -1,0 +1,518 @@
+{
+  "reviewer_id": "Andy",
+  "completed_at": "2026-03-23T22:04:37.895Z",
+  "dataset_metadata": {
+    "generated_at": "2026-03-23T12:57:11.972078+00:00",
+    "endpoint": "https://upstreamaifaq-uat.azurewebsites.net/api/faqquery?code=<REDACTED>",
+    "source_url": "https://storupstream.blob.core.windows.net/$web/site/supportcenter/support.json",
+    "total_questions": 164,
+    "completed_questions": 164
+  },
+  "sample_size": 50,
+  "total_items": 164,
+  "items_rated": 50,
+  "sample_item_ids": [
+    11,
+    32,
+    116,
+    148,
+    47,
+    111,
+    25,
+    26,
+    21,
+    107,
+    110,
+    31,
+    139,
+    29,
+    43,
+    1,
+    80,
+    74,
+    70,
+    65,
+    51,
+    145,
+    56,
+    36,
+    84,
+    87,
+    17,
+    162,
+    164,
+    22,
+    132,
+    68,
+    4,
+    161,
+    16,
+    112,
+    153,
+    69,
+    144,
+    101,
+    150,
+    114,
+    156,
+    118,
+    62,
+    63,
+    72,
+    44,
+    42,
+    106
+  ],
+  "ratings": [
+    {
+      "item_id": 11,
+      "question": "How much does it cost to use Upstream?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 32,
+      "question": "How can I check the current balance of my Upstream funds?",
+      "accuracy": 4,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 116,
+      "question": "What are Upstream's unique Collectible integrations?",
+      "accuracy": 5,
+      "completeness": 3,
+      "helpfulness": 3,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 148,
+      "question": "How do I know that I can trust Upstream with my assets?",
+      "accuracy": 4,
+      "completeness": 4,
+      "helpfulness": 5,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 47,
+      "question": "Will my account information remain confidential?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 111,
+      "question": "What happens if I try to bulk-sell my shares into a Market Pool?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 25,
+      "question": "Why Can’t I Transfer USDC Directly from my Personal Wallet?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 26,
+      "question": "How do I fund my Upstream account with USDT?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 21,
+      "question": "How are my U.S. Dollar funds kept safe?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 107,
+      "question": "How does Market Pool trading work?",
+      "accuracy": 5,
+      "completeness": 4,
+      "helpfulness": 5,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 110,
+      "question": "What happens if I try to buy all the shares inside a Market Pool?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 31,
+      "question": "When will my funds be available to invest?",
+      "accuracy": 4,
+      "completeness": 4,
+      "helpfulness": 4,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 139,
+      "question": "Who is Upstream’s Cash Custodian?",
+      "accuracy": 3,
+      "completeness": 3,
+      "helpfulness": 3,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 29,
+      "question": "How are my USDC funds kept safe?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 43,
+      "question": "How do I change or update my personal information?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 1,
+      "question": "What is Upstream?",
+      "accuracy": 5,
+      "completeness": 4,
+      "helpfulness": 5,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 80,
+      "question": "How do I dual list on Upstream?",
+      "accuracy": 2,
+      "completeness": 3,
+      "helpfulness": 3,
+      "hallucination": true,
+      "comment": null
+    },
+    {
+      "item_id": 74,
+      "question": "Why should I make secondary trading a part of my growth strategy?",
+      "accuracy": 5,
+      "completeness": 3,
+      "helpfulness": 5,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 70,
+      "question": "What are the risks of investing?",
+      "accuracy": 4,
+      "completeness": 4,
+      "helpfulness": 4,
+      "hallucination": true,
+      "comment": null
+    },
+    {
+      "item_id": 65,
+      "question": "Does Upstream offer margin trading?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 51,
+      "question": "How do I close my Upstream account?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 145,
+      "question": "Where is Upstream located?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 56,
+      "question": "How do I transfer shares to Upstream?",
+      "accuracy": 5,
+      "completeness": 3,
+      "helpfulness": 4,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 36,
+      "question": "Can I open a Joint or Corporate account?",
+      "accuracy": 5,
+      "completeness": 3,
+      "helpfulness": 4,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 84,
+      "question": "Why did I not get my full indication?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 87,
+      "question": "How long does it take for IPO orders to settle on Upstream?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 17,
+      "question": "How do I fund my Upstream account using PayPal?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 162,
+      "question": "What is Upstream's Alternative Uptick Rule?",
+      "accuracy": 4,
+      "completeness": 4,
+      "helpfulness": 4,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 164,
+      "question": "What Upstream fees are charged during a short sale?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 22,
+      "question": "How do I use my Upstream wallet on Mainnet/Metamask",
+      "accuracy": 5,
+      "completeness": 3,
+      "helpfulness": 3,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 132,
+      "question": "How do I report objectionable Collectible media?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 68,
+      "question": "What is a dividend?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 4,
+      "question": "What is MERJ Exchange?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 161,
+      "question": "Who receives Dividend Distributions and Voting Entitlements on short sold shares?",
+      "accuracy": 5,
+      "completeness": 4,
+      "helpfulness": 5,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 16,
+      "question": "What if i have trouble receiving my KYC code via SMS?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 112,
+      "question": "What is impermanent loss?",
+      "accuracy": 4,
+      "completeness": 5,
+      "helpfulness": 4,
+      "hallucination": true,
+      "comment": null
+    },
+    {
+      "item_id": 153,
+      "question": "What is Short Selling on Upstream?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 69,
+      "question": "What is an ex-dividend and record date?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 144,
+      "question": "What is an Unaccredited investor?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 101,
+      "question": "What are Options Strategies?",
+      "accuracy": 5,
+      "completeness": 3,
+      "helpfulness": 3,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 150,
+      "question": "Where can I find a breakdown of Upstream's fees?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 114,
+      "question": "What is the Upstream Collectibles Marketplace?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 156,
+      "question": "Can a stock lender recall their shares early on Upstream?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 4,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 118,
+      "question": "How can I purchase a Collectible?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 62,
+      "question": "How do I cancel an active securities order?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 63,
+      "question": "How can I see the blockchain details for my orders?",
+      "accuracy": 4,
+      "completeness": 3,
+      "helpfulness": 3,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 72,
+      "question": "How do I receive an application to list my company on Upstream?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 44,
+      "question": "How do I change my bank information?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 42,
+      "question": "What happens if I lost my Signing Key and forgot to back it up?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 106,
+      "question": "How can I withdraw my Market Pool earnings?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "comment": null
+    }
+  ]
+}

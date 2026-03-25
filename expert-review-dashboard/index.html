@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Chatbot Quality Evaluation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Login Screen -->
+    <div id="login-screen" class="screen">
+        <div class="login-card">
+            <h1>FAQ Chatbot Quality Evaluation</h1>
+            <p class="subtitle">Expert Review Questionnaire</p>
+            <div class="login-form">
+                <label for="reviewer-id">Your Name / Reviewer ID</label>
+                <input type="text" id="reviewer-id" placeholder="e.g., Pete, Reviewer1" autocomplete="off">
+                <label for="sample-size">How many items to review?</label>
+                <select id="sample-size">
+                    <option value="50" selected>50 (recommended sample)</option>
+                    <option value="30">30 (quick review)</option>
+                    <option value="164">All 164</option>
+                </select>
+                <button id="btn-start" class="btn btn-primary">Start Evaluation</button>
+            </div>
+            <div class="methodology-note">
+                <h3>About This Evaluation</h3>
+                <p>You are evaluating an FAQ chatbot that uses a small, CPU-only large language model (Gemma 2B) with retrieval-augmented generation (RAG) to answer questions about the Upstream trading platform.</p>
+                <p>For each item you will see:</p>
+                <ul style="margin: 8px 0 8px 20px; font-size: 13px; color: #475569;">
+                    <li><strong>Question</strong> &mdash; the user's question</li>
+                    <li><strong>Ground Truth</strong> &mdash; the correct answer from the knowledge base</li>
+                    <li><strong>Chatbot Response</strong> &mdash; what the system actually generated</li>
+                </ul>
+                <p>Rate each response on three dimensions (5-point scale), flag any hallucinations, and optionally add comments. <strong>Every response includes a standard footer</strong> directing users to support@upstream.exchange &mdash; please ignore this boilerplate when scoring.</p>
+                <p>Questions are presented in <strong>random order</strong>. Choose how many to review below &mdash; 50 is recommended for statistical validity.</p>
+                <p>Your progress is saved automatically in your browser's local storage &mdash; you can close and return at any time. Use the same name each time to resume. You can stop early using the <strong>Finish &amp; Export</strong> button in the header.</p>
+                <p class="ref">Evaluation design follows Van der Lee et al. (2021) best practices for human evaluation of generated text.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Evaluation Screen -->
+    <div id="eval-screen" class="screen hidden">
+        <header>
+            <div class="header-left">
+                <span id="reviewer-label" class="reviewer-badge"></span>
+            </div>
+            <div class="header-center">
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <div id="progress-fill" class="progress-fill"></div>
+                    </div>
+                    <span id="progress-text" class="progress-text"></span>
+                </div>
+            </div>
+            <div class="header-right">
+                <button id="btn-summary" class="btn btn-small">Summary</button>
+                <button id="btn-finish" class="btn btn-small btn-finish">Finish &amp; Export</button>
+            </div>
+        </header>
+
+        <main>
+            <div class="item-header">
+                <span id="item-number" class="item-number"></span>
+                <div class="nav-buttons">
+                    <button id="btn-prev" class="btn btn-nav" title="Previous (Left Arrow)">&larr; Prev</button>
+                    <button id="btn-next" class="btn btn-nav btn-primary" title="Next (Right Arrow)">Next &rarr;</button>
+                </div>
+            </div>
+
+            <div class="content-panels">
+                <div class="panel">
+                    <h3>Question</h3>
+                    <div id="panel-question" class="panel-body question-panel"></div>
+                </div>
+                <div class="panel">
+                    <h3>Ground Truth <span class="tag tag-truth">Source KB</span></h3>
+                    <div id="panel-truth" class="panel-body truth-panel"></div>
+                </div>
+                <div class="panel">
+                    <h3>Chatbot Response <span class="tag tag-bot">Generated</span></h3>
+                    <div id="panel-response" class="panel-body response-panel"></div>
+                </div>
+            </div>
+
+            <div class="rating-section">
+                <div class="rating-group">
+                    <h4>Accuracy <span class="rating-desc">Is the response factually correct?</span></h4>
+                    <div class="likert-scale" data-dimension="accuracy">
+                        <label class="likert-option"><input type="radio" name="accuracy" value="1"><span class="likert-label">1</span><span class="likert-anchor">Completely incorrect</span></label>
+                        <label class="likert-option"><input type="radio" name="accuracy" value="2"><span class="likert-label">2</span><span class="likert-anchor">Mostly incorrect</span></label>
+                        <label class="likert-option"><input type="radio" name="accuracy" value="3"><span class="likert-label">3</span><span class="likert-anchor">Partially correct</span></label>
+                        <label class="likert-option"><input type="radio" name="accuracy" value="4"><span class="likert-label">4</span><span class="likert-anchor">Mostly correct</span></label>
+                        <label class="likert-option"><input type="radio" name="accuracy" value="5"><span class="likert-label">5</span><span class="likert-anchor">Fully correct</span></label>
+                    </div>
+                </div>
+
+                <div class="rating-group">
+                    <h4>Completeness <span class="rating-desc">Does it cover all relevant information?</span></h4>
+                    <div class="likert-scale" data-dimension="completeness">
+                        <label class="likert-option"><input type="radio" name="completeness" value="1"><span class="likert-label">1</span><span class="likert-anchor">Missing everything</span></label>
+                        <label class="likert-option"><input type="radio" name="completeness" value="2"><span class="likert-label">2</span><span class="likert-anchor">Major gaps</span></label>
+                        <label class="likert-option"><input type="radio" name="completeness" value="3"><span class="likert-label">3</span><span class="likert-anchor">Covers some key points</span></label>
+                        <label class="likert-option"><input type="radio" name="completeness" value="4"><span class="likert-label">4</span><span class="likert-anchor">Covers most</span></label>
+                        <label class="likert-option"><input type="radio" name="completeness" value="5"><span class="likert-label">5</span><span class="likert-anchor">Fully complete</span></label>
+                    </div>
+                </div>
+
+                <div class="rating-group">
+                    <h4>Helpfulness <span class="rating-desc">Would this adequately help a real user?</span></h4>
+                    <div class="likert-scale" data-dimension="helpfulness">
+                        <label class="likert-option"><input type="radio" name="helpfulness" value="1"><span class="likert-label">1</span><span class="likert-anchor">Not helpful at all</span></label>
+                        <label class="likert-option"><input type="radio" name="helpfulness" value="2"><span class="likert-label">2</span><span class="likert-anchor">Slightly helpful</span></label>
+                        <label class="likert-option"><input type="radio" name="helpfulness" value="3"><span class="likert-label">3</span><span class="likert-anchor">Moderately helpful</span></label>
+                        <label class="likert-option"><input type="radio" name="helpfulness" value="4"><span class="likert-label">4</span><span class="likert-anchor">Very helpful</span></label>
+                        <label class="likert-option"><input type="radio" name="helpfulness" value="5"><span class="likert-label">5</span><span class="likert-anchor">Extremely helpful</span></label>
+                    </div>
+                </div>
+
+                <div class="rating-group hallucination-group">
+                    <h4>Hallucination <span class="rating-desc">Does the response contain information NOT in the source?</span></h4>
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="hallucination-check">
+                        <span>Yes &mdash; the response contains unsupported or fabricated information</span>
+                    </label>
+                </div>
+
+                <div class="rating-group">
+                    <h4>Comments <span class="rating-desc">(optional)</span></h4>
+                    <textarea id="comment-box" placeholder="Note anything interesting about this response..." rows="3"></textarea>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <span class="shortcut-hint">Keyboard: &larr;/&rarr; navigate &middot; 1-5 set accuracy</span>
+        </footer>
+    </div>
+
+    <!-- Summary Screen -->
+    <div id="summary-screen" class="screen hidden">
+        <div class="summary-card">
+            <h2>Evaluation Summary</h2>
+            <div id="summary-stats" class="summary-stats"></div>
+            <div class="summary-actions">
+                <button id="btn-export-email" class="btn btn-primary">Send Results via Email</button>
+                <button id="btn-export-download" class="btn">Download Results as JSON</button>
+                <button id="btn-back-eval" class="btn">Back to Evaluation</button>
+            </div>
+            <div id="incomplete-warning" class="warning hidden">
+                <strong>Warning:</strong> Not all items have been rated. Incomplete items are highlighted below.
+            </div>
+            <div id="summary-table-container"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

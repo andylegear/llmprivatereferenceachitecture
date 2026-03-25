@@ -1,0 +1,1657 @@
+{
+  "metadata": {
+    "dataset": "c:\\dev\\ai-architecture-paper\\evaluation\\automated-metrics\\..\\data\\dataset.json",
+    "computed_at": "2026-03-23T13:06:16.155139+00:00"
+  },
+  "summary": {
+    "total_items": 164,
+    "rouge1_f1_mean": 0.4452,
+    "rouge2_f1_mean": 0.2824,
+    "rougeL_f1_mean": 0.351,
+    "bertscore_f1_mean": 0.8133,
+    "bertscore_precision_mean": 0.7912,
+    "bertscore_recall_mean": 0.8405
+  },
+  "items": [
+    {
+      "id": 1,
+      "question": "What is Upstream?",
+      "rouge1_f1": 0.7077,
+      "rouge2_f1": 0.5181,
+      "rougeL_f1": 0.5846,
+      "bertscore_precision": 0.8469,
+      "bertscore_recall": 0.8587,
+      "bertscore_f1": 0.8528
+    },
+    {
+      "id": 2,
+      "question": "What are Upstream’s market hours and trading days?",
+      "rouge1_f1": 0.6,
+      "rouge2_f1": 0.4615,
+      "rougeL_f1": 0.45,
+      "bertscore_precision": 0.8426,
+      "bertscore_recall": 0.9205,
+      "bertscore_f1": 0.8798
+    },
+    {
+      "id": 3,
+      "question": "What does it mean that Upstream is a MERJ Exchange Market?",
+      "rouge1_f1": 0.4605,
+      "rouge2_f1": 0.2533,
+      "rougeL_f1": 0.3553,
+      "bertscore_precision": 0.7727,
+      "bertscore_recall": 0.7866,
+      "bertscore_f1": 0.7796
+    },
+    {
+      "id": 4,
+      "question": "What is MERJ Exchange?",
+      "rouge1_f1": 0.3529,
+      "rouge2_f1": 0.2537,
+      "rougeL_f1": 0.3382,
+      "bertscore_precision": 0.7548,
+      "bertscore_recall": 0.8972,
+      "bertscore_f1": 0.8198
+    },
+    {
+      "id": 5,
+      "question": "How is MERJ regulated?",
+      "rouge1_f1": 0.6286,
+      "rouge2_f1": 0.3913,
+      "rougeL_f1": 0.4857,
+      "bertscore_precision": 0.8052,
+      "bertscore_recall": 0.902,
+      "bertscore_f1": 0.8509
+    },
+    {
+      "id": 6,
+      "question": "Who can trade on Upstream?",
+      "rouge1_f1": 0.1456,
+      "rouge2_f1": 0.0701,
+      "rougeL_f1": 0.1203,
+      "bertscore_precision": 0.7983,
+      "bertscore_recall": 0.6815,
+      "bertscore_f1": 0.7353
+    },
+    {
+      "id": 7,
+      "question": "Who can buy Collectibles on Upstream?",
+      "rouge1_f1": 0.0563,
+      "rouge2_f1": 0.0,
+      "rougeL_f1": 0.0563,
+      "bertscore_precision": 0.6263,
+      "bertscore_recall": 0.7393,
+      "bertscore_f1": 0.6781
+    },
+    {
+      "id": 8,
+      "question": "What devices can I trade on?",
+      "rouge1_f1": 0.6777,
+      "rouge2_f1": 0.5714,
+      "rougeL_f1": 0.6281,
+      "bertscore_precision": 0.8402,
+      "bertscore_recall": 0.9349,
+      "bertscore_f1": 0.885
+    },
+    {
+      "id": 9,
+      "question": "Can a U.S.-based investor trade on Upstream?",
+      "rouge1_f1": 0.5476,
+      "rouge2_f1": 0.4634,
+      "rougeL_f1": 0.4048,
+      "bertscore_precision": 0.7976,
+      "bertscore_recall": 0.9473,
+      "bertscore_f1": 0.866
+    },
+    {
+      "id": 10,
+      "question": "What opportunities can I participate in on Upstream?",
+      "rouge1_f1": 0.3596,
+      "rouge2_f1": 0.2989,
+      "rougeL_f1": 0.3371,
+      "bertscore_precision": 0.752,
+      "bertscore_recall": 0.9327,
+      "bertscore_f1": 0.8327
+    },
+    {
+      "id": 11,
+      "question": "How much does it cost to use Upstream?",
+      "rouge1_f1": 0.6825,
+      "rouge2_f1": 0.5,
+      "rougeL_f1": 0.619,
+      "bertscore_precision": 0.8366,
+      "bertscore_recall": 0.9139,
+      "bertscore_f1": 0.8735
+    },
+    {
+      "id": 12,
+      "question": "What technology is powering Upstream?",
+      "rouge1_f1": 0.4142,
+      "rouge2_f1": 0.2515,
+      "rougeL_f1": 0.3077,
+      "bertscore_precision": 0.846,
+      "bertscore_recall": 0.7821,
+      "bertscore_f1": 0.8128
+    },
+    {
+      "id": 13,
+      "question": "What is the vision behind Upstream?",
+      "rouge1_f1": 0.1509,
+      "rouge2_f1": 0.0,
+      "rougeL_f1": 0.0943,
+      "bertscore_precision": 0.6926,
+      "bertscore_recall": 0.7031,
+      "bertscore_f1": 0.6978
+    },
+    {
+      "id": 14,
+      "question": "How do I open an Upstream account?",
+      "rouge1_f1": 0.3397,
+      "rouge2_f1": 0.1576,
+      "rougeL_f1": 0.2147,
+      "bertscore_precision": 0.8398,
+      "bertscore_recall": 0.789,
+      "bertscore_f1": 0.8136
+    },
+    {
+      "id": 15,
+      "question": "When would you require my identification?",
+      "rouge1_f1": 0.3557,
+      "rouge2_f1": 0.1992,
+      "rougeL_f1": 0.2134,
+      "bertscore_precision": 0.8166,
+      "bertscore_recall": 0.7537,
+      "bertscore_f1": 0.7839
+    },
+    {
+      "id": 16,
+      "question": "What if i have trouble receiving my KYC code via SMS?",
+      "rouge1_f1": 0.4272,
+      "rouge2_f1": 0.2574,
+      "rougeL_f1": 0.3301,
+      "bertscore_precision": 0.8403,
+      "bertscore_recall": 0.8759,
+      "bertscore_f1": 0.8577
+    },
+    {
+      "id": 17,
+      "question": "How do I fund my Upstream account using PayPal?",
+      "rouge1_f1": 0.581,
+      "rouge2_f1": 0.3269,
+      "rougeL_f1": 0.4286,
+      "bertscore_precision": 0.8045,
+      "bertscore_recall": 0.8617,
+      "bertscore_f1": 0.8321
+    },
+    {
+      "id": 18,
+      "question": "How do I fund my Upstream account using a Debit or Credit Card?",
+      "rouge1_f1": 0.5051,
+      "rouge2_f1": 0.2959,
+      "rougeL_f1": 0.3535,
+      "bertscore_precision": 0.8163,
+      "bertscore_recall": 0.7791,
+      "bertscore_f1": 0.7972
+    },
+    {
+      "id": 19,
+      "question": "When I try to fund my account using a Debit or Credit Card, I’m asked to log in to PayPal. Why is this?",
+      "rouge1_f1": 0.4831,
+      "rouge2_f1": 0.3162,
+      "rougeL_f1": 0.4237,
+      "bertscore_precision": 0.8544,
+      "bertscore_recall": 0.842,
+      "bertscore_f1": 0.8481
+    },
+    {
+      "id": 20,
+      "question": "How do I fund my Upstream Account using a Bank Wire Transfer?",
+      "rouge1_f1": 0.1504,
+      "rouge2_f1": 0.0224,
+      "rougeL_f1": 0.0891,
+      "bertscore_precision": 0.7546,
+      "bertscore_recall": 0.6753,
+      "bertscore_f1": 0.7128
+    },
+    {
+      "id": 21,
+      "question": "How are my U.S. Dollar funds kept safe?",
+      "rouge1_f1": 0.3979,
+      "rouge2_f1": 0.328,
+      "rougeL_f1": 0.356,
+      "bertscore_precision": 0.7615,
+      "bertscore_recall": 0.9188,
+      "bertscore_f1": 0.8328
+    },
+    {
+      "id": 22,
+      "question": "How do I use my Upstream wallet on Mainnet/Metamask",
+      "rouge1_f1": 0.4824,
+      "rouge2_f1": 0.2843,
+      "rougeL_f1": 0.402,
+      "bertscore_precision": 0.8452,
+      "bertscore_recall": 0.8441,
+      "bertscore_f1": 0.8446
+    },
+    {
+      "id": 23,
+      "question": "Is USDC a cryptocurrency?",
+      "rouge1_f1": 0.0588,
+      "rouge2_f1": 0.0,
+      "rougeL_f1": 0.0588,
+      "bertscore_precision": 0.5204,
+      "bertscore_recall": 0.7877,
+      "bertscore_f1": 0.6268
+    },
+    {
+      "id": 24,
+      "question": "Can I deposit cryptocurrency on Upstream? How do I fund my Upstream account with USDC cryptocurrency? How do I deposit to my Upstream account with USDC cryptocurrency?",
+      "rouge1_f1": 0.4522,
+      "rouge2_f1": 0.2314,
+      "rougeL_f1": 0.287,
+      "bertscore_precision": 0.8391,
+      "bertscore_recall": 0.8187,
+      "bertscore_f1": 0.8288
+    },
+    {
+      "id": 25,
+      "question": "Why Can’t I Transfer USDC Directly from my Personal Wallet?",
+      "rouge1_f1": 0.4427,
+      "rouge2_f1": 0.2326,
+      "rougeL_f1": 0.3053,
+      "bertscore_precision": 0.7844,
+      "bertscore_recall": 0.8631,
+      "bertscore_f1": 0.8219
+    },
+    {
+      "id": 26,
+      "question": "How do I fund my Upstream account with USDT?",
+      "rouge1_f1": 0.386,
+      "rouge2_f1": 0.2898,
+      "rougeL_f1": 0.3368,
+      "bertscore_precision": 0.8443,
+      "bertscore_recall": 0.8177,
+      "bertscore_f1": 0.8308
+    },
+    {
+      "id": 27,
+      "question": "WHY CAN’T I TRANSFER USDC or USDT DIRECTLY FROM MY PERSONAL WALLET?",
+      "rouge1_f1": 0.4496,
+      "rouge2_f1": 0.2205,
+      "rougeL_f1": 0.2636,
+      "bertscore_precision": 0.7858,
+      "bertscore_recall": 0.8659,
+      "bertscore_f1": 0.8239
+    },
+    {
+      "id": 28,
+      "question": "HOW DO I WITHDRAW DIGITAL CURRENCY FUNDS?",
+      "rouge1_f1": 0.3109,
+      "rouge2_f1": 0.1435,
+      "rougeL_f1": 0.1975,
+      "bertscore_precision": 0.8172,
+      "bertscore_recall": 0.7698,
+      "bertscore_f1": 0.7928
+    },
+    {
+      "id": 29,
+      "question": "How are my USDC funds kept safe?",
+      "rouge1_f1": 0.4272,
+      "rouge2_f1": 0.2181,
+      "rougeL_f1": 0.2786,
+      "bertscore_precision": 0.7981,
+      "bertscore_recall": 0.7919,
+      "bertscore_f1": 0.795
+    },
+    {
+      "id": 30,
+      "question": "How long does it take for KYC identity verification to be verified?",
+      "rouge1_f1": 0.5,
+      "rouge2_f1": 0.4545,
+      "rougeL_f1": 0.4872,
+      "bertscore_precision": 0.8568,
+      "bertscore_recall": 0.8401,
+      "bertscore_f1": 0.8483
+    },
+    {
+      "id": 31,
+      "question": "When will my funds be available to invest?",
+      "rouge1_f1": 0.2326,
+      "rouge2_f1": 0.0976,
+      "rougeL_f1": 0.2326,
+      "bertscore_precision": 0.7033,
+      "bertscore_recall": 0.8238,
+      "bertscore_f1": 0.7588
+    },
+    {
+      "id": 32,
+      "question": "How can I check the current balance of my Upstream funds?",
+      "rouge1_f1": 0.4921,
+      "rouge2_f1": 0.2116,
+      "rougeL_f1": 0.3141,
+      "bertscore_precision": 0.7988,
+      "bertscore_recall": 0.8179,
+      "bertscore_f1": 0.8083
+    },
+    {
+      "id": 33,
+      "question": "Is there a minimum funding requirement?",
+      "rouge1_f1": 0.4675,
+      "rouge2_f1": 0.3733,
+      "rougeL_f1": 0.4675,
+      "bertscore_precision": 0.735,
+      "bertscore_recall": 0.9325,
+      "bertscore_f1": 0.8221
+    },
+    {
+      "id": 34,
+      "question": "How do I withdraw funds from my Upstream account?",
+      "rouge1_f1": 0.6644,
+      "rouge2_f1": 0.4138,
+      "rougeL_f1": 0.4521,
+      "bertscore_precision": 0.8698,
+      "bertscore_recall": 0.8442,
+      "bertscore_f1": 0.8568
+    },
+    {
+      "id": 35,
+      "question": "What are the fees to fund or withdraw funds from my account?",
+      "rouge1_f1": 0.669,
+      "rouge2_f1": 0.461,
+      "rougeL_f1": 0.5211,
+      "bertscore_precision": 0.8603,
+      "bertscore_recall": 0.8964,
+      "bertscore_f1": 0.878
+    },
+    {
+      "id": 36,
+      "question": "Can I open a Joint or Corporate account?",
+      "rouge1_f1": 0.443,
+      "rouge2_f1": 0.3205,
+      "rougeL_f1": 0.3924,
+      "bertscore_precision": 0.8193,
+      "bertscore_recall": 0.7968,
+      "bertscore_f1": 0.8079
+    },
+    {
+      "id": 37,
+      "question": "What is a Signing Key and why is it so important?",
+      "rouge1_f1": 0.5611,
+      "rouge2_f1": 0.3322,
+      "rougeL_f1": 0.3366,
+      "bertscore_precision": 0.8121,
+      "bertscore_recall": 0.8347,
+      "bertscore_f1": 0.8233
+    },
+    {
+      "id": 38,
+      "question": "How do I backup my Signing Key?",
+      "rouge1_f1": 0.5,
+      "rouge2_f1": 0.2286,
+      "rougeL_f1": 0.3125,
+      "bertscore_precision": 0.8192,
+      "bertscore_recall": 0.7898,
+      "bertscore_f1": 0.8042
+    },
+    {
+      "id": 39,
+      "question": "How do I disable Two-Factor Authentication?",
+      "rouge1_f1": 0.4762,
+      "rouge2_f1": 0.2439,
+      "rougeL_f1": 0.381,
+      "bertscore_precision": 0.7446,
+      "bertscore_recall": 0.834,
+      "bertscore_f1": 0.7868
+    },
+    {
+      "id": 40,
+      "question": "What does the ‘Logout’ button do?",
+      "rouge1_f1": 0.4874,
+      "rouge2_f1": 0.2393,
+      "rougeL_f1": 0.3697,
+      "bertscore_precision": 0.8111,
+      "bertscore_recall": 0.8592,
+      "bertscore_f1": 0.8344
+    },
+    {
+      "id": 41,
+      "question": "What happens if I lose my phone, computer, or delete the app?",
+      "rouge1_f1": 0.6667,
+      "rouge2_f1": 0.562,
+      "rougeL_f1": 0.6667,
+      "bertscore_precision": 0.8279,
+      "bertscore_recall": 0.8882,
+      "bertscore_f1": 0.857
+    },
+    {
+      "id": 42,
+      "question": "What happens if I lost my Signing Key and forgot to back it up?",
+      "rouge1_f1": 0.1127,
+      "rouge2_f1": 0.087,
+      "rougeL_f1": 0.1127,
+      "bertscore_precision": 0.6936,
+      "bertscore_recall": 0.9116,
+      "bertscore_f1": 0.7878
+    },
+    {
+      "id": 43,
+      "question": "How do I change or update my personal information?",
+      "rouge1_f1": 0.4965,
+      "rouge2_f1": 0.259,
+      "rougeL_f1": 0.4255,
+      "bertscore_precision": 0.7979,
+      "bertscore_recall": 0.8644,
+      "bertscore_f1": 0.8298
+    },
+    {
+      "id": 44,
+      "question": "How do I change my bank information?",
+      "rouge1_f1": 0.4194,
+      "rouge2_f1": 0.082,
+      "rougeL_f1": 0.2581,
+      "bertscore_precision": 0.7638,
+      "bertscore_recall": 0.8453,
+      "bertscore_f1": 0.8025
+    },
+    {
+      "id": 45,
+      "question": "How will you communicate with me about my account?",
+      "rouge1_f1": 0.7213,
+      "rouge2_f1": 0.6167,
+      "rougeL_f1": 0.623,
+      "bertscore_precision": 0.8038,
+      "bertscore_recall": 0.9525,
+      "bertscore_f1": 0.8719
+    },
+    {
+      "id": 46,
+      "question": "Will I receive notices or statements?",
+      "rouge1_f1": 0.625,
+      "rouge2_f1": 0.5484,
+      "rougeL_f1": 0.5938,
+      "bertscore_precision": 0.8423,
+      "bertscore_recall": 0.9452,
+      "bertscore_f1": 0.8908
+    },
+    {
+      "id": 47,
+      "question": "Will my account information remain confidential?",
+      "rouge1_f1": 0.6226,
+      "rouge2_f1": 0.4808,
+      "rougeL_f1": 0.4528,
+      "bertscore_precision": 0.8154,
+      "bertscore_recall": 0.8957,
+      "bertscore_f1": 0.8537
+    },
+    {
+      "id": 48,
+      "question": "How is the money in my Upstream account protected?",
+      "rouge1_f1": 0.283,
+      "rouge2_f1": 0.0385,
+      "rougeL_f1": 0.2075,
+      "bertscore_precision": 0.7343,
+      "bertscore_recall": 0.7672,
+      "bertscore_f1": 0.7504
+    },
+    {
+      "id": 49,
+      "question": "How are the securities in my Upstream account protected?",
+      "rouge1_f1": 0.4384,
+      "rouge2_f1": 0.212,
+      "rougeL_f1": 0.274,
+      "bertscore_precision": 0.8225,
+      "bertscore_recall": 0.7967,
+      "bertscore_f1": 0.8094
+    },
+    {
+      "id": 50,
+      "question": "How do I enable biometric security?",
+      "rouge1_f1": 0.4808,
+      "rouge2_f1": 0.2941,
+      "rougeL_f1": 0.3077,
+      "bertscore_precision": 0.7534,
+      "bertscore_recall": 0.8793,
+      "bertscore_f1": 0.8115
+    },
+    {
+      "id": 51,
+      "question": "How do I close my Upstream account?",
+      "rouge1_f1": 0.3014,
+      "rouge2_f1": 0.2254,
+      "rougeL_f1": 0.2466,
+      "bertscore_precision": 0.7675,
+      "bertscore_recall": 0.9086,
+      "bertscore_f1": 0.8321
+    },
+    {
+      "id": 52,
+      "question": "Where do I go on the app to buy and sell securities from the market?",
+      "rouge1_f1": 0.431,
+      "rouge2_f1": 0.193,
+      "rougeL_f1": 0.3276,
+      "bertscore_precision": 0.7802,
+      "bertscore_recall": 0.8147,
+      "bertscore_f1": 0.7971
+    },
+    {
+      "id": 53,
+      "question": "What’s the Orderbook?",
+      "rouge1_f1": 0.514,
+      "rouge2_f1": 0.3051,
+      "rougeL_f1": 0.3799,
+      "bertscore_precision": 0.8242,
+      "bertscore_recall": 0.8249,
+      "bertscore_f1": 0.8245
+    },
+    {
+      "id": 54,
+      "question": "How do I buy securities?",
+      "rouge1_f1": 0.4768,
+      "rouge2_f1": 0.3305,
+      "rougeL_f1": 0.3502,
+      "bertscore_precision": 0.8652,
+      "bertscore_recall": 0.8304,
+      "bertscore_f1": 0.8474
+    },
+    {
+      "id": 55,
+      "question": "How do I sell securities?",
+      "rouge1_f1": 0.5,
+      "rouge2_f1": 0.3347,
+      "rougeL_f1": 0.3821,
+      "bertscore_precision": 0.8596,
+      "bertscore_recall": 0.8307,
+      "bertscore_f1": 0.8449
+    },
+    {
+      "id": 56,
+      "question": "How do I transfer shares to Upstream?",
+      "rouge1_f1": 0.1706,
+      "rouge2_f1": 0.0982,
+      "rougeL_f1": 0.1157,
+      "bertscore_precision": 0.8381,
+      "bertscore_recall": 0.7637,
+      "bertscore_f1": 0.7992
+    },
+    {
+      "id": 57,
+      "question": "How do I move shares back to US markets?",
+      "rouge1_f1": 0.632,
+      "rouge2_f1": 0.3629,
+      "rougeL_f1": 0.504,
+      "bertscore_precision": 0.8448,
+      "bertscore_recall": 0.8797,
+      "bertscore_f1": 0.8619
+    },
+    {
+      "id": 58,
+      "question": "What are the different order expiry options?",
+      "rouge1_f1": 0.6917,
+      "rouge2_f1": 0.4621,
+      "rougeL_f1": 0.5188,
+      "bertscore_precision": 0.8406,
+      "bertscore_recall": 0.8887,
+      "bertscore_f1": 0.864
+    },
+    {
+      "id": 59,
+      "question": "How do I manage my security Portfolio?",
+      "rouge1_f1": 0.2092,
+      "rouge2_f1": 0.1854,
+      "rougeL_f1": 0.1961,
+      "bertscore_precision": 0.7142,
+      "bertscore_recall": 0.9166,
+      "bertscore_f1": 0.8028
+    },
+    {
+      "id": 60,
+      "question": "How do I sell securities from my Portfolio screen?",
+      "rouge1_f1": 0.259,
+      "rouge2_f1": 0.1365,
+      "rougeL_f1": 0.1656,
+      "bertscore_precision": 0.7942,
+      "bertscore_recall": 0.7423,
+      "bertscore_f1": 0.7674
+    },
+    {
+      "id": 61,
+      "question": "How do I add a security to my Watchlist?",
+      "rouge1_f1": 0.5263,
+      "rouge2_f1": 0.3214,
+      "rougeL_f1": 0.4737,
+      "bertscore_precision": 0.7953,
+      "bertscore_recall": 0.8946,
+      "bertscore_f1": 0.842
+    },
+    {
+      "id": 62,
+      "question": "How do I cancel an active securities order?",
+      "rouge1_f1": 0.6122,
+      "rouge2_f1": 0.4167,
+      "rougeL_f1": 0.551,
+      "bertscore_precision": 0.7992,
+      "bertscore_recall": 0.9162,
+      "bertscore_f1": 0.8537
+    },
+    {
+      "id": 63,
+      "question": "How can I see the blockchain details for my orders?",
+      "rouge1_f1": 0.6818,
+      "rouge2_f1": 0.5191,
+      "rougeL_f1": 0.5909,
+      "bertscore_precision": 0.8715,
+      "bertscore_recall": 0.8748,
+      "bertscore_f1": 0.8731
+    },
+    {
+      "id": 64,
+      "question": "What are candlestick charts?",
+      "rouge1_f1": 0.5789,
+      "rouge2_f1": 0.4286,
+      "rougeL_f1": 0.4561,
+      "bertscore_precision": 0.7964,
+      "bertscore_recall": 0.9103,
+      "bertscore_f1": 0.8495
+    },
+    {
+      "id": 65,
+      "question": "Does Upstream offer margin trading?",
+      "rouge1_f1": 0.1296,
+      "rouge2_f1": 0.1132,
+      "rougeL_f1": 0.1296,
+      "bertscore_precision": 0.6797,
+      "bertscore_recall": 0.9328,
+      "bertscore_f1": 0.7864
+    },
+    {
+      "id": 66,
+      "question": "Does Upstream solicit trades?",
+      "rouge1_f1": 0.1825,
+      "rouge2_f1": 0.069,
+      "rougeL_f1": 0.1217,
+      "bertscore_precision": 0.774,
+      "bertscore_recall": 0.7351,
+      "bertscore_f1": 0.754
+    },
+    {
+      "id": 67,
+      "question": "What are the fees associated with trading?",
+      "rouge1_f1": 0.274,
+      "rouge2_f1": 0.2639,
+      "rougeL_f1": 0.274,
+      "bertscore_precision": 0.7065,
+      "bertscore_recall": 0.9209,
+      "bertscore_f1": 0.7996
+    },
+    {
+      "id": 68,
+      "question": "What is a dividend?",
+      "rouge1_f1": 0.5647,
+      "rouge2_f1": 0.3614,
+      "rougeL_f1": 0.4941,
+      "bertscore_precision": 0.7776,
+      "bertscore_recall": 0.8849,
+      "bertscore_f1": 0.8278
+    },
+    {
+      "id": 69,
+      "question": "What is an ex-dividend and record date?",
+      "rouge1_f1": 0.5243,
+      "rouge2_f1": 0.4752,
+      "rougeL_f1": 0.5049,
+      "bertscore_precision": 0.7703,
+      "bertscore_recall": 0.9239,
+      "bertscore_f1": 0.8401
+    },
+    {
+      "id": 70,
+      "question": "What are the risks of investing?",
+      "rouge1_f1": 0.5358,
+      "rouge2_f1": 0.3194,
+      "rougeL_f1": 0.3849,
+      "bertscore_precision": 0.8292,
+      "bertscore_recall": 0.8234,
+      "bertscore_f1": 0.8263
+    },
+    {
+      "id": 71,
+      "question": "How do I list my company on Upstream?",
+      "rouge1_f1": 0.5294,
+      "rouge2_f1": 0.4048,
+      "rougeL_f1": 0.3412,
+      "bertscore_precision": 0.8857,
+      "bertscore_recall": 0.8347,
+      "bertscore_f1": 0.8595
+    },
+    {
+      "id": 72,
+      "question": "How do I receive an application to list my company on Upstream?",
+      "rouge1_f1": 0.641,
+      "rouge2_f1": 0.6316,
+      "rougeL_f1": 0.641,
+      "bertscore_precision": 0.8187,
+      "bertscore_recall": 0.9521,
+      "bertscore_f1": 0.8804
+    },
+    {
+      "id": 73,
+      "question": "What are the benefits of listing my company on Upstream?",
+      "rouge1_f1": 0.4517,
+      "rouge2_f1": 0.2144,
+      "rougeL_f1": 0.3409,
+      "bertscore_precision": 0.8488,
+      "bertscore_recall": 0.7931,
+      "bertscore_f1": 0.82
+    },
+    {
+      "id": 74,
+      "question": "Why should I make secondary trading a part of my growth strategy?",
+      "rouge1_f1": 0.375,
+      "rouge2_f1": 0.1049,
+      "rougeL_f1": 0.2014,
+      "bertscore_precision": 0.759,
+      "bertscore_recall": 0.7762,
+      "bertscore_f1": 0.7675
+    },
+    {
+      "id": 75,
+      "question": "What types of assets are traded on Upstream?",
+      "rouge1_f1": 0.4,
+      "rouge2_f1": 0.1538,
+      "rougeL_f1": 0.325,
+      "bertscore_precision": 0.7651,
+      "bertscore_recall": 0.8372,
+      "bertscore_f1": 0.7995
+    },
+    {
+      "id": 76,
+      "question": "What’s included in Upstream’s marketing package for listing?",
+      "rouge1_f1": 0.4471,
+      "rouge2_f1": 0.3855,
+      "rougeL_f1": 0.4,
+      "bertscore_precision": 0.7638,
+      "bertscore_recall": 0.8333,
+      "bertscore_f1": 0.797
+    },
+    {
+      "id": 77,
+      "question": "WHAT IS A DIGITAL COUPON?",
+      "rouge1_f1": 0.5,
+      "rouge2_f1": 0.3084,
+      "rougeL_f1": 0.3889,
+      "bertscore_precision": 0.8182,
+      "bertscore_recall": 0.8186,
+      "bertscore_f1": 0.8184
+    },
+    {
+      "id": 78,
+      "question": "HOW DO I CLAIM A DIGITAL COUPON?",
+      "rouge1_f1": 0.6359,
+      "rouge2_f1": 0.5023,
+      "rougeL_f1": 0.553,
+      "bertscore_precision": 0.8817,
+      "bertscore_recall": 0.8753,
+      "bertscore_f1": 0.8785
+    },
+    {
+      "id": 79,
+      "question": "HOW DO I REDEEM A DIGITAL COUPON?",
+      "rouge1_f1": 0.4286,
+      "rouge2_f1": 0.2072,
+      "rougeL_f1": 0.3036,
+      "bertscore_precision": 0.796,
+      "bertscore_recall": 0.8295,
+      "bertscore_f1": 0.8124
+    },
+    {
+      "id": 80,
+      "question": "How do I dual list on Upstream?",
+      "rouge1_f1": 0.381,
+      "rouge2_f1": 0.2483,
+      "rougeL_f1": 0.2449,
+      "bertscore_precision": 0.7523,
+      "bertscore_recall": 0.8679,
+      "bertscore_f1": 0.806
+    },
+    {
+      "id": 81,
+      "question": "What does Upstream provide companies wishing to dual list?",
+      "rouge1_f1": 0.6425,
+      "rouge2_f1": 0.4084,
+      "rougeL_f1": 0.5078,
+      "bertscore_precision": 0.8191,
+      "bertscore_recall": 0.8541,
+      "bertscore_f1": 0.8363
+    },
+    {
+      "id": 82,
+      "question": "What is an IPO?",
+      "rouge1_f1": 0.6107,
+      "rouge2_f1": 0.4961,
+      "rougeL_f1": 0.5649,
+      "bertscore_precision": 0.8136,
+      "bertscore_recall": 0.8898,
+      "bertscore_f1": 0.85
+    },
+    {
+      "id": 83,
+      "question": "What makes Upstream IPOs unique?",
+      "rouge1_f1": 0.3758,
+      "rouge2_f1": 0.1769,
+      "rougeL_f1": 0.2013,
+      "bertscore_precision": 0.7484,
+      "bertscore_recall": 0.8113,
+      "bertscore_f1": 0.7786
+    },
+    {
+      "id": 84,
+      "question": "Why did I not get my full indication?",
+      "rouge1_f1": 0.3778,
+      "rouge2_f1": 0.1685,
+      "rougeL_f1": 0.2556,
+      "bertscore_precision": 0.7905,
+      "bertscore_recall": 0.7788,
+      "bertscore_f1": 0.7846
+    },
+    {
+      "id": 85,
+      "question": "When can I trade following the IPO?",
+      "rouge1_f1": 0.439,
+      "rouge2_f1": 0.3,
+      "rougeL_f1": 0.3171,
+      "bertscore_precision": 0.7789,
+      "bertscore_recall": 0.8482,
+      "bertscore_f1": 0.8121
+    },
+    {
+      "id": 86,
+      "question": "How long does it take for trades to settle on Upstream?",
+      "rouge1_f1": 0.2655,
+      "rouge2_f1": 0.0901,
+      "rougeL_f1": 0.2124,
+      "bertscore_precision": 0.7345,
+      "bertscore_recall": 0.7719,
+      "bertscore_f1": 0.7527
+    },
+    {
+      "id": 87,
+      "question": "How long does it take for IPO orders to settle on Upstream?",
+      "rouge1_f1": 0.4348,
+      "rouge2_f1": 0.3111,
+      "rougeL_f1": 0.3913,
+      "bertscore_precision": 0.7697,
+      "bertscore_recall": 0.8077,
+      "bertscore_f1": 0.7882
+    },
+    {
+      "id": 88,
+      "question": "What is a spinoff share distribution?",
+      "rouge1_f1": 0.7344,
+      "rouge2_f1": 0.6508,
+      "rougeL_f1": 0.6875,
+      "bertscore_precision": 0.8259,
+      "bertscore_recall": 0.8931,
+      "bertscore_f1": 0.8582
+    },
+    {
+      "id": 89,
+      "question": "How do I participate in a spinoff share distribution?",
+      "rouge1_f1": 0.6096,
+      "rouge2_f1": 0.4865,
+      "rougeL_f1": 0.5134,
+      "bertscore_precision": 0.8317,
+      "bertscore_recall": 0.8731,
+      "bertscore_f1": 0.8519
+    },
+    {
+      "id": 90,
+      "question": "How do I request my spinoff share distribution?",
+      "rouge1_f1": 0.484,
+      "rouge2_f1": 0.3257,
+      "rougeL_f1": 0.3562,
+      "bertscore_precision": 0.8519,
+      "bertscore_recall": 0.8397,
+      "bertscore_f1": 0.8457
+    },
+    {
+      "id": 91,
+      "question": "When can I trade my shares if they’re restricted?",
+      "rouge1_f1": 0.4872,
+      "rouge2_f1": 0.1579,
+      "rougeL_f1": 0.2821,
+      "bertscore_precision": 0.7459,
+      "bertscore_recall": 0.8438,
+      "bertscore_f1": 0.7918
+    },
+    {
+      "id": 92,
+      "question": "What is a Stock Warrant?",
+      "rouge1_f1": 0.6711,
+      "rouge2_f1": 0.44,
+      "rougeL_f1": 0.5132,
+      "bertscore_precision": 0.8235,
+      "bertscore_recall": 0.87,
+      "bertscore_f1": 0.8461
+    },
+    {
+      "id": 93,
+      "question": "What is Options Trading?",
+      "rouge1_f1": 0.1576,
+      "rouge2_f1": 0.0818,
+      "rougeL_f1": 0.1027,
+      "bertscore_precision": 0.7802,
+      "bertscore_recall": 0.7765,
+      "bertscore_f1": 0.7784
+    },
+    {
+      "id": 94,
+      "question": "What Options trading instruments does Upstream support?",
+      "rouge1_f1": 0.2137,
+      "rouge2_f1": 0.062,
+      "rougeL_f1": 0.1527,
+      "bertscore_precision": 0.6963,
+      "bertscore_recall": 0.6909,
+      "bertscore_f1": 0.6936
+    },
+    {
+      "id": 95,
+      "question": "What Warrants trading instrument does Upstream support?",
+      "rouge1_f1": 0.3186,
+      "rouge2_f1": 0.0721,
+      "rougeL_f1": 0.2478,
+      "bertscore_precision": 0.7536,
+      "bertscore_recall": 0.815,
+      "bertscore_f1": 0.7831
+    },
+    {
+      "id": 96,
+      "question": "What are the fees for trading Options on Upstream?",
+      "rouge1_f1": 0.6703,
+      "rouge2_f1": 0.4044,
+      "rougeL_f1": 0.4649,
+      "bertscore_precision": 0.815,
+      "bertscore_recall": 0.8609,
+      "bertscore_f1": 0.8373
+    },
+    {
+      "id": 97,
+      "question": "What’s a Long Call (Option Holder)?",
+      "rouge1_f1": 0.2746,
+      "rouge2_f1": 0.2305,
+      "rougeL_f1": 0.2448,
+      "bertscore_precision": 0.8488,
+      "bertscore_recall": 0.7822,
+      "bertscore_f1": 0.8141
+    },
+    {
+      "id": 98,
+      "question": "What’s a Long Put (Option Holder)?",
+      "rouge1_f1": 0.2231,
+      "rouge2_f1": 0.1542,
+      "rougeL_f1": 0.1692,
+      "bertscore_precision": 0.8035,
+      "bertscore_recall": 0.7733,
+      "bertscore_f1": 0.7881
+    },
+    {
+      "id": 99,
+      "question": "What’s a Covered Call (Option Holder)?",
+      "rouge1_f1": 0.327,
+      "rouge2_f1": 0.2724,
+      "rougeL_f1": 0.2541,
+      "bertscore_precision": 0.8534,
+      "bertscore_recall": 0.8124,
+      "bertscore_f1": 0.8324
+    },
+    {
+      "id": 100,
+      "question": "What’s a Short Put (Option Holder)?",
+      "rouge1_f1": 0.1897,
+      "rouge2_f1": 0.1499,
+      "rougeL_f1": 0.1695,
+      "bertscore_precision": 0.8297,
+      "bertscore_recall": 0.7587,
+      "bertscore_f1": 0.7926
+    },
+    {
+      "id": 101,
+      "question": "What are Options Strategies?",
+      "rouge1_f1": 0.2177,
+      "rouge2_f1": 0.1833,
+      "rougeL_f1": 0.1921,
+      "bertscore_precision": 0.8551,
+      "bertscore_recall": 0.8005,
+      "bertscore_f1": 0.8269
+    },
+    {
+      "id": 102,
+      "question": "What are Market Pools?",
+      "rouge1_f1": 0.4795,
+      "rouge2_f1": 0.2294,
+      "rougeL_f1": 0.2749,
+      "bertscore_precision": 0.7889,
+      "bertscore_recall": 0.8115,
+      "bertscore_f1": 0.8001
+    },
+    {
+      "id": 103,
+      "question": "What happens to my shares when I deposit them into a Market Pool?",
+      "rouge1_f1": 0.4355,
+      "rouge2_f1": 0.2787,
+      "rougeL_f1": 0.3065,
+      "bertscore_precision": 0.7809,
+      "bertscore_recall": 0.8459,
+      "bertscore_f1": 0.8121
+    },
+    {
+      "id": 104,
+      "question": "What happens to my money when I deposit it into a Market Pool?",
+      "rouge1_f1": 0.5899,
+      "rouge2_f1": 0.3814,
+      "rougeL_f1": 0.4516,
+      "bertscore_precision": 0.8178,
+      "bertscore_recall": 0.8425,
+      "bertscore_f1": 0.8299
+    },
+    {
+      "id": 105,
+      "question": "Do Market Pools pay liquidity providers a fee?",
+      "rouge1_f1": 0.4536,
+      "rouge2_f1": 0.3021,
+      "rougeL_f1": 0.3608,
+      "bertscore_precision": 0.817,
+      "bertscore_recall": 0.7912,
+      "bertscore_f1": 0.8039
+    },
+    {
+      "id": 106,
+      "question": "How can I withdraw my Market Pool earnings?",
+      "rouge1_f1": 0.425,
+      "rouge2_f1": 0.2308,
+      "rougeL_f1": 0.325,
+      "bertscore_precision": 0.7858,
+      "bertscore_recall": 0.8693,
+      "bertscore_f1": 0.8254
+    },
+    {
+      "id": 107,
+      "question": "How does Market Pool trading work?",
+      "rouge1_f1": 0.3745,
+      "rouge2_f1": 0.2143,
+      "rougeL_f1": 0.2659,
+      "bertscore_precision": 0.7891,
+      "bertscore_recall": 0.6981,
+      "bertscore_f1": 0.7408
+    },
+    {
+      "id": 108,
+      "question": "How do I evaluate the price my trade would get when a Market Pool is the counterparty?",
+      "rouge1_f1": 0.3427,
+      "rouge2_f1": 0.1638,
+      "rougeL_f1": 0.2191,
+      "bertscore_precision": 0.8295,
+      "bertscore_recall": 0.7247,
+      "bertscore_f1": 0.7735
+    },
+    {
+      "id": 109,
+      "question": "Can Upstreams’ trading circuit-breakers affect Market Pool trades?",
+      "rouge1_f1": 0.6812,
+      "rouge2_f1": 0.6079,
+      "rougeL_f1": 0.655,
+      "bertscore_precision": 0.879,
+      "bertscore_recall": 0.9135,
+      "bertscore_f1": 0.8959
+    },
+    {
+      "id": 110,
+      "question": "What happens if I try to buy all the shares inside a Market Pool?",
+      "rouge1_f1": 0.4646,
+      "rouge2_f1": 0.3254,
+      "rougeL_f1": 0.3543,
+      "bertscore_precision": 0.8067,
+      "bertscore_recall": 0.7913,
+      "bertscore_f1": 0.7989
+    },
+    {
+      "id": 111,
+      "question": "What happens if I try to bulk-sell my shares into a Market Pool?",
+      "rouge1_f1": 0.4751,
+      "rouge2_f1": 0.354,
+      "rougeL_f1": 0.3812,
+      "bertscore_precision": 0.8143,
+      "bertscore_recall": 0.7848,
+      "bertscore_f1": 0.7993
+    },
+    {
+      "id": 112,
+      "question": "What is impermanent loss?",
+      "rouge1_f1": 0.2573,
+      "rouge2_f1": 0.1183,
+      "rougeL_f1": 0.1637,
+      "bertscore_precision": 0.7124,
+      "bertscore_recall": 0.8951,
+      "bertscore_f1": 0.7934
+    },
+    {
+      "id": 113,
+      "question": "What is a Collectible?",
+      "rouge1_f1": 0.52,
+      "rouge2_f1": 0.3131,
+      "rougeL_f1": 0.45,
+      "bertscore_precision": 0.8559,
+      "bertscore_recall": 0.7899,
+      "bertscore_f1": 0.8216
+    },
+    {
+      "id": 114,
+      "question": "What is the Upstream Collectibles Marketplace?",
+      "rouge1_f1": 0.3529,
+      "rouge2_f1": 0.1928,
+      "rougeL_f1": 0.2588,
+      "bertscore_precision": 0.7815,
+      "bertscore_recall": 0.8618,
+      "bertscore_f1": 0.8197
+    },
+    {
+      "id": 115,
+      "question": "What are Collectibles on Upstream versus Collectibles on other platforms?",
+      "rouge1_f1": 0.1408,
+      "rouge2_f1": 0.058,
+      "rougeL_f1": 0.1408,
+      "bertscore_precision": 0.7042,
+      "bertscore_recall": 0.8541,
+      "bertscore_f1": 0.7719
+    },
+    {
+      "id": 116,
+      "question": "What are Upstream's unique Collectible integrations?",
+      "rouge1_f1": 0.0923,
+      "rouge2_f1": 0.0078,
+      "rougeL_f1": 0.0692,
+      "bertscore_precision": 0.6965,
+      "bertscore_recall": 0.6956,
+      "bertscore_f1": 0.6961
+    },
+    {
+      "id": 117,
+      "question": "How do I Claim a Collectible?",
+      "rouge1_f1": 0.5437,
+      "rouge2_f1": 0.1782,
+      "rougeL_f1": 0.4466,
+      "bertscore_precision": 0.791,
+      "bertscore_recall": 0.8301,
+      "bertscore_f1": 0.8101
+    },
+    {
+      "id": 118,
+      "question": "How can I purchase a Collectible?",
+      "rouge1_f1": 0.4579,
+      "rouge2_f1": 0.1226,
+      "rougeL_f1": 0.271,
+      "bertscore_precision": 0.737,
+      "bertscore_recall": 0.7988,
+      "bertscore_f1": 0.7667
+    },
+    {
+      "id": 119,
+      "question": "What’s a redeemable Collectible?",
+      "rouge1_f1": 0.5217,
+      "rouge2_f1": 0.2353,
+      "rougeL_f1": 0.3043,
+      "bertscore_precision": 0.7977,
+      "bertscore_recall": 0.8375,
+      "bertscore_f1": 0.8171
+    },
+    {
+      "id": 120,
+      "question": "How can I redeem an Collectible?",
+      "rouge1_f1": 0.5122,
+      "rouge2_f1": 0.2459,
+      "rougeL_f1": 0.3333,
+      "bertscore_precision": 0.7765,
+      "bertscore_recall": 0.8316,
+      "bertscore_f1": 0.8031
+    },
+    {
+      "id": 121,
+      "question": "What are Collectible Transactions?",
+      "rouge1_f1": 0.4966,
+      "rouge2_f1": 0.2449,
+      "rougeL_f1": 0.3624,
+      "bertscore_precision": 0.7562,
+      "bertscore_recall": 0.8626,
+      "bertscore_f1": 0.8059
+    },
+    {
+      "id": 122,
+      "question": "How can I sell a Collectible?",
+      "rouge1_f1": 0.7011,
+      "rouge2_f1": 0.5465,
+      "rougeL_f1": 0.6552,
+      "bertscore_precision": 0.8385,
+      "bertscore_recall": 0.9397,
+      "bertscore_f1": 0.8862
+    },
+    {
+      "id": 123,
+      "question": "What is a collectible auction?",
+      "rouge1_f1": 0.4762,
+      "rouge2_f1": 0.0856,
+      "rougeL_f1": 0.2116,
+      "bertscore_precision": 0.7679,
+      "bertscore_recall": 0.8141,
+      "bertscore_f1": 0.7903
+    },
+    {
+      "id": 124,
+      "question": "What if I am the highest bidder when the Collectible Auction closes?",
+      "rouge1_f1": 0.614,
+      "rouge2_f1": 0.5,
+      "rougeL_f1": 0.5263,
+      "bertscore_precision": 0.7934,
+      "bertscore_recall": 0.9252,
+      "bertscore_f1": 0.8543
+    },
+    {
+      "id": 125,
+      "question": "What happens if nobody bids at or above my reserve price?",
+      "rouge1_f1": 0.48,
+      "rouge2_f1": 0.3288,
+      "rougeL_f1": 0.4267,
+      "bertscore_precision": 0.7908,
+      "bertscore_recall": 0.9117,
+      "bertscore_f1": 0.8469
+    },
+    {
+      "id": 126,
+      "question": "Can I cancel an auction before the close?",
+      "rouge1_f1": 0.1852,
+      "rouge2_f1": 0.0,
+      "rougeL_f1": 0.1111,
+      "bertscore_precision": 0.6722,
+      "bertscore_recall": 0.7751,
+      "bertscore_f1": 0.72
+    },
+    {
+      "id": 127,
+      "question": "How do I place a bid?",
+      "rouge1_f1": 0.5339,
+      "rouge2_f1": 0.274,
+      "rougeL_f1": 0.3167,
+      "bertscore_precision": 0.7982,
+      "bertscore_recall": 0.8305,
+      "bertscore_f1": 0.814
+    },
+    {
+      "id": 128,
+      "question": "What is Upstream's digital rewards program?",
+      "rouge1_f1": 0.3333,
+      "rouge2_f1": 0.1321,
+      "rougeL_f1": 0.2222,
+      "bertscore_precision": 0.7654,
+      "bertscore_recall": 0.7785,
+      "bertscore_f1": 0.7719
+    },
+    {
+      "id": 129,
+      "question": "What is Upstream's Carbon Removal Program? Race Without A Trace ™",
+      "rouge1_f1": 0.4028,
+      "rouge2_f1": 0.1818,
+      "rougeL_f1": 0.2708,
+      "bertscore_precision": 0.8067,
+      "bertscore_recall": 0.8038,
+      "bertscore_f1": 0.8052
+    },
+    {
+      "id": 130,
+      "question": "Where can I read the full Terms and Conditions for Collectible Auctions?",
+      "rouge1_f1": 0.4545,
+      "rouge2_f1": 0.3438,
+      "rougeL_f1": 0.4242,
+      "bertscore_precision": 0.8382,
+      "bertscore_recall": 0.9379,
+      "bertscore_f1": 0.8853
+    },
+    {
+      "id": 131,
+      "question": "What technical standard do Upstream Collectibles follow?",
+      "rouge1_f1": 0.3,
+      "rouge2_f1": 0.2759,
+      "rougeL_f1": 0.3,
+      "bertscore_precision": 0.7233,
+      "bertscore_recall": 0.951,
+      "bertscore_f1": 0.8217
+    },
+    {
+      "id": 132,
+      "question": "How do I report objectionable Collectible media?",
+      "rouge1_f1": 0.6118,
+      "rouge2_f1": 0.4337,
+      "rougeL_f1": 0.5412,
+      "bertscore_precision": 0.8556,
+      "bertscore_recall": 0.8956,
+      "bertscore_f1": 0.8751
+    },
+    {
+      "id": 133,
+      "question": "How do I report copyright infringements of Collectible media offered for auction?",
+      "rouge1_f1": 0.4371,
+      "rouge2_f1": 0.1879,
+      "rougeL_f1": 0.2384,
+      "bertscore_precision": 0.7395,
+      "bertscore_recall": 0.8142,
+      "bertscore_f1": 0.775
+    },
+    {
+      "id": 134,
+      "question": "When I own a Collectibles, what are my rights?",
+      "rouge1_f1": 0.625,
+      "rouge2_f1": 0.4483,
+      "rougeL_f1": 0.5682,
+      "bertscore_precision": 0.8414,
+      "bertscore_recall": 0.8784,
+      "bertscore_f1": 0.8595
+    },
+    {
+      "id": 135,
+      "question": "How do I export my Collectible, is not in the list, it cannot be exported.",
+      "rouge1_f1": 0.438,
+      "rouge2_f1": 0.1926,
+      "rougeL_f1": 0.2774,
+      "bertscore_precision": 0.8289,
+      "bertscore_recall": 0.7504,
+      "bertscore_f1": 0.7877
+    },
+    {
+      "id": 136,
+      "question": "How can I “see” my exported Collectible in MetaMask?",
+      "rouge1_f1": 0.2783,
+      "rouge2_f1": 0.0531,
+      "rougeL_f1": 0.1739,
+      "bertscore_precision": 0.7915,
+      "bertscore_recall": 0.791,
+      "bertscore_f1": 0.7912
+    },
+    {
+      "id": 137,
+      "question": "What might Upstream consider objectionable Collectible material?",
+      "rouge1_f1": 0.1443,
+      "rouge2_f1": 0.0,
+      "rougeL_f1": 0.0722,
+      "bertscore_precision": 0.7314,
+      "bertscore_recall": 0.6738,
+      "bertscore_f1": 0.7014
+    },
+    {
+      "id": 138,
+      "question": "Are trades solicited on Upstream?",
+      "rouge1_f1": 0.2857,
+      "rouge2_f1": 0.1132,
+      "rougeL_f1": 0.2236,
+      "bertscore_precision": 0.7713,
+      "bertscore_recall": 0.761,
+      "bertscore_f1": 0.7661
+    },
+    {
+      "id": 139,
+      "question": "Who is Upstream’s Cash Custodian?",
+      "rouge1_f1": 0.3345,
+      "rouge2_f1": 0.0932,
+      "rougeL_f1": 0.1993,
+      "bertscore_precision": 0.7886,
+      "bertscore_recall": 0.7541,
+      "bertscore_f1": 0.771
+    },
+    {
+      "id": 140,
+      "question": "What is a Prospectus?",
+      "rouge1_f1": 0.3896,
+      "rouge2_f1": 0.1316,
+      "rougeL_f1": 0.2857,
+      "bertscore_precision": 0.7948,
+      "bertscore_recall": 0.8289,
+      "bertscore_f1": 0.8115
+    },
+    {
+      "id": 141,
+      "question": "What are the major differences between common and preferred stock?",
+      "rouge1_f1": 0.5657,
+      "rouge2_f1": 0.5155,
+      "rougeL_f1": 0.5253,
+      "bertscore_precision": 0.753,
+      "bertscore_recall": 0.9392,
+      "bertscore_f1": 0.8359
+    },
+    {
+      "id": 142,
+      "question": "What is a PIPE, private placement or secondary offering?",
+      "rouge1_f1": 0.4696,
+      "rouge2_f1": 0.4071,
+      "rougeL_f1": 0.3826,
+      "bertscore_precision": 0.7457,
+      "bertscore_recall": 0.8196,
+      "bertscore_f1": 0.7809
+    },
+    {
+      "id": 143,
+      "question": "What is a Registration Statement?",
+      "rouge1_f1": 0.5567,
+      "rouge2_f1": 0.4421,
+      "rougeL_f1": 0.5567,
+      "bertscore_precision": 0.8071,
+      "bertscore_recall": 0.917,
+      "bertscore_f1": 0.8586
+    },
+    {
+      "id": 144,
+      "question": "What is an Unaccredited investor?",
+      "rouge1_f1": 0.4259,
+      "rouge2_f1": 0.1887,
+      "rougeL_f1": 0.2222,
+      "bertscore_precision": 0.7706,
+      "bertscore_recall": 0.798,
+      "bertscore_f1": 0.7841
+    },
+    {
+      "id": 145,
+      "question": "Where is Upstream located?",
+      "rouge1_f1": 0.2667,
+      "rouge2_f1": 0.1395,
+      "rougeL_f1": 0.2222,
+      "bertscore_precision": 0.8019,
+      "bertscore_recall": 0.8632,
+      "bertscore_f1": 0.8314
+    },
+    {
+      "id": 146,
+      "question": "What annual & semi-annual disclosures are required?",
+      "rouge1_f1": 0.5352,
+      "rouge2_f1": 0.5217,
+      "rougeL_f1": 0.5352,
+      "bertscore_precision": 0.7998,
+      "bertscore_recall": 0.9598,
+      "bertscore_f1": 0.8725
+    },
+    {
+      "id": 147,
+      "question": "WHAT IS UPSTREAM Advertising?",
+      "rouge1_f1": 0.2811,
+      "rouge2_f1": 0.0707,
+      "rougeL_f1": 0.1459,
+      "bertscore_precision": 0.7973,
+      "bertscore_recall": 0.7381,
+      "bertscore_f1": 0.7666
+    },
+    {
+      "id": 148,
+      "question": "How do I know that I can trust Upstream with my assets?",
+      "rouge1_f1": 0.6805,
+      "rouge2_f1": 0.5941,
+      "rougeL_f1": 0.6307,
+      "bertscore_precision": 0.8155,
+      "bertscore_recall": 0.932,
+      "bertscore_f1": 0.8698
+    },
+    {
+      "id": 149,
+      "question": "How do I use my Upstream wallet on mainnet?",
+      "rouge1_f1": 0.3375,
+      "rouge2_f1": 0.1266,
+      "rougeL_f1": 0.225,
+      "bertscore_precision": 0.7718,
+      "bertscore_recall": 0.7585,
+      "bertscore_f1": 0.7651
+    },
+    {
+      "id": 150,
+      "question": "Where can I find a breakdown of Upstream's fees?",
+      "rouge1_f1": 0.4511,
+      "rouge2_f1": 0.3004,
+      "rougeL_f1": 0.366,
+      "bertscore_precision": 0.795,
+      "bertscore_recall": 0.7984,
+      "bertscore_f1": 0.7967
+    },
+    {
+      "id": 151,
+      "question": "Where can I download the Upstream App?",
+      "rouge1_f1": 0.6216,
+      "rouge2_f1": 0.5833,
+      "rougeL_f1": 0.6216,
+      "bertscore_precision": 0.8526,
+      "bertscore_recall": 0.9588,
+      "bertscore_f1": 0.9026
+    },
+    {
+      "id": 152,
+      "question": "Is Short Selling Allowsed on Upstream?",
+      "rouge1_f1": 0.1408,
+      "rouge2_f1": 0.1159,
+      "rougeL_f1": 0.1408,
+      "bertscore_precision": 0.6565,
+      "bertscore_recall": 0.856,
+      "bertscore_f1": 0.7431
+    },
+    {
+      "id": 153,
+      "question": "What is Short Selling on Upstream?",
+      "rouge1_f1": 0.4054,
+      "rouge2_f1": 0.1918,
+      "rougeL_f1": 0.2838,
+      "bertscore_precision": 0.7414,
+      "bertscore_recall": 0.8127,
+      "bertscore_f1": 0.7754
+    },
+    {
+      "id": 154,
+      "question": "What are the key features and restrictions of Upstream's Short Selling service?",
+      "rouge1_f1": 0.4737,
+      "rouge2_f1": 0.2,
+      "rougeL_f1": 0.2895,
+      "bertscore_precision": 0.7885,
+      "bertscore_recall": 0.8571,
+      "bertscore_f1": 0.8214
+    },
+    {
+      "id": 155,
+      "question": "How is the Lending Fee determined on Upstream?",
+      "rouge1_f1": 0.5524,
+      "rouge2_f1": 0.3883,
+      "rougeL_f1": 0.4571,
+      "bertscore_precision": 0.7674,
+      "bertscore_recall": 0.8721,
+      "bertscore_f1": 0.8164
+    },
+    {
+      "id": 156,
+      "question": "Can a stock lender recall their shares early on Upstream?",
+      "rouge1_f1": 0.5714,
+      "rouge2_f1": 0.3883,
+      "rougeL_f1": 0.4762,
+      "bertscore_precision": 0.7881,
+      "bertscore_recall": 0.8804,
+      "bertscore_f1": 0.8317
+    },
+    {
+      "id": 157,
+      "question": "What is the Borrower Margin requirement for short sellers?",
+      "rouge1_f1": 0.5686,
+      "rouge2_f1": 0.42,
+      "rougeL_f1": 0.5098,
+      "bertscore_precision": 0.7731,
+      "bertscore_recall": 0.9146,
+      "bertscore_f1": 0.8379
+    },
+    {
+      "id": 158,
+      "question": "What happens immediately after a short seller borrows shares?",
+      "rouge1_f1": 0.3962,
+      "rouge2_f1": 0.2115,
+      "rougeL_f1": 0.283,
+      "bertscore_precision": 0.7676,
+      "bertscore_recall": 0.8651,
+      "bertscore_f1": 0.8135
+    },
+    {
+      "id": 159,
+      "question": "What is the Downside Risk and Auto-Liquidation process for short sellers?",
+      "rouge1_f1": 0.6291,
+      "rouge2_f1": 0.6161,
+      "rougeL_f1": 0.6291,
+      "bertscore_precision": 0.82,
+      "bertscore_recall": 0.9175,
+      "bertscore_f1": 0.866
+    },
+    {
+      "id": 160,
+      "question": "How can a short seller mitigate downside risk?",
+      "rouge1_f1": 0.4539,
+      "rouge2_f1": 0.3165,
+      "rougeL_f1": 0.3404,
+      "bertscore_precision": 0.7527,
+      "bertscore_recall": 0.8806,
+      "bertscore_f1": 0.8116
+    },
+    {
+      "id": 161,
+      "question": "Who receives Dividend Distributions and Voting Entitlements on short sold shares?",
+      "rouge1_f1": 0.5234,
+      "rouge2_f1": 0.3619,
+      "rougeL_f1": 0.486,
+      "bertscore_precision": 0.769,
+      "bertscore_recall": 0.8459,
+      "bertscore_f1": 0.8056
+    },
+    {
+      "id": 162,
+      "question": "What is Upstream's Alternative Uptick Rule?",
+      "rouge1_f1": 0.5802,
+      "rouge2_f1": 0.3721,
+      "rougeL_f1": 0.4733,
+      "bertscore_precision": 0.7806,
+      "bertscore_recall": 0.8772,
+      "bertscore_f1": 0.8261
+    },
+    {
+      "id": 163,
+      "question": "How does Upstream guarantee the return of a lender's shares (no borrower-default risk)?",
+      "rouge1_f1": 0.6,
+      "rouge2_f1": 0.4444,
+      "rougeL_f1": 0.5818,
+      "bertscore_precision": 0.817,
+      "bertscore_recall": 0.9223,
+      "bertscore_f1": 0.8664
+    },
+    {
+      "id": 164,
+      "question": "What Upstream fees are charged during a short sale?",
+      "rouge1_f1": 0.5766,
+      "rouge2_f1": 0.4587,
+      "rougeL_f1": 0.5225,
+      "bertscore_precision": 0.769,
+      "bertscore_recall": 0.8622,
+      "bertscore_f1": 0.8129
+    }
+  ]
+}

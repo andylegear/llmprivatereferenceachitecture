@@ -1,0 +1,1420 @@
+{
+  "metadata": {
+    "dataset": "C:\\dev\\ai-architecture-paper\\evaluation\\automated-metrics\\..\\data\\dataset.json",
+    "model": "claude-sonnet-4-20250514",
+    "computed_at": "2026-03-23T14:31:34.732936+00:00"
+  },
+  "summary": {
+    "total_scored": 163,
+    "faithfulness_mean": 3.71,
+    "faithfulness_median": 4,
+    "faithfulness_min": 1,
+    "faithfulness_max": 5,
+    "items_with_hallucinations": 99
+  },
+  "items": [
+    {
+      "id": 1,
+      "question": "What is Upstream?",
+      "faithfulness_score": 5,
+      "unsupported_claims": [],
+      "reasoning": "All claims in the chatbot's response are directly supported by the source material. The response accurately describes Upstream as a global stock trading app, correctly lists the types of assets that can be traded (dual listed companies, IPOs, celebrity ventures, and other unique asset classes), and properly summarizes the available funding methods. The mention of 'international wire transfers' is an acceptable paraphrase of 'wire transfer of funds in the U.S. and internationally' from the source. The contact information is system-generated boilerplate and excluded from evaluation."
+    },
+    {
+      "id": 2,
+      "question": "What are Upstream’s market hours and trading days?",
+      "faithfulness_score": 5,
+      "unsupported_claims": [],
+      "reasoning": "The chatbot's response is fully faithful to the source material. It accurately states that Upstream is open 20 hours per day, Monday through Sunday, and correctly references the URL for latest market hours information. The contact information is system-level boilerplate that should be excluded from hallucination scoring. All substantive claims are directly supported by the ground truth."
+    },
+    {
+      "id": 3,
+      "question": "What does it mean that Upstream is a MERJ Exchange Market?",
+      "faithfulness_score": 5,
+      "unsupported_claims": [],
+      "reasoning": "All claims in the chatbot's response are directly supported by the source material. The response accurately states that Upstream is a MERJ Exchange market and correctly describes MERJ as 'a regulated and licensed securities exchange, clearing system, and depository for digital and non-digital securities,' which directly matches the source description of MERJ operating 'a fully regulated and licensed integrated securities exchange, clearing system and depository for digital and non-digital securities.' The contact information is system-level boilerplate and excluded from evaluation."
+    },
+    {
+      "id": 4,
+      "question": "What is MERJ Exchange?",
+      "faithfulness_score": 2,
+      "unsupported_claims": [
+        "It is a member of the World Federation of Exchanges (WFE)",
+        "a member of the African Stock Exchanges (ASEA)",
+        "a member of the Committee of SADC Stock Exchange (CoSSE)",
+        "a full member of the Association of National Numbering Agencies (ANNA)",
+        "a Qualifying Foreign Exchange for OTC Markets in the U.S."
+      ],
+      "reasoning": "The chatbot correctly describes MERJ Exchange as an innovative end-to-end, multi-market global financial exchange for equities, debt and derivatives, which is directly supported by the source. However, the response contains multiple specific membership claims (WFE, ASEA, CoSSE, ANNA, and OTC Markets qualification) that are completely absent from the source material. These fabricated organizational affiliations constitute significant unsupported claims that are not mere overgeneralizations but entirely new factual assertions."
+    },
+    {
+      "id": 5,
+      "question": "How is MERJ regulated?",
+      "faithfulness_score": 4,
+      "unsupported_claims": [
+        "ensuring compliance with anti-money laundering (AML) and counter-terrorism financing (CTF) regulations"
+      ],
+      "unsupported_claims_reasoning": "The source states that FSA 'is the securities and other non-banking financial services regulator' and 'is also the primary regulator for anti-money laundering compliance', but does not mention counter-terrorism financing (CTF) regulations as part of MERJ's regulatory oversight.",
+      "reasoning": "The response is mostly faithful, correctly identifying FSA as MERJ's regulator and accurately describing the collaboration with FIU on FATF recommendations. However, it adds CTF regulations which are not mentioned in the source material. The contact information is excluded per instructions."
+    },
+    {
+      "id": 6,
+      "question": "Who can trade on Upstream?",
+      "faithfulness_score": 4,
+      "unsupported_claims": [
+        "U.S.-based investors cannot trade on Upstream"
+      ],
+      "reasoning": "The response is mostly faithful but contains one overgeneralization. The source states 'U.S. persons may not deposit, buy, or sell securities on Upstream' but the chatbot broadens this to say they 'cannot trade on Upstream' entirely. While this is close to the source material, it omits that U.S. persons can still engage with Collectibles, making the blanket statement about trading slightly inaccurate. The claim about Collectibles is directly supported by the source."
+    },
+    {
+      "id": 7,
+      "question": "Who can buy Collectibles on Upstream?",
+      "faithfulness_score": 5,
+      "unsupported_claims": [],
+      "reasoning": "The chatbot declined to answer the question and made no affirmative claims about who can buy Collectibles. This is a retrieval failure rather than a hallucination. The response contains only a refusal to answer and contact info boilerplate, both of which are excluded from hallucination scoring. Since no unsupported claims were made, this scores 5 for faithfulness."
+    },
+    {
+      "id": 8,
+      "question": "What devices can I trade on?",
+      "faithfulness_score": 5,
+      "unsupported_claims": [],
+      "reasoning": "The chatbot's response is fully faithful to the source material. It accurately states that trading is available on Apple (iOS) and Google (Android) smartphones and the Apple Mac OS desktop app, which directly matches the source. It also correctly includes the security information about biometric security and two-factor authentication features. The contact information is system-injected boilerplate and excluded from evaluation. All claims are directly supported by the source material."
+    },
+    {
+      "id": 9,
+      "question": "Can a U.S.-based investor trade on Upstream?",
+      "faithfulness_score": 5,
+      "unsupported_claims": [],
+      "reasoning": "The chatbot's response is fully faithful to the source material. It correctly states that U.S. persons cannot trade securities on Upstream (supported by 'U.S. persons may not deposit, buy, or sell securities on Upstream') and accurately notes that they can engage with Collectibles (supported by 'U.S. persons may create, buy, auction or bid-for Collectibles on Upstream'). The answer appropriately distinguishes between securities trading (not allowed) and Collectibles activities (allowed). The contact information is system-injected boilerplate and excluded from evaluation."
+    },
+    {
+      "id": 10,
+      "question": "What opportunities can I participate in on Upstream?",
+      "faithfulness_score": 3,
+      "unsupported_claims": [
+        "Trade shares in dual listed companies, IPOs, celebrity ventures, and other unique asset classes directly from the blockchain-powered trading app"
+      ],
+      "reasoning": "The first bullet point accurately reflects the source material about depositing, buying, and selling stocks and collectibles from U.S. and international companies. However, the second bullet point introduces multiple specific claims not found in the source: dual listed companies, IPOs, celebrity ventures, other unique asset classes, and the blockchain-powered nature of the app. These are substantive new details that go beyond acceptable paraphrasing or overgeneralization of the source material."
+    },
+    {
+      "id": 11,
+      "question": "How much does it cost to use Upstream?",
+      "faithfulness_score": 5,
+      "unsupported_claims": [],
+      "reasoning": "All claims in the chatbot's response are directly supported by the source material. The response accurately states that Upstream is free to use with no membership fees, order-placement fees, or Collectible bidding fees. It correctly mentions the 1% fee for securities transactions on the secondary market and the 2% fee for successful Collectible sellers. The contact information is system-injected boilerplate and excluded from evaluation."
+    },
+    {
+      "id": 12,
+      "question": "What technology is powering Upstream?",
+      "faithfulness_score": 5,
+      "unsupported_claims": [],
+      "reasoning": "The chatbot's response is fully faithful to the source material. It accurately states that Upstream is powered by Horizon's ERC-20 smart contract securities ecosystem and Horizon's ERC-721 smart contract Collectible ecosystem, which is directly supported by the ground truth. The contact information is system-level boilerplate as specified in the exclusions. All claims made are directly supported by the source material."
+    },
+    {
+      "id": 13,
+      "question": "What is the vision behind Upstream?",
+      "faithfulness_score": 5,
+      "unsupported_claims": [],
+      "reasoning": "The chatbot's response is a pure refusal to answer, stating it cannot provide information about Upstream's vision from the provided context. While the source material does contain information about Upstream's aims and goals, the chatbot made no affirmative claims that could be unsupported. The contact information is excluded per instructions as system-level boilerplate. Since no fabricated or unsupported claims were made, this scores as fully faithful."
+    },
+    {
+      "id": 14,
+      "question": "How do I open an Upstream account?",
+      "faithfulness_score": 2,
+      "unsupported_claims": [
+        "Complete KYC identity verification by tapping on the KYC icon in the top right of the navigation menu",
+        "Fund your account using a debit/credit card or PayPal",
+        "Purchase shares from the Market tab",
+        "Claim your free Collectible by tapping on the Collectible icon in the top right of the navigation menu",
+        "Hold or trade your Collectibles in the Orders tab"
+      ],
+      "reasoning": "The response conflates opening an account with additional optional activities. The source shows that opening an account only requires downloading the app and tapping Sign Up - everything else (KYC, funding, purchasing) are separate activities that can be done after account creation. The response also contains specific navigation errors (wrong locations for KYC and Collectibles icons, wrong tab for trading Collectibles) and presents optional steps as required account opening steps."
+    },
+    {
+      "id": 15,
+      "question": "When would you require my identification?",
+      "faithfulness_score": 5,
+      "unsupported_claims": [],
+      "reasoning": "The chatbot's response is fully faithful to the source material. It accurately states that KYC is required when the account balance reaches $500 or more, correctly describes it as a 'light-touch KYC process,' and properly explains that it verifies identity before trading. The phrase 'ensure that you are who you say you are before you can trade' directly paraphrases the source material's 'Verifying that you are who you say you are is legally required in order for you to trade safely and securely.' The contact information is system boilerplate and excluded from evaluation."
+    },
+    {
+      "id": 16,
+      "question": "What if i have trouble receiving my KYC code via SMS?",
+      "faithfulness_score": 5,
+      "unsupported_claims": [],
+      "reasoning": "The chatbot's response is fully faithful to the source material. It accurately conveys that there's an alternative method for receiving KYC codes when having SMS trouble, and correctly provides the URL https://kyc.upstream.exchange/whatsmycode to retrieve the code. The contact information at the end is system-injected boilerplate and excluded from evaluation. All substantive claims are directly supported by the ground truth."
+    },
+    {
+      "id": 17,
+      "question": "How do I fund my Upstream account using PayPal?",
+      "faithfulness_score": 4,
+      "unsupported_claims": [
+        "Create a PayPal account or use an existing one."
+      ],
+      "reasoning": "The response is mostly faithful to the source material, accurately conveying the step-by-step process and fee structure. However, it adds an unsupported claim about creating a PayPal account at the beginning. The source material actually states the opposite - that you don't need a PayPal account to fund using credit/debit cards. While the chatbot doesn't contradict this note, it introduces new information about account creation that isn't supported by the source."
+    },
+    {
+      "id": 18,
+      "question": "How do I fund my Upstream account using a Debit or Credit Card?",
+      "faithfulness_score": 4,
+      "unsupported_claims": [
+        "This will allow you to enter the amount you want to fund"
+      ],
+      "reasoning": "The response accurately captures the main steps and correctly notes that no PayPal account is needed. However, it mentions 'entering' the amount when the source says to 'tap' the amount, suggesting a selection rather than manual entry. This is a minor unsupported detail about the interface mechanism, but the overall process description remains faithful to the source material."
+    },
+    {
+      "id": 19,
+      "question": "When I try to fund my account using a Debit or Credit Card, I’m asked to log in to PayPal. Why is this?",
+      "faithfulness_score": 5,
+      "unsupported_claims": [],
+      "reasoning": "All claims in the chatbot's response are directly supported by the source material. The response accurately explains that PayPal login prompts occur due to device location or email being linked to a PayPal account, correctly suggests clearing internet cache as a solution, and properly mentions the fallback options of creating a PayPal account or using USD wire transfer. The contact information is system boilerplate and excluded from evaluation."
+    },
+    {
+      "id": 20,
+      "question": "How do I fund my Upstream Account using a Bank Wire Transfer?",
+      "faithfulness_score": 1,
+      "unsupported_claims": [
+        "The information provided does not mention how to fund a Upstream Account using a bank wire transfer"
+      ],
+      "reasoning": "The chatbot's core claim that the source material doesn't mention bank wire transfers is factually incorrect. The source explicitly states 'traders may initiate a wire or a funds-transfer from any bank or financial institution' and provides detailed banking information including account number, SWIFT code, and complete wire transfer instructions. This is a significant misrepresentation of what information is available in the source material."
+    },
+    {
+      "id": 21,
+      "question": "How are my U.S. Dollar funds kept safe?",
+      "faithfulness_score": 2,
+      "unsupported_claims": [
+        "The Upstream Multisig smart contract source code is public, audited, and may be reviewed by the Upstream community",
+        "There is a maximum amount of USDC that Upstream will allow to be held inside the bridge at any one time, currently 10,000",
+        "Once the threshold is exceeded, the Upstream back-office will initiate a USDC withdrawal to Upstream's mainnet company wallet, where USDC will be sold on a cryptocurrency exchange for US Dollar fiat"
+      ],
+      "reasoning": "While the first two bullet points accurately reflect the source material about insurance/bankruptcy protection and withdrawal restrictions, the response contains three significant claims about smart contracts, USDC limits, and bridge operations that have no basis in the provided source material. These appear to be fabricated technical details that constitute major hallucinations."
+    },
+    {
+      "id": 22,
+      "question": "How do I use my Upstream wallet on Mainnet/Metamask",
+      "faithfulness_score": 5,
+      "unsupported_claims": [],
+      "reasoning": "All claims in the chatbot's response are directly supported by the source material. The response accurately describes the process of exporting the Upstream wallet using 'Manage Signing Key' -> 'Export Signing Key', correctly identifies the exported file as a password-encrypted JSON text file, and properly states that it can be imported into Metamask or other Ethereum wallet providers. The contact information is system-level boilerplate and excluded from evaluation. No fabricated information or unsupported claims were made."
+    },
+    {
+      "id": 23,
+      "question": "Is USDC a cryptocurrency?",
+      "faithfulness_score": 2,
+      "unsupported_claims": [
+        "USDC is a stablecoin",
+        "USDC is pegged to the price of USDC token"
+      ],
+      "reasoning": "The source material only confirms 'Yes' to whether USDC is a cryptocurrency. The chatbot adds significant unsupported details about USDC being a stablecoin and being pegged to 'the price of USDC token' (which is also nonsensical - something cannot be pegged to itself). These are substantial fabricated claims not present in the source material."
+    },
+    {
+      "id": 24,
+      "question": "Can I deposit cryptocurrency on Upstream? How do I fund my Upstream account with USDC cryptocurrency? How do I deposit to my Upstream account with USDC cryptocurrency?",
+      "faithfulness_score": 2,
+      "unsupported_claims": [
+        "You can transfer USDT from your personal wallet to the imported wallet address in Metamask",
+        "Once you have transferred your USDT to the Upstream wallet address, you can transfer it to the usdc.upstreambridge.eth address using Metamask"
+      ],
+      "reasoning": "The response contains a critical error by repeatedly mentioning USDT instead of USDC when describing the transfer process. The source material is entirely about USDC cryptocurrency, not USDT. This creates significant confusion about which cryptocurrency to actually use, making the response mostly unfaithful despite getting other details correct like the bridge address and wallet setup process."
+    },
+    {
+      "id": 25,
+      "question": "Why Can’t I Transfer USDC Directly from my Personal Wallet?",
+      "faithfulness_score": 2,
+      "unsupported_claims": [
+        "Upstream does not allow users to directly transfer USDC or USDT from their personal wallets",
+        "This is because Upstream does not mint USDC or USDT on Ethereum mainnet"
+      ],
+      "reasoning": "The response contains significant fabrications. The source only mentions that Upstream doesn't mint stablecoins from USDC deposits that DON'T match existing app wallet addresses, but the chatbot claims Upstream doesn't mint USDC or USDT at all on Ethereum mainnet. The chatbot also mentions USDT which isn't in the source material. While the consequence of funds being lost is supported, the core explanation is fundamentally incorrect."
+    },
+    {
+      "id": 26,
+      "question": "How do I fund my Upstream account with USDT?",
+      "faithfulness_score": 5,
+      "unsupported_claims": [],
+      "reasoning": "The chatbot's response accurately reproduces the 4-step process for funding an Upstream account with USDT as outlined in the source material. All steps are directly supported: exporting the Upstream wallet address, importing to Metamask, transferring USDT to the imported address, and finally transferring to usdt.upstreambridge.eth. The contact information is system boilerplate and excluded from evaluation. No fabricated or unsupported claims were made."
+    },
+    {
+      "id": 27,
+      "question": "WHY CAN’T I TRANSFER USDC or USDT DIRECTLY FROM MY PERSONAL WALLET?",
+      "faithfulness_score": 2,
+      "unsupported_claims": [
+        "the blockchain transfer functions used by Upstream are designed to prevent invalid transactions and ensure that funds are sent and received correctly"
+      ],
+      "reasoning": "The response correctly captures that Upstream does not mint stablecoins from USDC deposits on Ethereum mainnet, but it fabricates an explanation about blockchain transfer functions being 'designed to prevent invalid transactions.' The source actually states the opposite - that invalid deposits 'cannot be rejected by Upstream due to the nature of blockchain transfer functions' and may be lost forever. This is a significant misrepresentation of the technical explanation."
+    },
+    {
+      "id": 28,
+      "question": "HOW DO I WITHDRAW DIGITAL CURRENCY FUNDS?",
+      "faithfulness_score": 3,
+      "unsupported_claims": [
+        "Create a Metamask wallet and connect it to your Upstream app",
+        "You will receive a notification when the funds are transferred from the Upstream smart contract to your Ethereum mainnet wallet address"
+      ],
+      "reasoning": "The response captures the general withdrawal process but contains some unsupported claims. The source mentions exporting an Upstream app wallet and importing it to Metamask, not creating a new Metamask wallet and connecting it to the app. The source also doesn't mention receiving notifications about fund transfers. However, the core withdrawal steps and process are generally aligned with the source material."
+    },
+    {
+      "id": 29,
+      "question": "How are my USDC funds kept safe?",
+      "faithfulness_score": 4,
+      "unsupported_claims": [
+        "cannot be withdrawn by external parties"
+      ],
+      "reasoning": "The response is mostly faithful to the source material, accurately describing the multisig protection, withdrawal limits, and rebalancing processes. However, the claim that funds 'cannot be withdrawn by external parties' is not directly supported - the source only states that withdrawals require multisig confirmation and must be initiated by the bridge-service wallet, but doesn't explicitly state external parties cannot withdraw. The other claims about safeguards, maximum amounts, and rebalancing processes are well-supported by the source material."
+    },
+    {
+      "id": 30,
+      "question": "How long does it take for KYC identity verification to be verified?",
+      "faithfulness_score": 5,
+      "unsupported_claims": [],
+      "reasoning": "The chatbot's response directly quotes the first sentence from the source material verbatim, providing accurate information about KYC verification timeframes. The contact information is system-injected boilerplate as specified in the exclusions. All claims made are fully supported by the source material."
+    },
+    {
+      "id": 31,
+      "question": "When will my funds be available to invest?",
+      "faithfulness_score": 4,
+      "unsupported_claims": [
+        "funds will receive your funds instantly upon completion"
+      ],
+      "reasoning": "The response accurately conveys that PayPal, Credit, and Debit cards provide instant availability, which is directly supported by the source material. However, the phrasing 'upon completion' adds a slight qualification not present in the source, and the response omits the USDC information entirely. The core claim about instant availability for the three payment methods is faithful to the source."
+    },
+    {
+      "id": 32,
+      "question": "How can I check the current balance of my Upstream funds?",
+      "faithfulness_score": 2,
+      "unsupported_claims": [
+        "The Balance of funds number shows the total amount of funds you have available for trading",
+        "A push notification will be sent to your Upstream app and message center whenever you receive a deposit or make a trade, indicating the current balance"
+      ],
+      "reasoning": "The response contains significant unsupported claims. First, it incorrectly states that the Balance of funds shows funds 'available for trading' when the source clearly distinguishes between 'actual Balance' and 'Available Balance' for trading. Second, it fabricates entirely new information about push notifications for deposits/trades, which appears nowhere in the source material. Only the basic location information (Portfolio screen) is accurate."
+    },
+    {
+      "id": 33,
+      "question": "Is there a minimum funding requirement?",
+      "faithfulness_score": 3,
+      "unsupported_claims": [
+        "There are no minimum funding requirements to open an account with Upstream Exchange",
+        "the maximum amount you can trade in an amount greater than your account is funded"
+      ],
+      "reasoning": "The response contains one fabricated claim (adding 'to open an account with Upstream Exchange' which isn't in the source) and one garbled statement that contradicts the source material. The source says you 'may not trade in an amount greater than your account is funded' but the chatbot says 'the maximum amount you can trade in an amount greater than your account is funded' which is nonsensical and contradictory. The core information about no minimum funding requirements is correct."
+    },
+    {
+      "id": 34,
+      "question": "How do I withdraw funds from my Upstream account?",
+      "faithfulness_score": 4,
+      "unsupported_claims": [
+        "The withdrawal will be processed by PayPal or the Upstream banking partner using the Upstream API if the withdrawal amount does not exceed your original PayPal/Credit Card/Debit Card deposit amount"
+      ],
+      "reasoning": "The response accurately covers the withdrawal process steps and mentions AML checks and potential delays. However, there is one inaccuracy: the chatbot states withdrawals are processed by PayPal OR the banking partner 'if the amount does not exceed the original deposit amount,' when the source actually states PayPal processes withdrawals that do NOT exceed this amount, while the banking partner processes withdrawals ABOVE this amount. This reverses the logic but is a minor error in an otherwise faithful response."
+    },
+    {
+      "id": 35,
+      "question": "What are the fees to fund or withdraw funds from my account?",
+      "faithfulness_score": 2,
+      "unsupported_claims": [
+        "ACH Free: $30.00",
+        "PayPal 2.99% (U.S. Only): $0.29",
+        "PayPal 2.99% + local currency fee: $0.29"
+      ],
+      "reasoning": "The response contains several significant fabrications. The source clearly states 'ACH Free' meaning no fee, but the chatbot claims it costs $30.00. The PayPal percentages are correct, but the chatbot adds specific dollar amounts ($0.29) that don't exist in the source material. The response also includes trading and collectible fees which, while accurate, weren't asked about in the user's question about funding/withdrawal fees."
+    },
+    {
+      "id": 36,
+      "question": "Can I open a Joint or Corporate account?",
+      "faithfulness_score": 3,
+      "unsupported_claims": [
+        "Joint accounts can be opened using the same process as corporate accounts"
+      ],
+      "reasoning": "The source material only mentions corporate accounts and provides specific instructions for opening them. The chatbot response adds information about Joint accounts without any support from the source material. While the corporate account information is accurately conveyed, the inclusion of Joint accounts as equally available represents a significant unsupported claim that goes beyond acceptable paraphrasing or generalization."
+    },
+    {
+      "id": 37,
+      "question": "What is a Signing Key and why is it so important?",
+      "faithfulness_score": 5,
+      "unsupported_claims": [],
+      "reasoning": "All claims in the chatbot's response are directly supported by the source material. The response accurately describes a Signing Key as a password-protected file containing blockchain public and private keys, correctly states that Upstream never knows the private key, explains the non-custodial nature, mentions the biometric unlock feature, and emphasizes the importance of exporting/backing up the key for recovery purposes. The contact information is system-injected boilerplate and excluded from evaluation."
+    },
+    {
+      "id": 38,
+      "question": "How do I backup my Signing Key?",
+      "faithfulness_score": 4,
+      "unsupported_claims": [
+        "If you lost your Signing Key and forgot to back it up, you can contact Upstream Support at servicedesk@upstream.exchange for assistance."
+      ],
+      "reasoning": "Most claims are well-supported by the source material, including backup methods for Android/iOS and manual export process. However, the response contains one unsupported claim about contacting servicedesk@upstream.exchange for lost Signing Key assistance - this specific email address and service offering is not mentioned in the source material. The standard contact boilerplate (support@upstream.exchange) is excluded per instructions."
+    },
+    {
+      "id": 39,
+      "question": "How do I disable Two-Factor Authentication?",
+      "faithfulness_score": 4,
+      "unsupported_claims": [
+        "Disable two-factor authentication"
+      ],
+      "reasoning": "The response accurately captures the two main steps from the source material (click setting icon, tap 'Unlink Authenticator'). However, step 3 'Disable two-factor authentication' is redundant and not explicitly stated as a separate step in the source - the source indicates that clicking 'Unlink Authenticator' IS the action that disables 2FA. The contact information is system boilerplate and excluded from evaluation. The response omits the security warning but this is not a faithfulness issue since no contradictory claims were made."
+    },
+    {
+      "id": 40,
+      "question": "What does the ‘Logout’ button do?",
+      "faithfulness_score": 5,
+      "unsupported_claims": [],
+      "reasoning": "All claims in the chatbot's response are directly supported by the source material. The response accurately describes that the Logout button terminates the session at the server, requires reauthentication with two-factor authentication, and is a secure method. The mention of 'upon returning to the app' is a reasonable paraphrase of the source's context about not using the app 'for a few days'. The contact information is excluded from hallucination scoring per the guidelines."
+    },
+    {
+      "id": 41,
+      "question": "What happens if I lose my phone, computer, or delete the app?",
+      "faithfulness_score": 5,
+      "unsupported_claims": [],
+      "reasoning": "The chatbot's response is fully faithful to the source material. It directly addresses the user's question about losing their phone, computer, or deleting the app by paraphrasing the source content accurately. The response includes all the key information: the condition that the Signing Key must be safely backed-up, that it's easy to get back to the account, and provides the exact 6-step process from the source material. The contact information is excluded from evaluation as specified. No unsupported claims were made."
+    },
+    {
+      "id": 42,
+      "question": "What happens if I lost my Signing Key and forgot to back it up?",
+      "faithfulness_score": 2,
+      "unsupported_claims": [
+        "They will guide you through the process of recovering your account using your Signing Key, even if your phone, computer, or app are lost or deleted",
+        "According to the documentation"
+      ],
+      "reasoning": "The source material only provides a contact email address. The chatbot fabricates specific information about account recovery processes and guidance that will be provided, which has no basis in the source material. The phrase 'according to the documentation' is also unsupported since the source contains no such detailed documentation."
+    },
+    {
+      "id": 43,
+      "question": "How do I change or update my personal information?",
+      "faithfulness_score": 4,
+      "unsupported_claims": [
+        "Log in to your Upstream app",
+        "Enter the new personal information you want to change"
+      ],
+      "reasoning": "The response is mostly faithful to the source material, correctly capturing the main steps: tapping the Investor tab, selecting Update Personal Information, choosing information to change, and notarizing with the Signing Key. However, it adds two minor unsupported details: explicitly mentioning logging in (not stated in source) and describing the action as 'Enter the new personal information' rather than the source's 'select the information that you wish to change.' The contact information differences are excluded per instructions as system-level boilerplate."
+    },
+    {
+      "id": 44,
+      "question": "How do I change my bank information?",
+      "faithfulness_score": 4,
+      "unsupported_claims": [
+        "Verify your information by signing with your Signing Key"
+      ],
+      "reasoning": "The response accurately captures the main steps from the source material: Tap Investor, Tap Update Personal, Enter new details, Tap notarise. However, it adds an unsupported step about 'signing with your Signing Key' which is not mentioned in the source material. The contact information is excluded from scoring as per instructions. The response also appropriately includes the discretionary bank contact information from the source."
+    },
+    {
+      "id": 45,
+      "question": "How will you communicate with me about my account?",
+      "faithfulness_score": 4,
+      "unsupported_claims": [
+        "Every Upstream buy or sell order is notified to the user by a push notification to the Upstream app and in your \"Message Center\""
+      ],
+      "reasoning": "The response is mostly faithful but contains one minor inaccuracy. The source states that deposits are confirmed by both email AND push notification (with Message Center appearance), while buy/sell orders get push notifications and Message Center notifications. However, the chatbot incorrectly states that deposits only get email confirmation, omitting the push notification and Message Center components for deposits. The buy/sell order information is accurately presented."
+    },
+    {
+      "id": 46,
+      "question": "Will I receive notices or statements?",
+      "faithfulness_score": 5,
+      "unsupported_claims": [],
+      "reasoning": "The chatbot's response is fully faithful to the source material. It accurately states that users who have passed KYC may request monthly account statements by contacting the specified email address. The contact information boilerplate at the end is excluded from evaluation per the guidelines. All substantive claims are directly supported by the ground truth."
+    },
+    {
+      "id": 47,
+      "question": "Will my account information remain confidential?",
+      "faithfulness_score": 5,
+      "unsupported_claims": [],
+      "reasoning": "All claims in the chatbot's response are directly supported by the source material. The response accurately states that account information is kept strictly confidential, no mailing lists are sold, and information is never shared with outside firms unless legally mandated or directed by the user. These statements directly correspond to the ground truth content. The contact information is excluded from evaluation per the guidelines."
+    },
+    {
+      "id": 48,
+      "question": "How is the money in my Upstream account protected?",
+      "faithfulness_score": 3,
+      "unsupported_claims": [
+        "your funds will be safe even if Upstream goes bankrupt",
+        "your funds are kept separate from the Upstream company, minimizing the risk of loss due to insolvency"
+      ],
+      "reasoning": "The response correctly mentions that accounts are individually insured and bankruptcy protected, which is supported by the source. However, it makes specific claims about what bankruptcy protection means (funds being safe if Upstream goes bankrupt, funds being kept separate from the company) that go beyond what is stated in the source material. The source only mentions that accounts 'are bankruptcy protected' without explaining the mechanism or guaranteeing complete safety."
+    },
+    {
+      "id": 49,
+      "question": "How are the securities in my Upstream account protected?",
+      "faithfulness_score": 3,
+      "unsupported_claims": [
+        "The securities in your Upstream account are protected by the company issuing them",
+        "The company has a dedicated team that will assist you in replacing lost or stolen shares"
+      ],
+      "reasoning": "The response contains significant inaccuracies about who provides the protection and assistance. The source material states that Upstream (not the issuing company) assists in replacing lost shares by liaising with the issuer, registrar, and the user. The response incorrectly attributes this protection role to the issuing company and claims they have a 'dedicated team' for this purpose, which is not mentioned in the source. While the core concept of share replacement assistance is supported, the attribution of responsibility is substantially wrong."
+    },
+    {
+      "id": 50,
+      "question": "How do I enable biometric security?",
+      "faithfulness_score": 4,
+      "unsupported_claims": [
+        "This process allows you to use your fingerprint or facial recognition for secure access to your trading activities and withdrawals"
+      ],
+      "reasoning": "The response accurately captures the three-step process from the source material. However, it adds specific details about 'fingerprint or facial recognition' and 'secure access to your trading activities and withdrawals' that go beyond what's stated in the source. The source only mentions 'biometric verification for trades and withdrawals' without specifying the types of biometrics or framing it as 'secure access.' This is a minor enhancement rather than a major fabrication, hence the score of 4."
+    },
+    {
+      "id": 51,
+      "question": "How do I close my Upstream account?",
+      "faithfulness_score": 4,
+      "unsupported_claims": [
+        "They will guide you through the process of closing your account and ensuring that your securities are securely disposed of"
+      ],
+      "reasoning": "The core instruction to contact servicedesk@upstream.exchange is directly supported by the source material. However, the chatbot adds specific details about what the support team will do ('guide you through the process' and 'ensuring that your securities are securely disposed of') that are not mentioned in the source material. The contact info boilerplate is excluded from scoring as specified."
+    },
+    {
+      "id": 52,
+      "question": "Where do I go on the app to buy and sell securities from the market?",
+      "faithfulness_score": 4,
+      "unsupported_claims": [
+        "follow the steps outlined in the documentation to complete the trade"
+      ],
+      "reasoning": "The response accurately describes navigating to the market section and selecting securities to buy/sell, which is well supported by the source material. However, it references 'steps outlined in the documentation' which is not mentioned in the provided source material. This is a minor unsupported detail that doesn't significantly impact the overall accuracy of the response."
+    },
+    {
+      "id": 53,
+      "question": "What’s the Orderbook?",
+      "faithfulness_score": 4,
+      "unsupported_claims": [
+        "It shows the most recently executed orders"
+      ],
+      "reasoning": "The response is mostly faithful, accurately describing the Orderbook as showing real-time bids/offers, complete order book depth, and the private key requirement. However, it incorrectly states the Orderbook shows 'most recently executed orders' when the source only mentions it shows bids and offers, not executed orders. The contact information is excluded per instructions."
+    },
+    {
+      "id": 54,
+      "question": "How do I buy securities?",
+      "faithfulness_score": 3,
+      "unsupported_claims": [
+        "Confirm your identity using biometrics or provide your phone number for verification"
+      ],
+      "reasoning": "The response accurately captures most of the buying process but contains one significant unsupported claim about phone number verification. The source only mentions biometric verification, not phone number as an alternative. The response also omits several important details like the 1% fee requirement, expiry selection, and fund availability requirements, but these are omissions rather than fabrications."
+    },
+    {
+      "id": 55,
+      "question": "How do I sell securities?",
+      "faithfulness_score": 4,
+      "unsupported_claims": [
+        "Confirm your identity using biometrics and submit the order"
+      ],
+      "reasoning": "The response is mostly faithful and accurately summarizes the key steps for selling securities. However, it omits the important restriction that 'U.S. persons may not sell securities on Upstream' and slightly misrepresents the order of operations by suggesting identity confirmation happens before order submission, when the source indicates biometric verification is part of tapping the Sell button. The response also consolidates some steps but doesn't introduce substantively new information."
+    },
+    {
+      "id": 56,
+      "question": "How do I transfer shares to Upstream?",
+      "faithfulness_score": 2,
+      "unsupported_claims": [
+        "you can deposit them directly through your broker's customer service",
+        "deposit your shares with the transfer agent or the Upstream app",
+        "Once your shares are deposited and confirmed by the transfer agent or the Upstream app"
+      ],
+      "reasoning": "The response contains significant inaccuracies about the deposit process. The source material clearly states that shares must first be transferred to the transfer agent in 'direct registration' and 'book entry' before they can be deposited to Upstream via the app. The chatbot incorrectly suggests you can deposit directly through your broker's customer service and creates confusion by presenting the transfer agent and Upstream app as alternative deposit methods, when the source shows they are sequential steps in the process."
+    },
+    {
+      "id": 57,
+      "question": "How do I move shares back to US markets?",
+      "faithfulness_score": 4,
+      "unsupported_claims": [
+        "You will receive a DRS Advice (Statement) from the transfer agent showing your shares are held in book entry at the transfer agent"
+      ],
+      "reasoning": "The response accurately captures the main process from the source material. However, it contains one minor inaccuracy: it states the DRS Advice will be received from 'the transfer agent' without specifying the delivery method, while the source specifically mentions it will be provided 'via regular US mail.' The response also omits some details like needing to provide a copy of the DRS Advice to the broker and completing appropriate forms, but omission of details is not the same as making unsupported claims. Overall, the response is mostly faithful with only this minor unsupported detail about the delivery method."
+    },
+    {
+      "id": 58,
+      "question": "What are the different order expiry options?",
+      "faithfulness_score": 5,
+      "unsupported_claims": [],
+      "reasoning": "All claims in the chatbot's response are directly supported by the source material. The response accurately describes each order expiry option (IOC, 1 hour, Day, Custom date, FOK) with faithful paraphrasing of the ground truth definitions. Minor word variations like 'after one hour' vs 'in one hour' and 'after one day' vs 'by market-close today' are acceptable overgeneralizations that don't introduce new information. The contact information is system boilerplate and excluded from evaluation."
+    },
+    {
+      "id": 59,
+      "question": "How do I manage my security Portfolio?",
+      "faithfulness_score": 2,
+      "unsupported_claims": [
+        "Navigate to the Market and select the security you want to buy",
+        "Set the Limit Price (highest price you're willing to pay) and Order Size (number of shares you want to buy)",
+        "Ensure you have sufficient funds to complete the purchase",
+        "Confirm your identity using biometrics and submit your order",
+        "Your new shares will appear in the Portfolio section and be reflected in your available funds after the trade",
+        "You can access your previous orders or active orders waiting to be filled in the Orders tab"
+      ],
+      "reasoning": "The source material only provides information about viewing portfolio balances in the Portfolio tab. The chatbot's response includes extensive fabricated details about buying securities, setting limit prices, biometric confirmation, order management, and trade execution - none of which are mentioned in the source material. Only the first bullet point about viewing shares and balances is actually supported."
+    },
+    {
+      "id": 60,
+      "question": "How do I sell securities from my Portfolio screen?",
+      "faithfulness_score": 4,
+      "unsupported_claims": [
+        "'Sell Tap Sell' creates secret, off-orderbook orders"
+      ],
+      "reasoning": "The response is mostly faithful but contains one inaccuracy. While the source mentions 'Sell' and 'Tap Sell' as options to sell shares 'in the same way as described above in How do I sell securities?', it doesn't specify that regular selling creates secret, off-orderbook orders - this characteristic is only mentioned for Stop Loss and Take Profit orders. The response incorrectly applies this feature to all selling methods."
+    },
+    {
+      "id": 61,
+      "question": "How do I add a security to my Watchlist?",
+      "faithfulness_score": 5,
+      "unsupported_claims": [],
+      "reasoning": "The chatbot's response accurately reflects all the steps from the source material. Each step corresponds directly: 'Tap Market' becomes 'Tap the Market icon', 'Tap on the security you'd like to watch' becomes 'Find the security you want to add', 'Tap the star to the right of the ticker symbol' is accurately conveyed, and the final navigation step is faithfully represented. The contact information is system boilerplate and excluded from evaluation. All claims are supported by the source material."
+    },
+    {
+      "id": 62,
+      "question": "How do I cancel an active securities order?",
+      "faithfulness_score": 5,
+      "unsupported_claims": [],
+      "reasoning": "The chatbot's response accurately follows the steps provided in the source material. While there are minor word variations (e.g., 'Select' instead of 'Tap' for step 4, and combining 'Tap on the order' and 'Select Cancel' into separate steps), these are acceptable paraphrases that don't change the meaning or introduce new information. The contact information is system-level boilerplate and excluded from evaluation. All substantive claims are directly supported by the source material."
+    },
+    {
+      "id": 63,
+      "question": "How can I see the blockchain details for my orders?",
+      "faithfulness_score": 5,
+      "unsupported_claims": [],
+      "reasoning": "The chatbot's response accurately summarizes all the key information from the source material without adding any unsupported claims. It correctly describes the process (go to Orders tab, select order, click Order ID or Trade Reports links), mentions the Dora block explorer, and lists the specific blockchain details available (transaction hash, mining status, block height, timestamp, addresses, trade value, gas consumption, input data). The slight simplifications (like omitting 'All sub-tab' and 'where applicable') are acceptable overgeneralizations that don't introduce new information. The contact information is system boilerplate and excluded from evaluation."
+    },
+    {
+      "id": 64,
+      "question": "What are candlestick charts?",
+      "faithfulness_score": 4,
+      "unsupported_claims": [
+        "make informed trading decisions"
+      ],
+      "reasoning": "The response accurately captures the main points from the source material about candlestick charts being visual representations that show price movements over time to help investors understand price movement. However, it adds the claim about helping investors 'make informed trading decisions' which is not mentioned in the source material. The contact information is excluded per instructions as system boilerplate."
+    },
+    {
+      "id": 65,
+      "question": "Does Upstream offer margin trading?",
+      "faithfulness_score": 1,
+      "unsupported_claims": [
+        "Upstream is a global stock trading app that enables investors to directly trade shares in dual listed companies, IPOs, celebrity ventures, and other unique asset classes directly from the blockchain-powered trading app",
+        "Investors can fund their Upstream trading account using a credit/debit card, PayPal, USDC stablecoin on Ethereum or traditional bank (fiat/legal tender) payments such as ACH in the U.S., or a wire transfer of funds in the U.S. and internationally"
+      ],
+      "reasoning": "While the chatbot correctly answers the margin trading question, it then provides extensive details about Upstream's services and funding options that are completely absent from the source material. The source only states that Upstream does not offer margin trading - it contains no information about what Upstream is, what assets can be traded, or funding methods. These substantial unsupported claims make up the majority of the response."
+    },
+    {
+      "id": 66,
+      "question": "Does Upstream solicit trades?",
+      "faithfulness_score": 5,
+      "unsupported_claims": [],
+      "reasoning": "The chatbot's response is fully faithful. The core claim that 'Upstream does not solicit trades' is directly stated in the source material. The additional statement that 'any trade must be based on the user's own investing judgement' is a reasonable paraphrase of the source's statement that 'Investors who trade through the Upstream platform make their own trading and investment decisions' and that services are 'intended for self-directed clients who make their own investment decisions.' The contact information is system boilerplate and excluded from evaluation."
+    },
+    {
+      "id": 67,
+      "question": "What are the fees associated with trading?",
+      "faithfulness_score": 2,
+      "reasoning": "While the response correctly includes the 1% trade fee from the source material, it contains numerous additional fee details (wire transfer fees, PayPal fees, USDC fees, collectible fees, auction fees) that are not present in the source material. These represent significant unsupported claims that go well beyond the provided information."
+    },
+    {
+      "id": 68,
+      "question": "What is a dividend?",
+      "faithfulness_score": 3,
+      "unsupported_claims": [
+        "are received by the buyers of short-sold shares"
+      ],
+      "reasoning": "The response correctly defines dividends as payments made by companies to shareholders from business profits, which matches the source material. However, it adds an unsupported claim about dividends being 'received by the buyers of short-sold shares' - this information about short-selling is not mentioned anywhere in the source material and introduces new, fabricated information about who receives dividends."
+    },
+    {
+      "id": 69,
+      "question": "What is an ex-dividend and record date?",
+      "faithfulness_score": 2,
+      "unsupported_claims": [
+        "The record date is the date on which the company determines who is entitled to receive the dividend payment"
+      ],
+      "reasoning": "The source material clearly states that 'ex-dividend date, or record date' are the same thing - both referring to the cut-off date for dividend eligibility. However, the chatbot incorrectly presents them as two separate dates with different purposes. The ex-dividend date definition is accurate, but the record date definition is fabricated and contradicts the source which equates the two terms."
+    },
+    {
+      "id": 70,
+      "question": "What are the risks of investing?",
+      "faithfulness_score": 2,
+      "unsupported_claims": [
+        "The downside risk is not unlimited and may be capped at 20%."
+      ],
+      "reasoning": "The response accurately captures most investment risks from the source material, including high risk for early-stage companies, need for high risk tolerance, potential total loss, and liquidity issues. However, it contains one significant fabricated claim about downside risk being capped at 20%, which appears nowhere in the source material and contradicts the stated risk of losing the entire investment. This substantial unsupported claim significantly undermines the faithfulness of the response."
+    },
+    {
+      "id": 71,
+      "question": "How do I list my company on Upstream?",
+      "faithfulness_score": 4,
+      "unsupported_claims": [
+        "serviceDesk@upstream.exchange"
+      ],
+      "reasoning": "The response accurately conveys the main process for listing a company on Upstream, directly supported by the source material. However, it contains one minor unsupported detail: the contact email 'serviceDesk@upstream.exchange' instead of the correct 'servicedesk@upstream.exchange' (lowercase 'd'). The boilerplate contact information at the end is excluded from evaluation per the guidelines. All other claims are well-supported by the source material."
+    },
+    {
+      "id": 72,
+      "question": "How do I receive an application to list my company on Upstream?",
+      "faithfulness_score": 5,
+      "unsupported_claims": [],
+      "reasoning": "The chatbot's response directly matches the source material almost word-for-word. The core instruction to 'navigate to the Get Listed page and fill out your email, name, and desired transaction' and the follow-up about receiving 'the appropriate materials and listing application' are both exactly supported by the ground truth. The contact information at the end is explicitly excluded from hallucination scoring as system-level boilerplate."
+    },
+    {
+      "id": 73,
+      "question": "What are the benefits of listing my company on Upstream?",
+      "faithfulness_score": 4,
+      "unsupported_claims": [
+        "eliminating the need for intermediaries",
+        "difficulties in accessing liquidity, overcoming naked short selling restrictions, and offering advanced trading tools"
+      ],
+      "reasoning": "The response is mostly faithful with accurate information about Upstream's benefits. However, it contains two minor unsupported claims: 1) stating that direct access 'eliminates the need for intermediaries' which is not mentioned in the source, and 2) incorrectly listing 'overcoming naked short selling restrictions' as a challenge Upstream addresses, when the source actually states Upstream prohibits naked short selling as a feature. The second point also awkwardly groups unrelated items as challenges. The rest of the response accurately reflects the source material."
+    },
+    {
+      "id": 74,
+      "question": "Why should I make secondary trading a part of my growth strategy?",
+      "faithfulness_score": 4,
+      "unsupported_claims": [
+        "Unlock Liquidity: Increase access to capital and expand investor reach"
+      ],
+      "reasoning": "Most claims are well-supported by the source material, including direct market access, addressing OTC challenges, cutting-edge features, and shareholder loyalty programs. However, the 'Unlock Liquidity' bullet point about increasing access to capital and expanding investor reach introduces new claims not found in the source material. The contact information is excluded per instructions as system boilerplate."
+    },
+    {
+      "id": 75,
+      "question": "What types of assets are traded on Upstream?",
+      "faithfulness_score": 5,
+      "unsupported_claims": [],
+      "reasoning": "The chatbot's response is fully faithful to the source material. All five types of assets listed (dual listed securities, IPOs, athlete/celebrity ventures, crowdfunded companies, and digital collectibles) are directly taken from the source material's 'Types' section. The contact information at the end is system-level boilerplate which is excluded from hallucination scoring. No fabricated or unsupported claims were made."
+    },
+    {
+      "id": 76,
+      "question": "What’s included in Upstream’s marketing package for listing?",
+      "faithfulness_score": 5,
+      "unsupported_claims": [],
+      "reasoning": "The chatbot's response is fully faithful. It directly quotes the key information from the source material about the $100k IR value included in the marketing package. The contact information is system-level boilerplate that should be excluded from evaluation. The response doesn't include the media community details, but this is simply incomplete rather than unfaithful - all claims made are directly supported by the source."
+    },
+    {
+      "id": 77,
+      "question": "WHAT IS A DIGITAL COUPON?",
+      "faithfulness_score": 4,
+      "unsupported_claims": [
+        "opens the door for new customers to decide to sell the digital coupon on Upstream's regulated market to non-shareholders"
+      ],
+      "reasoning": "The response accurately captures most key information from the source: digital coupons are NFT collectibles awarded by Upstream issuers, they're redeemable tokens that give shareholders firsthand experience with products. However, there's one claim that misrepresents the source material - it suggests new customers sell coupons to non-shareholders, when the source actually states shareholders may sell to non-shareholders, opening doors for new customers as buyers, not sellers."
+    },
+    {
+      "id": 78,
+      "question": "HOW DO I CLAIM A DIGITAL COUPON?",
+      "faithfulness_score": 5,
+      "unsupported_claims": [],
+      "reasoning": "All claims in the chatbot's response are directly supported by the source material. The response accurately captures the 4-step process for claiming digital coupons, including downloading the app, completing KYC verification, using the claim feature with the issuer's code, and finding the coupon in the portfolio within 48 hours. The contact information is excluded from evaluation per the guidelines. No fabricated or unsupported information was introduced."
+    },
+    {
+      "id": 79,
+      "question": "HOW DO I REDEEM A DIGITAL COUPON?",
+      "faithfulness_score": 3,
+      "unsupported_claims": [
+        "Locate your desired digital coupon in the list of available collectibles",
+        "Provide this code to the Issuer on Upstream's regulated market",
+        "The Issuer will fulfill the utility associated with the digital coupon"
+      ],
+      "reasoning": "The response captures the core redemption process but contains several unsupported claims. The source specifies navigating via 'Investor, Collectible, Redeem' and selecting by ticker symbol, not locating from a general list. The source mentions supplying the code 'to the Issuer' but doesn't specify this happens 'on Upstream's regulated market.' The response also adds detail about the Issuer fulfilling utility that isn't in the source. Additionally, the response omits key supported information like the prerequisite of claiming/purchasing the coupon and the coupon being removed from portfolio after redemption."
+    },
+    {
+      "id": 80,
+      "question": "How do I dual list on Upstream?",
+      "faithfulness_score": 2,
+      "unsupported_claims": [
+        "The process is simple and takes approximately 30 days to complete",
+        "Once approved, issuers can access a global investor base and trade their shares using an app from anywhere in the world",
+        "Upstream is a regulated and licensed exchange that is part of the MERJ group"
+      ],
+      "reasoning": "While the response correctly identifies that issuers on major exchanges can list on Upstream and provides the correct contact methods, it fabricates significant details not present in the source material. The 30-day timeline, app-based trading details, and information about MERJ group affiliation are entirely unsupported claims that constitute major hallucinations."
+    },
+    {
+      "id": 81,
+      "question": "What does Upstream provide companies wishing to dual list?",
+      "faithfulness_score": 5,
+      "unsupported_claims": [],
+      "reasoning": "All claims in the chatbot's response are directly supported by the source material. The response accurately summarizes that Upstream provides: international investor base access via app, increased local share-trading volume through global exposure, access to new investor capital locally and globally, and access to MERJ (a regulated/licensed exchange). The contact information is system boilerplate and excluded from evaluation. No fabricated or unsupported claims were identified."
+    },
+    {
+      "id": 82,
+      "question": "What is an IPO?",
+      "faithfulness_score": 4,
+      "unsupported_claims": [
+        "It allows the company to raise money by selling its shares to investors"
+      ],
+      "reasoning": "The response is mostly faithful, accurately defining an IPO and correctly stating information about public trading and stock exchanges. However, it includes one claim about companies raising money by selling shares that, while generally true about IPOs, is not explicitly stated in the source material. The contact information is excluded from evaluation as specified."
+    },
+    {
+      "id": 83,
+      "question": "What makes Upstream IPOs unique?",
+      "faithfulness_score": 2,
+      "unsupported_claims": [
+        "The securities are unrestricted, meaning they can be traded on the Upstream app the next trading day following the IPO close",
+        "U.S. persons cannot trade securities on Upstream"
+      ],
+      "reasoning": "The response contains two major unsupported claims that are completely fabricated. While the first bullet point about ordering shares before IPO closes is directly supported by the source material, the claims about unrestricted securities and trading restrictions for U.S. persons have no basis in the provided source material whatsoever."
+    },
+    {
+      "id": 84,
+      "question": "Why did I not get my full indication?",
+      "faithfulness_score": 5,
+      "unsupported_claims": [],
+      "reasoning": "All claims in the chatbot's response are directly supported by the source material. The response accurately explains that users may not receive full allocations when IPOs are in high demand, that allocation happens on a pro-rata basis when the IPO closes, and that users only receive a portion of requested shares. The contact information is system-generated boilerplate and excluded from evaluation."
+    },
+    {
+      "id": 85,
+      "question": "When can I trade following the IPO?",
+      "faithfulness_score": 5,
+      "unsupported_claims": [],
+      "reasoning": "The chatbot's response accurately states that users can trade IPO securities 'the next trading day following the IPO close', which directly matches the source material. The contact information is system-generated boilerplate and excluded from evaluation. All claims made are fully supported by the source material."
+    },
+    {
+      "id": 86,
+      "question": "How long does it take for trades to settle on Upstream?",
+      "faithfulness_score": 1,
+      "unsupported_claims": [
+        "Trade settlements on Upstream occur instantly for IPOs and immediately upon IPO close for other securities"
+      ],
+      "reasoning": "The chatbot completely reversed the information from the source material. The source states that secondary market trades settle instantly, while IPO trades settle immediately upon IPO close. The chatbot incorrectly states the opposite - that IPOs settle instantly while other securities settle upon IPO close. This is a fundamental misrepresentation of the core information."
+    },
+    {
+      "id": 87,
+      "question": "How long does it take for IPO orders to settle on Upstream?",
+      "faithfulness_score": 5,
+      "unsupported_claims": [],
+      "reasoning": "The chatbot's response is fully faithful to the source material. The main claim that 'IPO orders on the Upstream primary market settle immediately upon IPO close' is directly quoted from the source. The follow-up statement 'For IPOs, trades settle immediately upon IPO close' is a slight paraphrase of the same information, which qualifies as acceptable overgeneralization rather than fabrication. The contact information is system-injected boilerplate and excluded from hallucination scoring. No unsupported claims were made."
+    },
+    {
+      "id": 88,
+      "question": "What is a spinoff share distribution?",
+      "faithfulness_score": 5,
+      "unsupported_claims": [],
+      "reasoning": "The chatbot's response is fully faithful to the source material. All key claims are directly supported: spinoff involves distributing shares in a subsidiary/division to parent company shareholders, shareholders as of the record date are entitled to receive shares, and they receive an equal proportion. The response accurately paraphrases the source without adding any unsupported information. The contact info is excluded per instructions as system boilerplate."
+    },
+    {
+      "id": 89,
+      "question": "How do I participate in a spinoff share distribution?",
+      "faithfulness_score": 4,
+      "unsupported_claims": [
+        "Non-U.S. shareholders can download Upstream and complete KYC identity verification ahead of the distribution date"
+      ],
+      "reasoning": "The response is mostly faithful but contains one minor unsupported detail. The source material states 'Non-U.S. shareholders of the set record date can download Upstream and complete KYC identity verification ahead of the distribution date' - the chatbot omitted the important qualifier 'of the set record date' which specifies that only non-U.S. shareholders who held shares as of the record date are eligible. This creates a slightly broader claim than what the source supports. All other claims are accurately supported by the source material."
+    },
+    {
+      "id": 90,
+      "question": "How do I request my spinoff share distribution?",
+      "faithfulness_score": 4,
+      "unsupported_claims": [
+        "Non-U.S. shareholders can download the Upstream app and complete KYC identity verification ahead of the distribution date"
+      ],
+      "reasoning": "The response is mostly faithful to the source material, accurately capturing the key steps for requesting spinoff distributions. However, it makes one unsupported claim by specifically stating that 'Non-U.S. shareholders can download the Upstream app and complete KYC' - while the source mentions U.S. persons cannot use the service, it doesn't explicitly state that non-U.S. persons can. The response also simplifies some steps (like the email verification process) but this constitutes acceptable summarization rather than fabrication."
+    },
+    {
+      "id": 91,
+      "question": "When can I trade my shares if they’re restricted?",
+      "faithfulness_score": 4,
+      "unsupported_claims": [
+        "the exact date may vary depending on the specific requirements of the company"
+      ],
+      "reasoning": "The main claim about six-month trading eligibility is directly supported by the source. However, the statement about dates varying based on company requirements introduces information not present in the source material, which only mentions 'certain requirements' being met, not company-specific variations in timing."
+    },
+    {
+      "id": 92,
+      "question": "What is a Stock Warrant?",
+      "faithfulness_score": 5,
+      "unsupported_claims": [],
+      "reasoning": "The chatbot's response is fully faithful to the source material. It accurately states that a stock warrant gives the holder the right to purchase company stock at a specific price and date, and correctly explains that shares are issued directly by the company when exercised. The slight paraphrasing (e.g., 'company issues shares directly to the holder' vs 'shares are received directly from the company') maintains the core meaning without adding unsupported information. The contact information is excluded from evaluation as specified."
+    },
+    {
+      "id": 93,
+      "question": "What is Options Trading?",
+      "faithfulness_score": 4,
+      "unsupported_claims": [
+        "Collar Strategy is a multi-leg options strategy that combines a long stock position, an out-of-the-money covered call, and an out-of-the-money protective put"
+      ],
+      "reasoning": "The response is mostly faithful with accurate information about options trading being derived from underlying securities, the right but no obligation concept, premiums being non-refundable, and the ability to benefit from directional moves. However, the specific mention of 'Collar Strategy' and its detailed definition is not found anywhere in the source material, making it an unsupported claim. The rest of the content accurately reflects the source material's explanations of options trading fundamentals."
+    },
+    {
+      "id": 94,
+      "question": "What Options trading instruments does Upstream support?",
+      "faithfulness_score": 5,
+      "unsupported_claims": [],
+      "reasoning": "The chatbot's response is fully faithful. It correctly lists the four options trading instruments mentioned in the source material: Long Call, Long Put, Covered Call, and Short Put. All claims are directly supported by the ground truth. The contact information is boilerplate and excluded from evaluation per instructions."
+    },
+    {
+      "id": 95,
+      "question": "What Warrants trading instrument does Upstream support?",
+      "faithfulness_score": 2,
+      "unsupported_claims": [
+        "Short Put (the holder sells when the stock price falls below the strike price and benefits from the rise of the stock price)",
+        "Upstream supports two types of warrants"
+      ],
+      "reasoning": "The response contains significant fabricated information. The source material only mentions Long Call options, but the chatbot invents a 'Short Put' warrant type that doesn't exist in the source. Additionally, the chatbot claims Upstream supports 'two types of warrants' when the source only provides information about one type. The Long Call description is reasonably faithful to the source, but the major fabrication of the Short Put makes this mostly unfaithful."
+    },
+    {
+      "id": 96,
+      "question": "What are the fees for trading Options on Upstream?",
+      "faithfulness_score": 5,
+      "unsupported_claims": [],
+      "reasoning": "All claims in the chatbot's response are directly supported by the source material. The response accurately conveys the 1% fees for buyers, sellers, holders exercising contracts, and writers of exercised contracts. The contact information is system-level boilerplate and excluded from evaluation. No fabricated information or unsupported claims were made."
+    },
+    {
+      "id": 97,
+      "question": "What’s a Long Call (Option Holder)?",
+      "faithfulness_score": 5,
+      "unsupported_claims": [],
+      "reasoning": "All claims in the chatbot's response are directly supported by the source material. The response accurately describes a Long Call as a single-leg, risk-defined, bullish options strategy, correctly states that traders can purchase them from other traders or companies issuing the underlying stock, properly explains the purchase rationale (belief that stock price will increase by at least the premium cost), and accurately describes the risk/reward profile (maximum risk limited to premium, unlimited profit potential). The contact information is excluded per instructions as system-level boilerplate."
+    },
+    {
+      "id": 98,
+      "question": "What’s a Long Put (Option Holder)?",
+      "faithfulness_score": 5,
+      "unsupported_claims": [],
+      "reasoning": "All claims in the chatbot's response are directly supported by the source material. The response accurately describes a long put as a single-leg strategy giving the right to sell shares at strike price, correctly states the maximum risk is limited to option cost, and accurately notes profit potential is unlimited until stock reaches zero. The contact information is system-injected boilerplate and excluded from evaluation."
+    },
+    {
+      "id": 99,
+      "question": "What’s a Covered Call (Option Holder)?",
+      "faithfulness_score": 5,
+      "unsupported_claims": [],
+      "reasoning": "All claims in the chatbot's response are directly supported by the source material. The response accurately describes covered calls as combining long stock with short call options, mentions the income generation and cost basis reduction benefits, correctly states the 100-share requirement, and accurately describes the moderately bullish market outlook and extended holding period use case. The contact information is system-generated boilerplate and excluded from evaluation."
+    },
+    {
+      "id": 100,
+      "question": "What’s a Short Put (Option Holder)?",
+      "faithfulness_score": 5,
+      "unsupported_claims": [],
+      "reasoning": "All claims in the chatbot's response are directly supported by the source material. The response accurately describes a short put as a single-leg bullish options strategy with undefined risk and limited profit potential, correctly identifies it as a leveraged alternative to buying stock, and accurately states that profit potential is limited to the credit received. The slight redundancy in mentioning 'leveraged alternative' twice is not a fabrication but rather repetitive phrasing of supported information. The contact information is excluded per instructions as system-level boilerplate."
+    },
+    {
+      "id": 101,
+      "question": "What are Options Strategies?",
+      "faithfulness_score": 5,
+      "unsupported_claims": [],
+      "reasoning": "The chatbot's response is fully faithful to the source material. All key claims are directly supported: options strategies help investors achieve financial goals, they can benefit from directional moves or stocks staying in ranges, they vary from single-leg to multi-leg positions, the Married Puts definition is accurate, and the Collar Strategy description is correct. The response appropriately summarizes the source content without adding unsupported information. The contact information is excluded from evaluation as specified."
+    },
+    {
+      "id": 102,
+      "question": "What are Market Pools?",
+      "faithfulness_score": 4,
+      "unsupported_claims": [
+        "To evaluate the price your trade would get when a Market Pool is the counterparty, you can visit the Upstream market data service at https://trader.upstream.exchange/marketdata and search for the ticker symbol of the security you would like to trade."
+      ],
+      "reasoning": "The response accurately explains what Market Pools are, including their purpose, functionality, and key characteristics (guaranteed liquidity, freely discoverable pricing, counterparty role). However, it includes specific instructions about visiting a market data service URL that is not mentioned anywhere in the source material. This is fabricated information rather than an overgeneralization of existing content."
+    },
+    {
+      "id": 103,
+      "question": "What happens to my shares when I deposit them into a Market Pool?",
+      "faithfulness_score": 3,
+      "unsupported_claims": [
+        "The MP contributor also cannot use this money to buy securities in the Upstream order book or withdraw it"
+      ],
+      "reasoning": "The response correctly states that shares remain owned by the MP contributor and cannot be offered for sale in the order book, which is supported by the source. However, it adds unsupported information about not being able to use 'this money' to buy securities or withdraw it - the source material only discusses shares and liens, not restrictions on using money for purchases or withdrawals."
+    },
+    {
+      "id": 104,
+      "question": "What happens to my money when I deposit it into a Market Pool?",
+      "faithfulness_score": 5,
+      "unsupported_claims": [],
+      "reasoning": "All claims in the chatbot's response are directly supported by the source material. The response accurately explains that deposited money has a lien placed on it, cannot be used for buying securities or withdrawals, reduces available balance, and that overall balance remains unaffected until orders execute. The contact information is system boilerplate and excluded from evaluation."
+    },
+    {
+      "id": 105,
+      "question": "Do Market Pools pay liquidity providers a fee?",
+      "faithfulness_score": 5,
+      "unsupported_claims": [],
+      "reasoning": "The chatbot's response is fully faithful to the source material. It directly answers the user's question with a clear 'Yes' and then provides the exact key information from the source: that every trade pays 0.16% of trade value to MP contributors pro rata to their percentage. The contact information is system-injected boilerplate which is excluded from faithfulness evaluation. All substantive claims made by the chatbot are directly supported by the ground truth."
+    },
+    {
+      "id": 106,
+      "question": "How can I withdraw my Market Pool earnings?",
+      "faithfulness_score": 2,
+      "unsupported_claims": [
+        "then remove your account"
+      ],
+      "reasoning": "The response correctly describes the first step of removing the entire MP contribution from the specified location in the app. However, it adds a completely fabricated step about removing your account, which is not mentioned anywhere in the source material. This is a significant unsupported claim that materially changes the withdrawal process, making the response mostly unfaithful."
+    },
+    {
+      "id": 107,
+      "question": "How does Market Pool trading work?",
+      "faithfulness_score": 3,
+      "unsupported_claims": [
+        "Market pools allow users to deposit securities and US Dollars into a smart contract called an MP",
+        "These MP's offer freely discoverable pricing and guaranteed liquidity"
+      ],
+      "reasoning": "The response correctly captures the core mechanics of MP trading, including the constant product formula concept, price movements based on buying/selling, and the pricing curve. However, it introduces unsupported technical details about smart contracts and makes claims about 'freely discoverable pricing and guaranteed liquidity' that are not mentioned in the source material. The source focuses on the mathematical formula and trading mechanics but doesn't describe the underlying technology or guarantee liquidity."
+    },
+    {
+      "id": 108,
+      "question": "How do I evaluate the price my trade would get when a Market Pool is the counterparty?",
+      "faithfulness_score": 2,
+      "unsupported_claims": [
+        "To evaluate the price your trade would get when a Market Pool (MP) is the counterparty, you can divide the Market Data CPF value by the Cash Volume value"
+      ],
+      "reasoning": "The chatbot provides an oversimplified and incorrect formula. The source material shows that evaluating trade prices requires different calculations for buying vs selling, involves adding your trade amount to existing volumes first, then dividing CPF by the adjusted volume. The chatbot's single formula of 'CPF divided by Cash Volume' doesn't match either calculation method described in the source and omits the crucial step of adjusting volumes by the trade amount."
+    },
+    {
+      "id": 109,
+      "question": "Can Upstreams’ trading circuit-breakers affect Market Pool trades?",
+      "faithfulness_score": 2,
+      "unsupported_claims": [
+        "Yes, trading circuit-breakers can affect Market Pool trades"
+      ],
+      "reasoning": "The chatbot's opening statement directly contradicts the source material. The source clearly explains that circuit-breakers are only triggered by orders with non-market pool counterparties, and that Market Pool trades have protections that prevent them from triggering circuit-breakers. While the chatbot correctly quotes technical details later in the response, the main answer to the user's question is factually incorrect and unsupported."
+    },
+    {
+      "id": 110,
+      "question": "What happens if I try to buy all the shares inside a Market Pool?",
+      "faithfulness_score": 5,
+      "unsupported_claims": [],
+      "reasoning": "All claims in the chatbot's response are directly supported by the source material. The response accurately explains that buy orders become more expensive due to the constant-product formula, and that all 10,000 shares cannot be purchased because the share price approaches infinity. While the response doesn't mention the partial-fill and cancel mechanism, it captures the core outcome described in the source. The contact information is excluded from evaluation as specified."
+    },
+    {
+      "id": 111,
+      "question": "What happens if I try to bulk-sell my shares into a Market Pool?",
+      "faithfulness_score": 5,
+      "unsupported_claims": [],
+      "reasoning": "All claims in the chatbot's response are directly supported by the source material. The response accurately explains the partial-fill and cancel mechanism, the constant-product formula's impact on pricing, and how share prices approach zero with continued selling. The contact information is system-generated boilerplate as specified in the exclusions."
+    },
+    {
+      "id": 112,
+      "question": "What is impermanent loss?",
+      "faithfulness_score": 1,
+      "unsupported_claims": [
+        "Impermanent loss refers to a loss that cannot be recovered or reversed, even if the underlying asset recovers",
+        "The downside risk for short sellers is not unlimited",
+        "If the price of the stock rises by 10% or more from the entry price, Upstream will automatically buy in (cover) the shares using the initial sales proceeds plus a 20% margin cash",
+        "Worst-case scenario, the short seller may lose just under 20% of the short position value"
+      ],
+      "reasoning": "The response is completely unfaithful. The source material only contains one fragmented sentence about impermanent loss in the context of MP contributions. However, the chatbot fabricated a definition of impermanent loss as 'a loss that cannot be recovered' and invented an entire section about short selling, auto-liquidation, and specific percentages (10%, 20%) that appear nowhere in the source material. This represents mostly fabricated information with no basis in the provided ground truth."
+    },
+    {
+      "id": 113,
+      "question": "What is a Collectible?",
+      "faithfulness_score": 5,
+      "unsupported_claims": [],
+      "reasoning": "The chatbot's response accurately summarizes the key information from the source material. All claims are directly supported: collectibles are media with unique digital IDs representing ownership (direct quote), they meet criteria set by rules (paraphrased from source), are delivered electronically (criterion 1), held on non-fungible basis (criterion 2), and can be auctioned in the Upstream Collectibles Marketplace (criterion 3). The response appropriately simplifies the technical content without adding unsupported information. Contact info is system boilerplate and excluded from evaluation."
+    },
+    {
+      "id": 114,
+      "question": "What is the Upstream Collectibles Marketplace?",
+      "faithfulness_score": 4,
+      "unsupported_claims": [
+        "connect with other collectors and enthusiasts"
+      ],
+      "reasoning": "The response accurately captures the core elements from the source: secure platform, creating/selling authenticated Collectibles, and serving fans/investors. The phrase 'purchase and sell' is a reasonable paraphrase of 'selling' in context. However, the claim about connecting with other collectors and enthusiasts introduces new functionality not mentioned in the source material."
+    },
+    {
+      "id": 115,
+      "question": "What are Collectibles on Upstream versus Collectibles on other platforms?",
+      "faithfulness_score": 2,
+      "unsupported_claims": [
+        "Upstream Collectibles adhere to the Ethereum ERC-721 standard",
+        "ERC-721 is a widely recognized and secure token standard for cryptocurrencies"
+      ],
+      "reasoning": "While the chatbot correctly mentions that Upstream focuses on unique Collectible integrations, it fabricates specific technical claims about ERC-721 standards that have no basis in the source material. The chatbot even acknowledges these details are 'not specified in the document' but presents them as factual anyway, making this a clear case of hallucination."
+    },
+    {
+      "id": 116,
+      "question": "What are Upstream's unique Collectible integrations?",
+      "faithfulness_score": 2,
+      "unsupported_claims": [
+        "Upstream's unique Collectible integrations focus on integrating and maintaining specific NFT collections and assets within the Upstream ecosystem"
+      ],
+      "reasoning": "The chatbot's main substantive claim about Upstream's collectible integrations focusing on 'integrating and maintaining specific NFT collections and assets within the Upstream ecosystem' is not supported by the source material. The source describes 8 different types of collectibles (Phygital, Airdrop, Redeemable, etc.) with their specific use cases, but makes no mention of 'integrating and maintaining NFT collections' or anything about an 'Upstream ecosystem.' This appears to be fabricated information that contradicts or misrepresents what the source actually says about Upstream's collectible offerings."
+    },
+    {
+      "id": 117,
+      "question": "How do I Claim a Collectible?",
+      "faithfulness_score": 5,
+      "unsupported_claims": [],
+      "reasoning": "The chatbot's response accurately follows the three-step process outlined in the source material: downloading Upstream and signing up, claiming the collectible by opening the app and following the specified steps (tap investor, Collectible, claim, enter claim code), and noting that the collectible can be held or traded. All claims are directly supported by the ground truth, and the contact information is system boilerplate as specified in the exclusions."
+    },
+    {
+      "id": 118,
+      "question": "How can I purchase a Collectible?",
+      "faithfulness_score": 5,
+      "unsupported_claims": [],
+      "reasoning": "The chatbot's response accurately summarizes all the steps from the source material without adding any unsupported information. Each step corresponds directly to the ground truth: Step 1 matches downloading and signing up, Step 2 covers account funding, Steps 3-5 accurately describe the purchasing process (Market → Collectibles → select → bid → Buy Now), and Step 6 reflects the portfolio storage mentioned in the source. The contact information is excluded per the guidelines as system-level boilerplate."
+    },
+    {
+      "id": 119,
+      "question": "What’s a redeemable Collectible?",
+      "faithfulness_score": 3,
+      "unsupported_claims": [
+        "The redeemable Collectible can be redeemed by providing a unique redemption code to the Collectible creator"
+      ],
+      "reasoning": "The response correctly captures that redeemable Collectibles allow buyers to redeem items/experiences and can be held as collector's items. However, it fabricates specific information about redemption requiring 'a unique redemption code to the Collectible creator' - this mechanism is not mentioned anywhere in the source material. The response also omits key information about the burning and evolution process described in the source."
+    },
+    {
+      "id": 120,
+      "question": "How can I redeem an Collectible?",
+      "faithfulness_score": 2,
+      "unsupported_claims": [
+        "Step 4: Enter the unique redemption code in the message center on your Upstream app",
+        "Step 5: The Collectible will be removed from your portfolio and replaced with a commemorative Collectible that can be held as a collector's item"
+      ],
+      "reasoning": "The response contains significant errors in the redemption process. Step 4 incorrectly states that you enter a redemption code in the message center, when actually the system generates and shows you a unique code after redemption. Step 5 mischaracterizes the commemorative Collectible as simply a 'collector's item' when the source specifies it's 'no longer redeemable.' The response also omits the crucial step of supplying the redemption code to the Collectible creator to fulfill the utility, which is the main purpose of redemption."
+    },
+    {
+      "id": 121,
+      "question": "What are Collectible Transactions?",
+      "faithfulness_score": 4,
+      "unsupported_claims": [
+        "You can create a Collectible on the app by selecting the option in the app"
+      ],
+      "reasoning": "The response accurately captures all three types of Collectible Transactions from the source material. However, it adds an unsupported procedural detail about 'selecting the option in the app' for creating collectibles, which is not mentioned in the source. The contact information is system boilerplate and excluded from evaluation. All other claims are well-supported by the source material."
+    },
+    {
+      "id": 122,
+      "question": "How can I sell a Collectible?",
+      "faithfulness_score": 5,
+      "unsupported_claims": [],
+      "reasoning": "All claims in the chatbot's response are directly supported by the source material. The response accurately follows the 6-step process provided, with only minor acceptable paraphrasing (e.g., 'minimum sell price' instead of 'minimum sell price acceptable to you, as seller' and 'if your Collectible is sold' instead of 'purchased'). The contact information is system boilerplate and excluded from evaluation. No fabricated information or unsupported claims were identified."
+    },
+    {
+      "id": 123,
+      "question": "What is a collectible auction?",
+      "faithfulness_score": 1,
+      "unsupported_claims": [
+        "A collectible auction is a way for users to bid on and purchase Collectibles that they have already purchased through the Upstream App",
+        "The bids are placed through the Upstream Account and are subject to the highest bid in the auction, which is the final price paid",
+        "Bidders must review their suitability and ownership objectives before placing an auction or bidding on an auction"
+      ],
+      "reasoning": "The response contains multiple fabricated claims with no basis in the source material. The source never mentions that collectibles must be 'already purchased', never states that the highest bid is the 'final price paid', and never mentions requirements about reviewing 'suitability and ownership objectives'. The response fundamentally misrepresents how collectible auctions work according to the source material."
+    },
+    {
+      "id": 124,
+      "question": "What if I am the highest bidder when the Collectible Auction closes?",
+      "faithfulness_score": 2,
+      "unsupported_claims": [
+        "When you are the highest bidder when the Collectible Auction closes, you are guaranteed to be paid at least that price, as the highest bid wins the auction"
+      ],
+      "reasoning": "The chatbot fundamentally misunderstands the auction format. The source material discusses reserve prices and payments to sellers when their reserve is met, but the chatbot incorrectly describes a scenario where the highest bidder gets paid, which contradicts basic auction mechanics where bidders pay, not receive payment."
+    },
+    {
+      "id": 125,
+      "question": "What happens if nobody bids at or above my reserve price?",
+      "faithfulness_score": 5,
+      "unsupported_claims": [],
+      "reasoning": "The chatbot's response directly paraphrases the source material. It correctly states that unsold collectibles (when nobody bids at or above reserve price) will appear in the Portfolio screen and can be re-auctioned whenever the user wishes. The contact information is system boilerplate and excluded from evaluation. All substantive claims are fully supported by the ground truth."
+    },
+    {
+      "id": 126,
+      "question": "Can I cancel an auction before the close?",
+      "faithfulness_score": 2,
+      "unsupported_claims": [
+        "the answer is no"
+      ],
+      "reasoning": "The chatbot correctly states that the passage doesn't specify whether auctions can be canceled, but then incorrectly concludes 'the answer is no' without any support from the source material. The source only discusses when auctions close, not cancellation policies. This definitive 'no' answer is fabricated and directly misleading to the user."
+    },
+    {
+      "id": 127,
+      "question": "How do I place a bid?",
+      "faithfulness_score": null,
+      "unsupported_claims": [],
+      "reasoning": "Failed to parse Claude response: {\n  \"faithfulness_score\": 3,\n  \"unsupported_claims\": [\"Enter the maximum price you are willing to pay for the collectible\" (step 4), \"Enter your bid amount\" (step 6), \"Tap on 'Bid'\" (step 7)],\n  \"reas"
+    },
+    {
+      "id": 128,
+      "question": "What is Upstream's digital rewards program?",
+      "faithfulness_score": 2,
+      "unsupported_claims": [
+        "Fans then engage sponsors who can gift them a free collectible"
+      ],
+      "reasoning": "The response contains a significant factual error about the process flow. According to the source material, creators (not fans) engage sponsors, and creators (not sponsors) gift free collectibles to sponsors. The chatbot reversed the roles, making sponsors both the buyers and recipients of gifts, which contradicts the clear 4-step process outlined in the source."
+    },
+    {
+      "id": 129,
+      "question": "What is Upstream's Carbon Removal Program? Race Without A Trace ™",
+      "faithfulness_score": 4,
+      "unsupported_claims": [
+        "investors can purchase and display digital racecars to represent their commitment to sustainability"
+      ],
+      "reasoning": "The response accurately captures most key elements from the source: Upstream purchases carbon removal units from Frontier and sells 1:1 to racers, units are linked to digital racecars, and fans can track contributions via QR code scanning. However, the response introduces the concept of 'investors' purchasing digital racecars, while the source material only mentions 'racers' as the purchasers. The source does mention adding vehicles to a 'team portfolio' and displaying fleets, but doesn't specifically reference investors as a separate category of purchasers."
+    },
+    {
+      "id": 130,
+      "question": "Where can I read the full Terms and Conditions for Collectible Auctions?",
+      "faithfulness_score": 4,
+      "unsupported_claims": [
+        "the document is specifically called the 'Upstream Participation Agreement'",
+        "this document specifically contains Terms and Conditions for Collectible Auctions"
+      ],
+      "reasoning": "The chatbot correctly provides the URL from the source material, but adds specific details not present in the source: naming the document as 'Upstream Participation Agreement' and confirming it contains Terms and Conditions for Collectible Auctions. The source only states it has 'the latest terms and conditions' without specifying the document name or that it covers collectible auctions specifically. These are minor unsupported details rather than major fabrications."
+    },
+    {
+      "id": 131,
+      "question": "What technical standard do Upstream Collectibles follow?",
+      "faithfulness_score": 4,
+      "unsupported_claims": [
+        "This standard is a technical specification for non-fungible tokens (NFTs) that ensures their authenticity and transparency"
+      ],
+      "reasoning": "The core claim that Upstream Collectibles adhere to the Ethereum ERC-721 standard is directly supported by the source material. However, the additional explanation about ERC-721 being 'a technical specification for non-fungible tokens (NFTs) that ensures their authenticity and transparency' is not found in the source material and constitutes an unsupported claim. While this information about ERC-721 may be factually accurate, it goes beyond what is provided in the ground truth. The contact information is excluded per instructions as system-level boilerplate."
+    },
+    {
+      "id": 132,
+      "question": "How do I report objectionable Collectible media?",
+      "faithfulness_score": 5,
+      "unsupported_claims": [],
+      "reasoning": "The chatbot's response accurately captures all key information from the source material: the correct contact email (servicedesk@upstream.exchange), the process of requesting a review, and the outcome if content is found objectionable. The response appropriately paraphrases 'at our sole discretion' as simply stating Upstream's decision-making role. The contact boilerplate at the end is excluded from evaluation per the guidelines."
+    },
+    {
+      "id": 133,
+      "question": "How do I report copyright infringements of Collectible media offered for auction?",
+      "faithfulness_score": 2,
+      "unsupported_claims": [
+        "If you find an objectionable image or video, you can contact servicedesk@upstream.exchange to request a review and withdrawal of the auction"
+      ],
+      "reasoning": "The response correctly captures the requirement for a statement verifying ownership/authorization and signed declaration from the source material. However, it introduces a significant fabricated claim about contacting 'servicedesk@upstream.exchange' for objectionable images/videos and auction withdrawal, which has no basis in the provided source material. The source only mentions requirements 3 and 4 of what appears to be a DMCA notice process, but the chatbot adds procedural steps not mentioned in the source."
+    },
+    {
+      "id": 134,
+      "question": "When I own a Collectibles, what are my rights?",
+      "faithfulness_score": 2,
+      "unsupported_claims": [
+        "when you own a Collectibles, you are responsible for reviewing your suitability and objectives before placing a Collectible Auction or bidding on a Collectible Auction"
+      ],
+      "reasoning": "The chatbot fundamentally misunderstands the user's question about ownership rights and instead provides information about responsibilities before purchasing/bidding. The source material discusses pre-purchase considerations and risks, not post-ownership rights. The chatbot incorrectly frames pre-purchase review requirements as ownership responsibilities, which is not supported by the source material that specifically addresses the auction/bidding process, not ownership rights."
+    },
+    {
+      "id": 135,
+      "question": "How do I export my Collectible, is not in the list, it cannot be exported.",
+      "faithfulness_score": 2,
+      "unsupported_claims": [
+        "The Collectible cannot be exported because it is not listed in the supported export address"
+      ],
+      "reasoning": "The chatbot fabricates a specific explanation about why the collectible cannot be exported ('not listed in the supported export address'), which has no basis in the source material. The source only provides instructions for transferring ETH to fund export costs but doesn't address export eligibility or listing issues. The ETH transfer requirement is accurately conveyed, but the invented explanation about listing significantly undermines faithfulness."
+    },
+    {
+      "id": 136,
+      "question": "How can I “see” my exported Collectible in MetaMask?",
+      "faithfulness_score": 5,
+      "unsupported_claims": [],
+      "reasoning": "The chatbot's response is fully faithful to the source material. It correctly states that users can access their exported Collectible in MetaMask by connecting their Upstream Keystore to their software, which directly aligns with the ground truth instructions about connecting the Upstream Keystore to MetaMask to access the Collectible. The contact information is system-level boilerplate that should be excluded from evaluation. All claims made are supported by the source material."
+    },
+    {
+      "id": 137,
+      "question": "What might Upstream consider objectionable Collectible material?",
+      "faithfulness_score": 5,
+      "unsupported_claims": [],
+      "reasoning": "The chatbot declined to answer, stating it doesn't have the information to respond to the question. This is a retrieval failure rather than a hallucination. The response contains no fabricated claims - it makes only one affirmative claim that the context doesn't provide the requested information, which is actually incorrect since the source material does contain relevant information about objectionable collectible material. However, being wrong about what information is available is not the same as making unsupported factual claims. The contact information is excluded per instructions. Since no unsupported claims were made, this receives the highest faithfulness score."
+    },
+    {
+      "id": 138,
+      "question": "Are trades solicited on Upstream?",
+      "faithfulness_score": 5,
+      "unsupported_claims": [],
+      "reasoning": "The chatbot's response is fully faithful to the source material. The claim that 'trades are not solicited on Upstream' is directly supported by the source statement 'Upstream does not solicit customers to do transactions on its platform.' The follow-up statement that 'any trade must be based on your own investing judgement' is also directly quoted from the source material. The contact information is system-level boilerplate and excluded from evaluation. All substantive claims are well-supported."
+    },
+    {
+      "id": 139,
+      "question": "Who is Upstream’s Cash Custodian?",
+      "faithfulness_score": 2,
+      "unsupported_claims": [
+        "Their primary function is to facilitate the 'Pay Me' and 'I Pay' processes for Upstream users",
+        "Upstream is described as a global stock trading app built on the blockchain-powered Horizon platform",
+        "It allows investors to directly trade shares in various asset classes directly from the blockchain, bypassing traditional intermediaries",
+        "Reference to 'Chunk 2' information"
+      ],
+      "reasoning": "While the chatbot correctly identifies Digital Trust as the Cash Custodian and provides accurate location information, it makes several significant unsupported claims. It incorrectly states that Digital Trust's primary function is to facilitate payment processes (the source shows these are app features, not custodian functions), and introduces entirely fabricated information about Upstream being a stock trading app with blockchain trading capabilities that has no basis in the source material."
+    },
+    {
+      "id": 140,
+      "question": "What is a Prospectus?",
+      "faithfulness_score": 3,
+      "unsupported_claims": [
+        "A prospectus is a document that provides detailed information about an IPO",
+        "It outlines the terms and conditions of an IPO",
+        "including the company's history, management team, financial situation, and future plans"
+      ],
+      "reasoning": "The response contains a mix of supported and unsupported claims. The statement about protecting against non-disclosure claims is supported by the source. However, the definition of a prospectus as specifically an 'IPO document' and the detailed list of what it contains (terms, conditions, history, financial situation, future plans) are not supported by the source material, which only mentions risks, age, management experience/involvement, and capitalization being described in prospectuses."
+    },
+    {
+      "id": 141,
+      "question": "What are the major differences between common and preferred stock?",
+      "faithfulness_score": 2,
+      "unsupported_claims": [
+        "Common stockholders have greater claim to the company's assets and earnings than preferred stockholders"
+      ],
+      "reasoning": "The chatbot directly contradicts the source material by stating that common stockholders have greater claim to assets and earnings than preferred stockholders, when the source clearly states the opposite. This is a significant factual error that reverses the fundamental relationship between the two stock types. The claims about preferred stock dividends are accurately supported by the source."
+    },
+    {
+      "id": 142,
+      "question": "What is a PIPE, private placement or secondary offering?",
+      "faithfulness_score": 2,
+      "unsupported_claims": [
+        "A PIPE, private placement or secondary offering is a way for companies to raise capital in the public markets in timely and most cost-efficient manner"
+      ],
+      "reasoning": "The chatbot incorrectly treats PIPE, private placement, and secondary offering as a single entity with one definition, when the source material provides three distinct definitions. The source only describes PIPEs as raising capital 'in timely and most cost-efficient manner,' but the chatbot applies this description to all three concepts. Additionally, the source specifies that private placements are NOT registered with the FSA (making them not truly 'public market' offerings), which contradicts the chatbot's claim that all three are ways to raise capital 'in the public markets.'"
+    },
+    {
+      "id": 143,
+      "question": "What is a Registration Statement?",
+      "faithfulness_score": 4,
+      "unsupported_claims": [
+        "provides transparency about the company's financial standing and intentions to investors"
+      ],
+      "reasoning": "The response accurately captures the core definition from the source material about Registration Statements being documents that disclose financial information regarding securities registration, including a prospectus filed with Upstream regulators. However, it adds the claim about 'providing transparency about the company's financial standing and intentions to investors,' which, while reasonable, is not explicitly stated in the source material and introduces new substantive information beyond what was provided."
+    },
+    {
+      "id": 144,
+      "question": "What is an Unaccredited investor?",
+      "faithfulness_score": 2,
+      "unsupported_claims": [
+        "they are not a high-net-worth investor",
+        "are not eligible to trade securities on Upstream"
+      ],
+      "reasoning": "The response correctly defines unaccredited investors using the exact wording from the source. However, it adds two significant unsupported claims: defining unaccredited investors as 'not high-net-worth' (the source mentions ultra-wealthy in a different context) and stating they 'are not eligible to trade securities on Upstream' (the source only mentions U.S. persons cannot trade, with no connection to accreditation status)."
+    },
+    {
+      "id": 145,
+      "question": "Where is Upstream located?",
+      "faithfulness_score": 1,
+      "unsupported_claims": [
+        "Upstream is a global stock trading app",
+        "located at servicedesk@upstream.exchange"
+      ],
+      "reasoning": "The response contains multiple fabricated claims with no basis in the source material. The source only provides contact information for support questions, but the chatbot invents that Upstream is a 'global stock trading app' and incorrectly states it is 'located at' an email address. These are substantive fabrications that go far beyond the available information."
+    },
+    {
+      "id": 146,
+      "question": "What annual & semi-annual disclosures are required?",
+      "faithfulness_score": 2,
+      "unsupported_claims": [
+        "Claims this is a summary of information in Chunk 1 regarding annual & semi-annual disclosures",
+        "Presents the document list as if it answers what disclosures are required"
+      ],
+      "reasoning": "The chatbot falsely claims to be providing a summary of information about annual & semi-annual disclosures from 'Chunk 1', but the source material only contains a list of document titles with no actual disclosure requirements or content. The response misleadingly presents this document list as if it answers the user's question about what specific disclosures are required, when it provides no substantive information about disclosure requirements."
+    },
+    {
+      "id": 147,
+      "question": "WHAT IS UPSTREAM Advertising?",
+      "faithfulness_score": 4,
+      "unsupported_claims": [
+        "users receive curated ads based on their interests"
+      ],
+      "reasoning": "The response is mostly faithful to the source material. It correctly describes Upstream as a decentralized web3 advertising service that gives users control and doesn't share personal data. However, it claims users receive ads 'based on their interests' when the source actually describes a payment threshold system where users set minimum reward amounts to determine which ads they see, not interest-based targeting."
+    },
+    {
+      "id": 148,
+      "question": "How do I know that I can trust Upstream with my assets?",
+      "faithfulness_score": 3,
+      "unsupported_claims": [
+        "Before making any investment, investors should consider the risks and benefits associated with the investment, their investment objectives, liquidity risks and potential benefits, volatility and likely performance in a variety of market and economic conditions."
+      ],
+      "reasoning": "Most claims are well-supported by the source material, including Upstream being regulated/licensed, the various exchange memberships, and the 2020 growth achievement. However, the lengthy paragraph about investment risks and considerations is entirely fabricated - this information appears nowhere in the source material and represents a significant unsupported addition to the response."
+    },
+    {
+      "id": 149,
+      "question": "How do I use my Upstream wallet on mainnet?",
+      "faithfulness_score": 5,
+      "unsupported_claims": [],
+      "reasoning": "The chatbot's response accurately summarizes the key steps from the source material: exporting the Upstream wallet from the Upstream app and importing it into Metamask to use on Ethereum mainnet. This is a valid generalization of the detailed instructions provided in the source. The contact information is system-level boilerplate as specified in the exclusions."
+    },
+    {
+      "id": 150,
+      "question": "Where can I find a breakdown of Upstream's fees?",
+      "faithfulness_score": 4,
+      "unsupported_claims": [
+        "There are no membership fees or minimum dollar amounts to maintain an account"
+      ],
+      "reasoning": "The response accurately captures most fee information from the source material, including trading fees, collectible fees, and auction fees. However, it makes an unsupported claim about 'no minimum dollar amounts' - the source only mentions no fees to maintain accounts, not minimum balance requirements. The response also omits several fee categories mentioned in the source (wire transfers, PayPal, USDC fees) but this is incompleteness rather than fabrication."
+    },
+    {
+      "id": 151,
+      "question": "Where can I download the Upstream App?",
+      "faithfulness_score": 5,
+      "unsupported_claims": [],
+      "reasoning": "The chatbot's response is fully faithful to the source material. It accurately states that Upstream can be downloaded from the Apple App Store or Google Play, and that links are available on the website https://upstream.exchange/. The contact information at the end is system-level boilerplate that should be excluded from hallucination scoring per the instructions."
+    },
+    {
+      "id": 152,
+      "question": "Is Short Selling Allowsed on Upstream?",
+      "faithfulness_score": 2,
+      "unsupported_claims": [
+        "Selling shares that you don't own or haven't borrowed is also not permitted",
+        "Traders cannot be simultaneously long and short the same stock"
+      ],
+      "reasoning": "While the chatbot correctly states that short selling is allowed but naked short selling is not (supported by the source), it adds two significant claims about borrowed shares and simultaneous long/short positions that have no basis in the source material. The source only states 'Yes but not naked short selling' and provides no information about borrowing requirements or position restrictions."
+    },
+    {
+      "id": 153,
+      "question": "What is Short Selling on Upstream?",
+      "faithfulness_score": 2,
+      "unsupported_claims": [
+        "This allows the investor to profit from the price difference between buying and selling the securities",
+        "short selling is not allowed on Upstream because it is not a naked short position"
+      ],
+      "reasoning": "The response starts correctly by defining short selling as borrowing securities and selling them in anticipation of price decline, which matches the source. However, it then makes two significant unsupported claims: explaining the profit mechanism in terms of 'price difference between buying and selling' (not mentioned in source), and most critically, stating that 'short selling is not allowed on Upstream because it is not a naked short position' - which directly contradicts the source material that explains how short selling works on Upstream and its benefits to the platform."
+    },
+    {
+      "id": 154,
+      "question": "What are the key features and restrictions of Upstream's Short Selling service?",
+      "faithfulness_score": 4,
+      "unsupported_claims": [
+        "Lending only applies to shares held in the trader's portfolio (long only)"
+      ],
+      "reasoning": "The response accurately captures the main restrictions from the source material about naked short selling and long/short restrictions. However, it presents lending as a 'key feature' when the source describes it as a restriction, and the phrasing 'lending only applies to shares held in the trader's portfolio (long only)' is somewhat confusing - it doesn't clearly convey that only Upstream traders can lend to other Upstream traders, and market makers cannot participate in lending. The contact information is system boilerplate and excluded from evaluation."
+    },
+    {
+      "id": 155,
+      "question": "How is the Lending Fee determined on Upstream?",
+      "faithfulness_score": 5,
+      "unsupported_claims": [],
+      "reasoning": "All claims in the chatbot's response are directly supported by the source material. The response accurately states that the lending fee is determined on a per-share basis by the stock lender, and that the short seller pays this fee at the time of entering their short position. The contact information is system-level boilerplate and excluded from evaluation. No unsupported claims were made."
+    },
+    {
+      "id": 156,
+      "question": "Can a stock lender recall their shares early on Upstream?",
+      "faithfulness_score": 4,
+      "unsupported_claims": [
+        "The documentation does not specify a timeframe for share recalls"
+      ],
+      "reasoning": "The core claim that stock lenders cannot recall shares early is directly supported by the source. The explanation that lenders must wait for the short seller to buy back shares or for the loan to expire is also supported. However, the statement about what the documentation does/doesn't specify goes beyond what's provided in the source material, as it makes a claim about the absence of information rather than just stating the policy."
+    },
+    {
+      "id": 157,
+      "question": "What is the Borrower Margin requirement for short sellers?",
+      "faithfulness_score": 5,
+      "unsupported_claims": [],
+      "reasoning": "The chatbot's response accurately reproduces the key information from the source material: the 20% requirement for short-margin-cash to be blocked in the portfolio, and the conditions under which this cash remains blocked (until the short position is covered, liquidated, or expires). The contact information is excluded from evaluation per the guidelines. All substantive claims are directly supported by the source material."
+    },
+    {
+      "id": 158,
+      "question": "What happens immediately after a short seller borrows shares?",
+      "faithfulness_score": 4,
+      "unsupported_claims": [
+        "without any negotiation between the short seller and the Upstream market maker(s)"
+      ],
+      "reasoning": "The response accurately captures the key information from the source: that borrowed shares are automatically sold 'at market' into the Upstream market maker(s) Market Pool. However, it adds an unsupported detail about 'without any negotiation' which is not mentioned in the source material. The contact information is excluded as system boilerplate."
+    },
+    {
+      "id": 159,
+      "question": "What is the Downside Risk and Auto-Liquidation process for short sellers?",
+      "faithfulness_score": 5,
+      "unsupported_claims": [],
+      "reasoning": "The chatbot's response is fully faithful to the source material. All claims made are directly supported: the downside risk is not unlimited due to auto-liquidation, the 10% trigger for automatic buy-in, the use of initial sales proceeds plus 20% margin cash, and the worst-case loss of just under 20%. The response simply reorganizes the source information into clear sections without adding unsupported claims. The contact information is excluded per the guidelines as system-level boilerplate."
+    },
+    {
+      "id": 160,
+      "question": "How can a short seller mitigate downside risk?",
+      "faithfulness_score": 2,
+      "unsupported_claims": [
+        "Auto-liquidation service will automatically buy-in (cover) the shares if the price of the shorted stock rises by 10% or more from the price when the short position was entered",
+        "Worst case, the short seller may lose just under 20% of the short position value"
+      ],
+      "reasoning": "While the first bullet point accurately reflects the source material about buying call options and selling put options, the response contains two major fabricated claims about an auto-liquidation service and specific loss percentages that have no basis in the source material. These are substantive new pieces of information, not overgeneralizations."
+    },
+    {
+      "id": 161,
+      "question": "Who receives Dividend Distributions and Voting Entitlements on short sold shares?",
+      "faithfulness_score": 5,
+      "unsupported_claims": [],
+      "reasoning": "The chatbot's response is fully faithful to the source material. It correctly identifies that the buyer of the short-sold shares receives dividend distributions and voting entitlements, which directly matches the ground truth statement that 'The buyer of the short-sold shares...is therefore the recipient of any dividend distributions and is entitled to vote the shares.' The response accurately conveys this information without adding unsupported claims or fabricating details. The contact information is system-level boilerplate and excluded from evaluation."
+    },
+    {
+      "id": 162,
+      "question": "What is Upstream's Alternative Uptick Rule?",
+      "faithfulness_score": 1,
+      "unsupported_claims": [
+        "The Alternative Uptick Rule allows short selling of stocks when they have triggered a circuit breaker due to a price decline of at least 10% in one session"
+      ],
+      "reasoning": "The chatbot completely misrepresents the source material. The source states that procedures prevent short sale execution when a stock triggers a circuit breaker, but the chatbot claims the opposite - that the Alternative Uptick Rule allows short selling in this scenario. This is a fundamental factual error that contradicts the core information provided."
+    },
+    {
+      "id": 163,
+      "question": "How does Upstream guarantee the return of a lender's shares (no borrower-default risk)?",
+      "faithfulness_score": 5,
+      "unsupported_claims": [],
+      "reasoning": "The chatbot's response accurately conveys all the key information from the source material. It correctly states that Upstream guarantees share return by ensuring sufficient Market Pool depth, mentions the Market Pool's role in supplying shares for buy-in, and accurately references the Short-Liquidation Trigger as a 10% price rise. The slight paraphrasing (e.g., 'buy back the shares' instead of 'cover the buy-in') represents acceptable overgeneralization rather than fabrication. The contact information is system-injected boilerplate and excluded from evaluation."
+    },
+    {
+      "id": 164,
+      "question": "What Upstream fees are charged during a short sale?",
+      "faithfulness_score": 5,
+      "unsupported_claims": [],
+      "reasoning": "The chatbot's response directly and accurately reflects the information provided in the source material. It correctly states that Upstream charges a 1% trade execution fee on the initial short sale trade proceeds and a 1% fee on the cover (buy-in) trade execution. The response contains no fabricated information or unsupported claims. The contact information is system-generated boilerplate and excluded from evaluation."
+    }
+  ]
+}

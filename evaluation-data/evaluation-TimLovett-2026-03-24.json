@@ -1,0 +1,518 @@
+{
+  "reviewer_id": "Tim Lovett",
+  "completed_at": "2026-03-24T16:29:34.253Z",
+  "dataset_metadata": {
+    "generated_at": "2026-03-23T12:57:11.972078+00:00",
+    "endpoint": "https://upstreamaifaq-uat.azurewebsites.net/api/faqquery?code=<REDACTED>",
+    "source_url": "https://storupstream.blob.core.windows.net/$web/site/supportcenter/support.json",
+    "total_questions": 164,
+    "completed_questions": 164
+  },
+  "sample_size": 50,
+  "total_items": 164,
+  "items_rated": 50,
+  "sample_item_ids": [
+    46,
+    103,
+    48,
+    39,
+    2,
+    49,
+    122,
+    87,
+    99,
+    139,
+    80,
+    56,
+    37,
+    162,
+    15,
+    55,
+    129,
+    30,
+    105,
+    8,
+    111,
+    33,
+    96,
+    73,
+    36,
+    116,
+    110,
+    60,
+    126,
+    159,
+    59,
+    84,
+    140,
+    134,
+    66,
+    57,
+    1,
+    146,
+    133,
+    158,
+    17,
+    5,
+    81,
+    44,
+    12,
+    102,
+    91,
+    25,
+    132,
+    35
+  ],
+  "ratings": [
+    {
+      "item_id": 46,
+      "question": "Will I receive notices or statements?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 103,
+      "question": "What happens to my shares when I deposit them into a Market Pool?",
+      "accuracy": 5,
+      "completeness": 4,
+      "helpfulness": 4,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 48,
+      "question": "How is the money in my Upstream account protected?",
+      "accuracy": 3,
+      "completeness": 2,
+      "helpfulness": null,
+      "hallucination": true,
+      "comment": "No mention in the response of USDC accounts from the KB, Upstream no longer uses individual accounts for bank deposits. source KB needs updating"
+    },
+    {
+      "item_id": 39,
+      "question": "How do I disable Two-Factor Authentication?",
+      "accuracy": 2,
+      "completeness": 2,
+      "helpfulness": 1,
+      "hallucination": false,
+      "comment": "Originating KB is the old one, Settings button no longer exists"
+    },
+    {
+      "item_id": 2,
+      "question": "What are Upstream’s market hours and trading days?",
+      "accuracy": 4,
+      "completeness": 4,
+      "helpfulness": 3,
+      "hallucination": false,
+      "comment": "URL is broken. KB using old data, I've sent in updates for this article previously"
+    },
+    {
+      "item_id": 49,
+      "question": "How are the securities in my Upstream account protected?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 122,
+      "question": "How can I sell a Collectible?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 87,
+      "question": "How long does it take for IPO orders to settle on Upstream?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 99,
+      "question": "What’s a Covered Call (Option Holder)?",
+      "accuracy": null,
+      "completeness": null,
+      "helpfulness": null,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 139,
+      "question": "Who is Upstream’s Cash Custodian?",
+      "accuracy": 3,
+      "completeness": null,
+      "helpfulness": 2,
+      "hallucination": false,
+      "comment": "It's not clear from the user input that they are talking about Pay Me and Pay I, it could be the cash custodian for normal withdrawals and deposits. Also \"In chunk1\" and \"in chunk2\" would be confusing"
+    },
+    {
+      "item_id": 80,
+      "question": "How do I dual list on Upstream?",
+      "accuracy": 4,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "comment": "Not sure where the \"30 days\" came from. Might be correct, but it's not from the \"truth\" article shown"
+    },
+    {
+      "item_id": 56,
+      "question": "How do I transfer shares to Upstream?",
+      "accuracy": 5,
+      "completeness": 2,
+      "helpfulness": 2,
+      "hallucination": false,
+      "comment": "Missing huge parts of the process"
+    },
+    {
+      "item_id": 37,
+      "question": "What is a Signing Key and why is it so important?",
+      "accuracy": 4,
+      "completeness": 4,
+      "helpfulness": 2,
+      "hallucination": false,
+      "comment": "The answer is too complicated and misses the word \"file\" from most of our messaging. It might be a throwback from the last set of updates for the support center which I'm not sure were implemented"
+    },
+    {
+      "item_id": 162,
+      "question": "What is Upstream's Alternative Uptick Rule?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 15,
+      "question": "When would you require my identification?",
+      "accuracy": 3,
+      "completeness": 4,
+      "helpfulness": 3,
+      "hallucination": false,
+      "comment": "You also need full KYC for any securities trading regardless of value of cash in the account"
+    },
+    {
+      "item_id": 55,
+      "question": "How do I sell securities?",
+      "accuracy": 4,
+      "completeness": 4,
+      "helpfulness": 4,
+      "hallucination": false,
+      "comment": "Misses the important notice that it's not for US investors"
+    },
+    {
+      "item_id": 129,
+      "question": "What is Upstream's Carbon Removal Program? Race Without A Trace ™",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 30,
+      "question": "How long does it take for KYC identity verification to be verified?",
+      "accuracy": 3,
+      "completeness": 4,
+      "helpfulness": 3,
+      "hallucination": false,
+      "comment": "Missed out the \"up to two weeks\""
+    },
+    {
+      "item_id": 105,
+      "question": "Do Market Pools pay liquidity providers a fee?",
+      "accuracy": 5,
+      "completeness": 4,
+      "helpfulness": 4,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 8,
+      "question": "What devices can I trade on?",
+      "accuracy": 4,
+      "completeness": 4,
+      "helpfulness": 3,
+      "hallucination": false,
+      "comment": "Missing Desktop via web trader, old data source"
+    },
+    {
+      "item_id": 111,
+      "question": "What happens if I try to bulk-sell my shares into a Market Pool?",
+      "accuracy": 4,
+      "completeness": 2,
+      "helpfulness": 2,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 33,
+      "question": "Is there a minimum funding requirement?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 96,
+      "question": "What are the fees for trading Options on Upstream?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 73,
+      "question": "What are the benefits of listing my company on Upstream?",
+      "accuracy": 5,
+      "completeness": 4,
+      "helpfulness": 5,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 36,
+      "question": "Can I open a Joint or Corporate account?",
+      "accuracy": 5,
+      "completeness": 3,
+      "helpfulness": 3,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 116,
+      "question": "What are Upstream's unique Collectible integrations?",
+      "accuracy": 5,
+      "completeness": 2,
+      "helpfulness": 3,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 110,
+      "question": "What happens if I try to buy all the shares inside a Market Pool?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 4,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 60,
+      "question": "How do I sell securities from my Portfolio screen?",
+      "accuracy": 4,
+      "completeness": 4,
+      "helpfulness": 4,
+      "hallucination": false,
+      "comment": "\"Sell Tap Sell\" is incorrect, but the source explanation has misleading formatting which would lead to this"
+    },
+    {
+      "item_id": 126,
+      "question": "Can I cancel an auction before the close?",
+      "accuracy": 1,
+      "completeness": 1,
+      "helpfulness": 1,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 159,
+      "question": "What is the Downside Risk and Auto-Liquidation process for short sellers?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 59,
+      "question": "How do I manage my security Portfolio?",
+      "accuracy": 2,
+      "completeness": 5,
+      "helpfulness": 2,
+      "hallucination": false,
+      "comment": "Seems to go into selling securities through the Market screen, which I would not expect from the original question, or source KB article"
+    },
+    {
+      "item_id": 84,
+      "question": "Why did I not get my full indication?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 140,
+      "question": "What is a Prospectus?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 134,
+      "question": "When I own a Collectibles, what are my rights?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 66,
+      "question": "Does Upstream solicit trades?",
+      "accuracy": 5,
+      "completeness": 2,
+      "helpfulness": 4,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 57,
+      "question": "How do I move shares back to US markets?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 1,
+      "question": "What is Upstream?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 146,
+      "question": "What annual & semi-annual disclosures are required?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 133,
+      "question": "How do I report copyright infringements of Collectible media offered for auction?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 158,
+      "question": "What happens immediately after a short seller borrows shares?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 17,
+      "question": "How do I fund my Upstream account using PayPal?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 5,
+      "question": "How is MERJ regulated?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 81,
+      "question": "What does Upstream provide companies wishing to dual list?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 44,
+      "question": "How do I change my bank information?",
+      "accuracy": 5,
+      "completeness": 4,
+      "helpfulness": 5,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 12,
+      "question": "What technology is powering Upstream?",
+      "accuracy": 5,
+      "completeness": 3,
+      "helpfulness": 4,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 102,
+      "question": "What are Market Pools?",
+      "accuracy": 5,
+      "completeness": 3,
+      "helpfulness": 4,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 91,
+      "question": "When can I trade my shares if they’re restricted?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 25,
+      "question": "Why Can’t I Transfer USDC Directly from my Personal Wallet?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 132,
+      "question": "How do I report objectionable Collectible media?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "comment": null
+    },
+    {
+      "item_id": 35,
+      "question": "What are the fees to fund or withdraw funds from my account?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "comment": null
+    }
+  ]
+}

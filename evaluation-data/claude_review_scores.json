@@ -1,0 +1,1506 @@
+{
+  "metadata": {
+    "dataset": "C:\\dev\\ai-architecture-paper\\evaluation\\automated-metrics\\..\\data\\dataset.json",
+    "model": "claude-sonnet-4-20250514",
+    "rubric": "Expert review rubric (Accuracy, Completeness, Helpfulness 1-5 + Hallucination flag)",
+    "computed_at": "2026-03-23T15:59:59.479795+00:00"
+  },
+  "summary": {
+    "accuracy_mean": 3.81,
+    "accuracy_median": 4,
+    "completeness_mean": 3.1,
+    "completeness_median": 3,
+    "helpfulness_mean": 3.34,
+    "helpfulness_median": 4,
+    "total_scored": 164,
+    "hallucinations_flagged": 73
+  },
+  "items": [
+    {
+      "id": 2,
+      "question": "What are Upstream’s market hours and trading days?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "reasoning": "The response accurately states Upstream is open 20 hours per day, Monday through Sunday, and correctly provides the reference URL for latest market hours information. It covers all relevant information from the source material and would fully help a user understand the trading schedule. No fabricated information is present."
+    },
+    {
+      "id": 3,
+      "question": "What does it mean that Upstream is a MERJ Exchange Market?",
+      "accuracy": 5,
+      "completeness": 2,
+      "helpfulness": 3,
+      "hallucination": false,
+      "reasoning": "The response is factually accurate - it correctly states that Upstream is a MERJ Exchange market and accurately describes MERJ as a regulated and licensed securities exchange, clearing system, and depository for digital and non-digital securities. However, it has major completeness gaps, omitting MERJ's memberships (WFE, ASEA, CoSSE, ANNA), its status as a Qualifying Foreign Exchange for OTC Markets, and its recognition as one of the fastest growing exchanges in 2020. The response is moderately helpful as it directly answers the user's question with correct basic information, but could be much more informative. No hallucination detected - all claims are supported by the source material."
+    },
+    {
+      "id": 5,
+      "question": "How is MERJ regulated?",
+      "accuracy": 4,
+      "completeness": 4,
+      "helpfulness": 4,
+      "hallucination": true,
+      "reasoning": "The response accurately captures that MERJ is regulated by the Seychelles FSA and mentions their collaboration with the FIU on FATF recommendations. However, it adds 'counter-terrorism financing (CTF)' which is not mentioned in the source material, constituting a hallucination. It misses that the FSA is described as 'the securities and other non-banking financial services regulator' but covers the main regulatory points well."
+    },
+    {
+      "id": 7,
+      "question": "Who can buy Collectibles on Upstream?",
+      "accuracy": 5,
+      "completeness": 1,
+      "helpfulness": 1,
+      "hallucination": false,
+      "reasoning": "The chatbot refused to answer the question entirely, providing no factual claims to evaluate for accuracy (hence 5 - no incorrect information given). However, it completely missed providing the relevant information from the source about who can buy Collectibles (completeness: 1) and was not helpful to the user who had a straightforward question that could be answered from the available source material (helpfulness: 1). No hallucination occurred as it made no specific claims about the topic."
+    },
+    {
+      "id": 8,
+      "question": "What devices can I trade on?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "reasoning": "The response accurately states all supported devices (iOS, Android smartphones, Mac OS desktop app) and correctly includes the security recommendations about biometric and two-factor authentication. It covers all relevant information from the source material and directly answers the user's question about trading devices. No fabricated information is present."
+    },
+    {
+      "id": 10,
+      "question": "What opportunities can I participate in on Upstream?",
+      "accuracy": 3,
+      "completeness": 4,
+      "helpfulness": 4,
+      "hallucination": true,
+      "reasoning": "The response accurately covers the core source material (deposit, buy, sell stocks and collectibles from U.S. and international companies) but adds significant unsupported details like 'dual listed companies, IPOs, celebrity ventures, and other unique asset classes' and 'blockchain-powered trading app' which are not mentioned in the source. While these additions make the response more helpful and detailed, they constitute hallucinations since they introduce specific claims not found in the ground truth."
+    },
+    {
+      "id": 11,
+      "question": "How much does it cost to use Upstream?",
+      "accuracy": 4,
+      "completeness": 4,
+      "helpfulness": 5,
+      "hallucination": false,
+      "reasoning": "The response is mostly accurate and covers nearly all key cost information from the source. It correctly states that Upstream is free to use with no membership fees, order-placement fees, or Collectible bidding fees. It accurately mentions the 1% fee for securities trades and 2% fee for Collectible sellers. However, it misses two minor details: no minimum dollar amount requirement and that the 1% fee specifically applies to the 'secondary market.' The response is extremely helpful as it directly answers the user's cost question with all the essential fee information. No hallucination detected - all claims are supported by the source material."
+    },
+    {
+      "id": 12,
+      "question": "What technology is powering Upstream?",
+      "accuracy": 5,
+      "completeness": 2,
+      "helpfulness": 2,
+      "hallucination": false,
+      "reasoning": "The response is factually correct - it accurately states that Upstream is powered by Horizon's ERC-20 and ERC-721 smart contract ecosystems. However, it misses significant technical details from the source material including the Ethereum layer-2 optimistic-rollup proof-of-authority blockchain (Ráneum), the comprehensive tech stack capabilities, and other relevant context. While accurate, the incomplete answer provides limited help to users seeking to understand the full technology stack powering Upstream."
+    },
+    {
+      "id": 13,
+      "question": "What is the vision behind Upstream?",
+      "accuracy": 1,
+      "completeness": 1,
+      "helpfulness": 1,
+      "hallucination": false,
+      "reasoning": "The chatbot claims it cannot answer the question about Upstream's vision, but the source material clearly describes their vision to 'unlock liquidity for investors of all levels' and create 'the future of securities and Collectible trading' with transparency, accessibility, and investor protections. This is a complete refusal when relevant information exists, resulting in zero accuracy, completeness, and helpfulness. However, no hallucination occurred since it made no false claims."
+    },
+    {
+      "id": 16,
+      "question": "What if i have trouble receiving my KYC code via SMS?",
+      "accuracy": 5,
+      "completeness": 4,
+      "helpfulness": 5,
+      "hallucination": false,
+      "reasoning": "The response accurately provides the correct alternative method and URL from the source material. It covers the key solution but misses some context about location/coverage being potential causes. Very helpful as it directly answers the user's question with the practical solution. No hallucinated information - all claims are supported by the source."
+    },
+    {
+      "id": 17,
+      "question": "How do I fund my Upstream account using PayPal?",
+      "accuracy": 4,
+      "completeness": 4,
+      "helpfulness": 4,
+      "hallucination": true,
+      "reasoning": "The response accurately covers most steps and fees from the source material. However, it contains a hallucination by stating 'Create a PayPal account or use an existing one' as step 1, when the source explicitly notes you don't need a PayPal account to fund using credit/debit cards. The response misses the 'Tap Investor' step and the note about not needing a PayPal account, but otherwise provides helpful, step-by-step guidance with correct fee information."
+    },
+    {
+      "id": 18,
+      "question": "How do I fund my Upstream account using a Debit or Credit Card?",
+      "accuracy": 4,
+      "completeness": 2,
+      "helpfulness": 2,
+      "hallucination": false,
+      "reasoning": "The response is mostly accurate - it correctly mentions tapping 'Fund With Credit Card' in the funding section and confirms no PayPal account is needed. However, it's significantly incomplete, missing most of the 8-step process (login steps, selecting Investor, amount confirmation, PayPal interface steps, Pay Now button, etc.) and omitting all fee information. This makes it only slightly helpful as users would still need much more detail to actually complete the funding process."
+    },
+    {
+      "id": 19,
+      "question": "When I try to fund my account using a Debit or Credit Card, I’m asked to log in to PayPal. Why is this?",
+      "accuracy": 4,
+      "completeness": 3,
+      "helpfulness": 4,
+      "hallucination": false,
+      "reasoning": "The response accurately captures the main reasons (device location, email linked to PayPal) and solutions (clear cache, create PayPal account, alternative funding). However, it misses some details like 'rare occasions', PayPal being the credit card processor, cached internet files as a factor, and specific mention of guest checkout services. No fabricated information present. The response would help users understand and resolve the issue despite being somewhat condensed."
+    },
+    {
+      "id": 20,
+      "question": "How do I fund my Upstream Account using a Bank Wire Transfer?",
+      "accuracy": 1,
+      "completeness": 1,
+      "helpfulness": 1,
+      "hallucination": false,
+      "reasoning": "The chatbot claims it cannot answer the question about bank wire transfers, but the source material explicitly covers this topic in detail, including KYC requirements, bank account details, SWIFT codes, and wire transfer instructions. This is a complete refusal to answer despite having comprehensive relevant information available. Since it's a pure refusal with no fabricated claims, there's no hallucination, but it fails on all other dimensions by not helping the user at all."
+    },
+    {
+      "id": 21,
+      "question": "How are my U.S. Dollar funds kept safe?",
+      "accuracy": 4,
+      "completeness": 4,
+      "helpfulness": 4,
+      "hallucination": true,
+      "reasoning": "The response accurately covers both key points from the source material (individual insurance/bankruptcy protection and same-bank withdrawal requirement). However, it contains significant hallucinated information about multisig smart contracts, USDC bridge limits, and withdrawal procedures that are not mentioned anywhere in the source. While the factual claims it makes are correct, the additional fabricated content about technical infrastructure details constitutes clear hallucination."
+    },
+    {
+      "id": 22,
+      "question": "How do I use my Upstream wallet on Mainnet/Metamask",
+      "accuracy": 5,
+      "completeness": 2,
+      "helpfulness": 2,
+      "hallucination": false,
+      "reasoning": "The response is factually accurate - it correctly describes the export process using 'Manage Signing Key' -> 'Export Signing Key' and accurately states the file is password-encrypted JSON that can be imported into Metamask. However, it's significantly incomplete as it only covers the export step and omits all the detailed Metamask import instructions (opening Metamask, tapping import account, selecting JSON file type, etc.). This makes it only slightly helpful since a user would still need the specific import steps to complete the process."
+    },
+    {
+      "id": 24,
+      "question": "Can I deposit cryptocurrency on Upstream? How do I fund my Upstream account with USDC cryptocurrency? How do I deposit to my Upstream account with USDC cryptocurrency?",
+      "accuracy": 2,
+      "completeness": 2,
+      "helpfulness": 2,
+      "hallucination": true,
+      "reasoning": "The response contains a critical error by repeatedly mentioning USDT instead of USDC, which is factually incorrect and confusing. It misses key information like the 3-step process, the need to export/import the Upstream wallet to Metamask, and how the bridge-service works with 1-to-1 minting. While it correctly mentions some elements (bridge contract address, finding Upstream address in profile), the USDT error significantly undermines accuracy and helpfulness."
+    },
+    {
+      "id": 25,
+      "question": "Why Can’t I Transfer USDC Directly from my Personal Wallet?",
+      "accuracy": 2,
+      "completeness": 3,
+      "helpfulness": 3,
+      "hallucination": true,
+      "reasoning": "The response contains a significant factual error - it states Upstream 'does not mint USDC or USDT on Ethereum mainnet' when the source says they don't mint from addresses that do NOT match existing app wallets (double negative). It also adds unsupported information about USDT and 'limitations imposed by blockchain transfer functions.' However, it correctly conveys that transfers will be ignored/lost and partially addresses the user's question about personal wallet transfers."
+    },
+    {
+      "id": 27,
+      "question": "WHY CAN’T I TRANSFER USDC or USDT DIRECTLY FROM MY PERSONAL WALLET?",
+      "accuracy": 2,
+      "completeness": 2,
+      "helpfulness": 2,
+      "hallucination": true,
+      "reasoning": "The response correctly identifies that Upstream doesn't mint stablecoins from USDC deposits, but it completely misrepresents the reason. The source states that invalid deposits 'cannot be rejected' and 'may be lost forever,' while the chatbot claims the system 'prevents invalid transactions' - the exact opposite. The response also misses critical warnings about fund loss and adds fabricated information about blockchain transfer functions being designed to prevent invalid transactions."
+    },
+    {
+      "id": 31,
+      "question": "When will my funds be available to invest?",
+      "accuracy": 5,
+      "completeness": 2,
+      "helpfulness": 3,
+      "hallucination": false,
+      "reasoning": "The response accurately states that PayPal, Credit, and Debit cards provide instant funds availability, which matches the source material exactly. However, it completely omits the information about USDC (typically within 15 minutes), creating a major gap in completeness. The response is moderately helpful as it answers the user's question for some payment methods but leaves them uninformed about USDC timing. No hallucination detected - all claims are supported by the source."
+    },
+    {
+      "id": 32,
+      "question": "How can I check the current balance of my Upstream funds?",
+      "accuracy": 2,
+      "completeness": 2,
+      "helpfulness": 2,
+      "hallucination": true,
+      "reasoning": "The response correctly identifies that balance can be checked on the Portfolio screen, but makes several errors. It incorrectly describes 'Balance of funds' as the total available for trading (the source says 'Available Balance' is for trading, while 'Balance of funds' is the actual balance). More significantly, it fabricates information about push notifications for deposits/trades showing current balance - this is completely absent from the source material. The response also misses key information about the distinction between actual balance and available balance, and why available balance might be lower due to pending orders."
+    },
+    {
+      "id": 35,
+      "question": "What are the fees to fund or withdraw funds from my account?",
+      "accuracy": 2,
+      "completeness": 3,
+      "helpfulness": 2,
+      "hallucination": true,
+      "reasoning": "The response contains multiple factual errors: ACH is listed as '$30.00' when it should be 'Free', PayPal percentages are incorrectly converted to dollar amounts ($0.29), and funding fees via PayPal (3.49%+49c US, 4.99%+49c International) are completely omitted. While it covers withdrawal fees and mentions some relevant fee categories, the inaccuracies and missing funding information make it misleading and not very helpful to users seeking correct fee information."
+    },
+    {
+      "id": 36,
+      "question": "Can I open a Joint or Corporate account?",
+      "accuracy": 2,
+      "completeness": 2,
+      "helpfulness": 2,
+      "hallucination": true,
+      "reasoning": "The response incorrectly states that both Joint AND Corporate accounts can be opened, when the source material only mentions Corporate accounts. This is a hallucination - Joint accounts are not mentioned anywhere in the source. The response also omits crucial information like the detailed steps for KYC setup, the restriction on U.S. domiciled companies, and provides incomplete guidance on the actual process."
+    },
+    {
+      "id": 38,
+      "question": "How do I backup my Signing Key?",
+      "accuracy": 4,
+      "completeness": 3,
+      "helpfulness": 4,
+      "hallucination": true,
+      "reasoning": "The response accurately covers the main backup methods (cloud backup during signup, manual export via Manage Signing Key menu) and correctly describes Android/iOS differences. However, it's missing important details like specific steps (tapping profile icon), biometric verification requirements, password protection of exported keystores, and iOS iCloud troubleshooting. The response hallucinates by providing an unsupported email address 'servicedesk@upstream.exchange' for lost key recovery, which is not mentioned in the source material."
+    },
+    {
+      "id": 40,
+      "question": "What does the ‘Logout’ button do?",
+      "accuracy": 5,
+      "completeness": 4,
+      "helpfulness": 4,
+      "hallucination": false,
+      "reasoning": "The response accurately describes what the Logout button does - terminating the server session and requiring reauthentication with 2FA. It captures the core functionality and security aspect. It omits the specific detail about being 'a very secure way to disconnect if you won't be using it for a few days' but covers the essential information. The response would help users understand the button's purpose and security implications."
+    },
+    {
+      "id": 41,
+      "question": "What happens if I lose my phone, computer, or delete the app?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "reasoning": "The response accurately answers the user's question by directly addressing what happens when devices are lost or apps are deleted. It correctly states that recovery is possible with a backed-up Signing Key and provides the complete 6-step recovery process exactly as outlined in the source material. The response is highly helpful as it directly answers the user's concern and provides actionable steps. No information is fabricated - everything comes directly from the source."
+    },
+    {
+      "id": 42,
+      "question": "What happens if I lost my Signing Key and forgot to back it up?",
+      "accuracy": 3,
+      "completeness": 4,
+      "helpfulness": 3,
+      "hallucination": true,
+      "reasoning": "The response correctly identifies contacting servicedesk@upstream.exchange as the solution, which matches the source material. However, it contains significant hallucinated content about account recovery processes and scenarios (lost phone/computer/app) that are not mentioned anywhere in the source. The source only provides the contact email with no additional details about recovery procedures."
+    },
+    {
+      "id": 43,
+      "question": "How do I change or update my personal information?",
+      "accuracy": 4,
+      "completeness": 3,
+      "helpfulness": 4,
+      "hallucination": true,
+      "reasoning": "The response accurately captures the main steps from the source material and presents them in a clear, structured format. However, it contains hallucination by adding 'Log in to your Upstream app' (step 1) and 'Enter the new personal information' (step 4), which are not mentioned in the source. The source says to 'select the information that you wish to change' rather than 'enter new information.' It misses the specific contact email (servicedesk@upstream.exchange) mentioned in the source, affecting completeness. Despite these issues, it would be helpful to users as it provides a clear step-by-step process."
+    },
+    {
+      "id": 44,
+      "question": "How do I change my bank information?",
+      "accuracy": 4,
+      "completeness": 3,
+      "helpfulness": 4,
+      "hallucination": true,
+      "reasoning": "The response accurately captures the main steps from the source material (Investor tab, Update Personal, enter details, notarize). However, it adds unsupported information about 'signing with your Signing Key' which isn't mentioned in the source. It misses the important disclaimer about Upstream potentially contacting old/new banks for verification. Despite the hallucination, the core process is correct and would help users complete the task."
+    },
+    {
+      "id": 45,
+      "question": "How will you communicate with me about my account?",
+      "accuracy": 4,
+      "completeness": 4,
+      "helpfulness": 4,
+      "hallucination": false,
+      "reasoning": "The response accurately captures the main communication methods from the source material. It correctly states that deposits are confirmed by email and that buy/sell orders trigger push notifications and Message Center updates. However, it misses that deposits also trigger push notifications and Message Center notifications, making it not fully complete. The response is helpful in clearly organizing the information into two communication channels, though it could be more comprehensive."
+    },
+    {
+      "id": 46,
+      "question": "Will I receive notices or statements?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "reasoning": "The response accurately conveys all key information from the source: KYC-passed users can request monthly statements via email at servicedesk@upstream.exchange. It directly answers the user's question about receiving statements/notices with complete and factually correct information. No fabricated claims are present."
+    },
+    {
+      "id": 47,
+      "question": "Will my account information remain confidential?",
+      "accuracy": 5,
+      "completeness": 4,
+      "helpfulness": 5,
+      "hallucination": false,
+      "reasoning": "The response accurately captures all key confidentiality commitments from the source. It covers the main points about strict confidentiality, no mailing list sales, and limited sharing exceptions. Only minor gap is omitting the reference to the privacy policy and the philosophical statement about wealth privacy, but the core answer is complete and directly addresses the user's question about account confidentiality."
+    },
+    {
+      "id": 48,
+      "question": "How is the money in my Upstream account protected?",
+      "accuracy": 3,
+      "completeness": 2,
+      "helpfulness": 3,
+      "hallucination": true,
+      "reasoning": "The response correctly mentions bankruptcy protection and insurance, but adds unsupported claims about funds being 'kept separate from the Upstream company' and explains what bankruptcy protection means without basis in the source. It misses the insurance aspect entirely and doesn't mention the USDC/fiat conversion information. The hallucinated claims about fund segregation make it partially inaccurate despite getting some core facts right."
+    },
+    {
+      "id": 50,
+      "question": "How do I enable biometric security?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "reasoning": "The response accurately reproduces all the steps from the source material in the correct order. It covers the complete process (profile icon → Settings → Use Biometrics for Keystore toggle). The response is extremely helpful with clear step-by-step instructions. The mention of 'fingerprint or facial recognition' and clarification about 'trading activities and withdrawals' are reasonable paraphrases of biometric verification for trades/withdrawals, not fabricated claims."
+    },
+    {
+      "id": 51,
+      "question": "How do I close my Upstream account?",
+      "accuracy": 4,
+      "completeness": 5,
+      "helpfulness": 4,
+      "hallucination": true,
+      "reasoning": "The response accurately provides the correct email address (servicedesk@upstream.exchange) and covers all information from the source. It's helpful to users seeking to close their account. However, it contains hallucinated information about 'guiding through the process' and 'ensuring securities are securely disposed of' - details not present in the source material."
+    },
+    {
+      "id": 53,
+      "question": "What’s the Orderbook?",
+      "accuracy": 3,
+      "completeness": 2,
+      "helpfulness": 3,
+      "reasoning": "The response correctly identifies the Orderbook as showing best bids/offers in real-time and mentions private key signing. However, it contains a significant error by claiming it 'shows the most recently executed orders' when the source describes it as showing bids/offers, not executed trades. It misses major points about blockchain transparency, no hidden/iceberg orders, no algorithmic trading, and data privacy policies. The hallucination about executed orders makes it partially inaccurate but still somewhat helpful for basic understanding.",
+      "hallucination": true
+    },
+    {
+      "id": 54,
+      "question": "How do I buy securities?",
+      "accuracy": 4,
+      "completeness": 3,
+      "helpfulness": 4,
+      "helpfulness_reasoning": "The response provides a clear, step-by-step process that would help most users understand how to buy securities, though it lacks some important details.",
+      "hallucination": true,
+      "reasoning": "The response is mostly accurate and follows the general process from the source material. However, it contains a hallucination in step 5 where it mentions 'provide your phone number for verification' - this is not mentioned anywhere in the source material. The source only mentions biometric verification. The response also omits several important details like the restriction on U.S. persons, fund requirements, order expiry selection, and the detailed explanation of limit prices and order sizes, making it incomplete but still moderately helpful for basic understanding."
+    },
+    {
+      "id": 55,
+      "question": "How do I sell securities?",
+      "accuracy": 4,
+      "completeness": 3,
+      "helpfulness": 4,
+      "helpfulness_reasoning": "The response provides a clear, step-by-step process that would help users sell securities, covering the main workflow effectively.",
+      "hallucination": false,
+      "reasoning": "The response accurately captures the core selling process but omits several important details from the source material. Missing information includes: the restriction that U.S. persons cannot sell securities, details about the default limit price setting, the $0.01 minimum price, the requirement for sufficient shares and impact on other orders, the expiry selection step, and information about viewing orders in the Orders tab. All information provided is factually correct and supported by the source material, with no fabricated claims."
+    },
+    {
+      "id": 56,
+      "question": "How do I transfer shares to Upstream?",
+      "accuracy": 2,
+      "completeness": 2,
+      "helpfulness": 2,
+      "hallucination": true,
+      "reasoning": "The response contains a significant hallucination - it suggests you can deposit shares 'directly through your broker's customer service' as an alternative to the Upstream app, which is not supported by the source. The source clearly states you must first transfer shares to the transfer agent via your broker, then use the Upstream app to request deposit. The response also omits critical details like the KYC process, the 4-step procedure, the $100k limit, and that this process is for non-U.S. users only. While it captures some basic concepts, the inaccurate information and major omissions make it misleading and incomplete."
+    },
+    {
+      "id": 57,
+      "question": "How do I move shares back to US markets?",
+      "accuracy": 4,
+      "completeness": 3,
+      "helpfulness": 4,
+      "hallucination": false,
+      "reasoning": "The response accurately captures the main steps from the source material and presents them in a clear, numbered format. It covers the key process elements: using Upstream's Withdraw Securities feature, transfer agent handling, and receiving DRS Advice. However, it misses some important details like shares being received 'immediately', DRS Advice coming via 'regular US mail', needing to provide a 'copy of your DRS Advice' to the broker, and that brokers will provide 'appropriate forms to complete'. Despite these gaps, the response would still effectively guide a user through the process without adding unsupported information."
+    },
+    {
+      "id": 58,
+      "question": "What are the different order expiry options?",
+      "accuracy": 4,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "reasoning": "The response covers all 5 order expiry options from the source material. Most descriptions are accurate, though there's a minor imprecision in the IOC description - it says 'filling the entire order if possible' when the source indicates it 'executes all immediately OR fills part and cancels unfilled portion.' However, this is more of a paraphrasing issue than a factual error. All information provided has basis in the source material, making it complete and very helpful for users wanting to understand their options."
+    },
+    {
+      "id": 59,
+      "question": "How do I manage my security Portfolio?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 2,
+      "hallucination": true,
+      "reasoning": "The response accurately includes the source information about viewing shares and balance in the Portfolio tab. However, it contains extensive fabricated details about buying securities, setting limit prices, biometric confirmation, and accessing orders - none of which appear in the source material. While these additions might be helpful for portfolio management generally, they are pure hallucinations. The response doesn't actually help answer the user's question about managing their portfolio since the source only covers viewing, not management functions."
+    },
+    {
+      "id": 60,
+      "question": "How do I sell securities from my Portfolio screen?",
+      "accuracy": 2,
+      "completeness": 2,
+      "helpfulness": 2,
+      "hallucination": false,
+      "reasoning": "The response correctly identifies the basic navigation (tap position) and lists the four selling options, but contains significant inaccuracies. It incorrectly states that 'Sell Tap Sell' creates secret off-orderbook orders (it's actually regular selling), and mischaracterizes Stop Loss as selling when price 'falls to specified trigger' without mentioning it's for limiting losses. The response also omits crucial details like limit prices, trigger mechanics, specific purposes of each order type, and important caveats about order fulfillment. While not hallucinating, the oversimplified and partially incorrect explanation would not adequately help users understand these important trading features."
+    },
+    {
+      "id": 61,
+      "question": "How do I add a security to my Watchlist?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "reasoning": "The response accurately captures all four steps from the source material with appropriate paraphrasing. 'Tap Market' becomes 'Tap the Market icon', 'security you'd like to watch' becomes 'security you want to add to your Watchlist', and 'Navigate back' becomes 'Return to the Market page' - all reasonable paraphrases that don't change the meaning. The response is complete, covering all steps in logical order, and would be extremely helpful for users wanting to add securities to their watchlist."
+    },
+    {
+      "id": 62,
+      "question": "How do I cancel an active securities order?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "reasoning": "The response accurately captures all steps from the source material in the correct sequence. It covers the complete process (login, tap Orders, select order, cancel, sign with Signing Key) and presents it in a clear, actionable format that would effectively help a user cancel their order. No fabricated information is present."
+    },
+    {
+      "id": 64,
+      "question": "What are candlestick charts?",
+      "accuracy": 5,
+      "completeness": 4,
+      "helpfulness": 4,
+      "hallucination": true,
+      "reasoning": "The response accurately captures the core information about candlestick charts from the source material. It covers most key points but misses the specific detail about being 'an efficient way to look at a lot of information at once.' The response is very helpful for users wanting to understand candlestick charts. However, it contains hallucination by adding 'make informed trading decisions' - a claim not present in the source material that goes beyond the provided information about helping investors understand price movement."
+    },
+    {
+      "id": 65,
+      "question": "Does Upstream offer margin trading?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 4,
+      "hallucination": true,
+      "reasoning": "The core answer about margin trading is perfectly accurate and complete. However, the response contains extensive information about Upstream's general features, funding methods, and asset classes that is not present in the source material, constituting hallucination. While this additional context might seem helpful, it's fabricated information that reduces the score despite the correct core answer."
+    },
+    {
+      "id": 67,
+      "question": "What are the fees associated with trading?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": true,
+      "reasoning": "The response accurately includes the 1% trade fee from the source material and presents it clearly. However, it contains extensive additional fee information (wire transfer fees, PayPal fees, USDC fees, collectible trading fees, auction fees) that is not present in the source material, constituting hallucination. While this extra information might be factually correct about the platform, it goes well beyond what's supported by the provided source. The response is very helpful and complete in addressing what a user would want to know about trading fees, but the hallucination flag must be true due to the unsupported claims."
+    },
+    {
+      "id": 69,
+      "question": "What is an ex-dividend and record date?",
+      "accuracy": 3,
+      "completeness": 4,
+      "helpfulness": 4,
+      "hallucination": true,
+      "reasoning": "The response accurately captures the ex-dividend date definition from the source material. However, it contains hallucination by treating ex-dividend date and record date as two separate concepts when the source explicitly states they are the same thing ('The ex-dividend date, or record date'). The chatbot fabricated a separate definition for record date that isn't in the source. Despite this hallucination, the response is still helpful to users wanting to understand these financial terms, and it covers the core concept from the source material well."
+    },
+    {
+      "id": 70,
+      "question": "What are the risks of investing?",
+      "accuracy": 2,
+      "completeness": 3,
+      "helpfulness": 2,
+      "helpfulness_reasoning": "While it provides some useful risk information, the fabricated claim about capped downside undermines trust and could mislead users about their actual risk exposure",
+      "hallucination": true,
+      "reasoning": "The response contains a significant fabrication: 'The downside risk is not unlimited and may be capped at 20%' - this specific claim about a 20% cap appears nowhere in the source material and contradicts the source's warning that investors must be able to afford to lose their entire investment. The other bullet points accurately reflect the source content, covering early-stage investment risks, liquidity concerns, potential total loss, and redemption fees. However, this fabricated risk limitation is a serious error that could mislead investors about their actual exposure."
+    },
+    {
+      "id": 71,
+      "question": "How do I list my company on Upstream?",
+      "accuracy": 5,
+      "completeness": 4,
+      "helpfulness": 4,
+      "hallucination": false,
+      "reasoning": "The response is fully accurate, providing the correct process (visit Get Listed page, fill out required information) and correct contact email. It covers the main actionable steps but misses some contextual information from the source about Upstream being a 'revolutionary exchange' and making the process 'seamless' for both companies and investors. The response is very helpful as it directly answers how to list a company with clear steps. No hallucination detected - all information comes from the source material."
+    },
+    {
+      "id": 72,
+      "question": "How do I receive an application to list my company on Upstream?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "reasoning": "The chatbot response is virtually identical to the source material, accurately conveying all the required steps: navigate to Get Listed page, fill out email/name/desired transaction, and receive materials/application. It's complete, factually correct, and directly answers the user's question with clear actionable instructions."
+    },
+    {
+      "id": 73,
+      "question": "What are the benefits of listing my company on Upstream?",
+      "accuracy": 4,
+      "completeness": 3,
+      "helpfulness": 4,
+      "hallucination": false,
+      "reasoning": "The response accurately captures the four main benefits mentioned in the source material with good detail. However, it misses some important content like the specific regulatory credentials (WFE affiliate, HM Revenue recognition, etc.), the funding methods available, the $100k+ IR value offering, and the broader context about liquidity challenges. The information provided is factually correct and well-organized, making it quite helpful for users seeking an overview of listing benefits."
+    },
+    {
+      "id": 74,
+      "question": "Why should I make secondary trading a part of my growth strategy?",
+      "accuracy": 4,
+      "completeness": 4,
+      "helpfulness": 4,
+      "hallucination": true,
+      "reasoning": "The response accurately captures most key points from the source material including direct market access, addressing OTC challenges, cutting-edge features, and shareholder loyalty programs. However, it adds 'Unlock Liquidity: Increase access to capital and expand investor reach' which is not explicitly stated in the source material, constituting hallucination. The response is well-structured and helpful for users considering secondary trading, covering most relevant information, but the unsupported liquidity claim prevents higher scores."
+    },
+    {
+      "id": 75,
+      "question": "What types of assets are traded on Upstream?",
+      "accuracy": 5,
+      "completeness": 4,
+      "helpfulness": 5,
+      "hallucination": false,
+      "reasoning": "The response accurately lists all 5 types of assets from the source material with perfect fidelity. It's extremely helpful by directly answering the user's question in a clear, bulleted format. Completeness is rated 4 rather than 5 because it omits the broader context that these are 'securities and Collectibles from U.S. and international companies' traded on 'one global trading app,' but this contextual information is not essential to answering the specific question asked."
+    },
+    {
+      "id": 76,
+      "question": "What’s included in Upstream’s marketing package for listing?",
+      "accuracy": 5,
+      "completeness": 2,
+      "helpfulness": 2,
+      "hallucination": false,
+      "reasoning": "The response accurately states the $100k IR value included in the marketing package, which is correct. However, it's significantly incomplete as it omits the entire Media Community list (IBN, Mission Matters, New to the Street, ADVFN, The Average Joe, Spotlight Growth) that's part of the marketing package. This makes it only slightly helpful since a user asking about what's included would expect to see the full scope of benefits, not just the monetary value."
+    },
+    {
+      "id": 77,
+      "question": "WHAT IS A DIGITAL COUPON?",
+      "accuracy": 4,
+      "completeness": 2,
+      "helpfulness": 3,
+      "hallucination": false,
+      "reasoning": "The response is mostly accurate - correctly identifies digital coupons as redeemable NFT collectibles awarded by issuers, mentions shareholder experience with products, and trading on Upstream's market. However, it has completeness issues, missing key details like: one per shareholder regardless of shares owned, record date mechanism, ERC-721 standard, revenue potential for issuers, and important disclaimers about no royalties/equity/dividends. The response is moderately helpful as it gives a basic understanding but lacks comprehensive detail a user might need."
+    },
+    {
+      "id": 79,
+      "question": "HOW DO I REDEEM A DIGITAL COUPON?",
+      "accuracy": 3,
+      "completeness": 2,
+      "helpfulness": 3,
+      "reasoning": "The response captures the basic redemption flow but has significant gaps and inaccuracies. It correctly mentions opening Upstream, finding collectibles, tapping redeem, and getting a redemption code. However, it misses the prerequisite step of checking your portfolio first, omits the specific navigation path (Investor > Collectible > Redeem), fails to mention the coupon is removed from portfolio after redemption, and doesn't explain how to find the code later in Message Center. The phrase 'Provide this code to the Issuer on Upstream's regulated market' adds unsupported detail about where/how to provide the code, constituting a hallucination.",
+      "hallucination": true
+    },
+    {
+      "id": 80,
+      "question": "How do I dual list on Upstream?",
+      "accuracy": 2,
+      "completeness": 4,
+      "helpfulness": 3,
+      "helpfulness_reasoning": "The response provides a structured answer with actionable steps, but includes fabricated details that could mislead users.",
+      "hallucination": true,
+      "reasoning": "The response correctly identifies the two ways to get started (Get Listed page or email hello@upstream.exchange) and mentions accessing a global investor base. However, it contains significant fabricated information not in the source: the '30 days to complete' timeframe, details about trading 'using an app from anywhere in the world', and claims about Upstream being 'regulated and licensed' and 'part of the MERJ group'. These specific details have no basis in the source material."
+    },
+    {
+      "id": 81,
+      "question": "What does Upstream provide companies wishing to dual list?",
+      "accuracy": 4,
+      "completeness": 4,
+      "helpfulness": 5,
+      "helpfulness_reasoning": "The response directly answers the user's question with a clear, well-organized list of what Upstream provides to companies wanting to dual list. The formatting with bullet points makes it easy to read and understand.",
+      "hallucination": false,
+      "reasoning": "The response accurately captures the key benefits Upstream provides: international investor access via app, potential increase in trading volume, access to new capital, and association with MERJ's regulated status. One minor accuracy issue: it states 'increased' volume as fact rather than 'potential increase' as in the source. Completeness is strong but missing the specific '30 days' timeframe detail. No hallucinations - all claims are supported by the source material."
+    },
+    {
+      "id": 82,
+      "question": "What is an IPO?",
+      "accuracy": 5,
+      "completeness": 3,
+      "helpfulness": 4,
+      "hallucination": true,
+      "reasoning": "The response is factually accurate in defining IPOs and mentioning trading on exchanges like Upstream/MERJ. However, it's incomplete as it omits the important restriction that U.S. persons may not invest in IPOs on Upstream, and doesn't mention other major exchanges like LSE or TSE. The response is quite helpful for understanding what an IPO is. There is a minor hallucination - the phrase 'It allows the company to raise money by selling its shares to investors' adds explanatory detail not explicitly stated in the source material, though this represents a reasonable inference about IPO purposes."
+    },
+    {
+      "id": 83,
+      "question": "What makes Upstream IPOs unique?",
+      "accuracy": 2,
+      "completeness": 3,
+      "helpfulness": 2,
+      "hallucination": true,
+      "reasoning": "The response correctly identifies that investors can order shares before IPO closes, which is supported by the source. However, it contains two major fabricated claims not found in the source material: that securities are 'unrestricted and can be traded the next day' and that 'U.S. persons cannot trade on Upstream.' These hallucinations significantly impact accuracy and helpfulness. Completeness is moderate as it captures one key differentiator but misses the comparison with other trading apps that only allow orders for when trading begins."
+    },
+    {
+      "id": 84,
+      "question": "Why did I not get my full indication?",
+      "accuracy": 5,
+      "completeness": 3,
+      "helpfulness": 4,
+      "hallucination": false,
+      "reasoning": "The response is fully accurate - it correctly explains that high demand led to pro-rata allocation where users receive only a portion of requested shares. It covers the key mechanism but misses some context like Upstream's broader goal of democratizing IPO access and that unspent funds get unblocked. Very helpful for answering the specific question about why they didn't get their full indication. No fabricated information present."
+    },
+    {
+      "id": 86,
+      "question": "How long does it take for trades to settle on Upstream?",
+      "accuracy": 2,
+      "completeness": 2,
+      "helpfulness": 2,
+      "hallucination": false,
+      "reasoning": "The response reverses the correct information from the source. It states trades settle 'instantly for IPOs and immediately upon IPO close for other securities' when the source says the opposite: secondary market trades settle instantly, while IPO trades settle upon IPO close. This major factual error significantly reduces accuracy. The response also omits important details about fund withdrawal timing and trading requirements, making it incomplete and only minimally helpful to users seeking comprehensive settlement information."
+    },
+    {
+      "id": 89,
+      "question": "How do I participate in a spinoff share distribution?",
+      "accuracy": 5,
+      "completeness": 3,
+      "helpfulness": 3,
+      "hallucination": false,
+      "reasoning": "The response is fully accurate - everything stated is directly from the source material. However, it omits important information about U.S. persons' limitations (they can claim but not deposit/trade shares) and the reference to visiting the issuer's investor page. The response is moderately helpful as it provides the basic process for non-U.S. shareholders but leaves out crucial context that could affect user expectations."
+    },
+    {
+      "id": 90,
+      "question": "How do I request my spinoff share distribution?",
+      "accuracy": 4,
+      "completeness": 3,
+      "helpfulness": 4,
+      "hallucination": true,
+      "reasoning": "The response is mostly accurate and covers the key steps for requesting spinoff shares. However, it contains a hallucination by stating 'Non-U.S. shareholders can download the Upstream app and complete KYC identity verification' - the source never mentions non-U.S. shareholders or downloading the app. The response misses some details like the spinoff ratio explanation, verification email process, 5 business day timeline, and that allocations don't begin until distribution date. Despite these gaps, it provides the essential steps users need to follow, making it quite helpful overall."
+    },
+    {
+      "id": 92,
+      "question": "What is a Stock Warrant?",
+      "accuracy": 5,
+      "completeness": 4,
+      "helpfulness": 4,
+      "hallucination": false,
+      "reasoning": "The response accurately captures the core definition of a stock warrant and correctly explains that shares come directly from the company when exercised. It covers the main points but omits the detail about warrants being issued directly by the company and the note about Upstream Long Call Options operating the same way. No fabricated information is present. The response would be helpful to users seeking a basic understanding of stock warrants."
+    },
+    {
+      "id": 93,
+      "question": "What is Options Trading?",
+      "accuracy": 4,
+      "completeness": 2,
+      "helpfulness": 3,
+      "hallucination": true,
+      "reasoning": "The response accurately captures basic concepts about options trading from the source material, including the right but no obligation aspect, premium payments, and general strategy concepts. However, it has significant completeness gaps - missing key components like strike price, expiration date, call/put distinctions, contract size, and specific Upstream features. The response contains hallucinated information not found in the source: 'Options strategies can benefit from directional moves or from stock prices staying within a defined range' and the entire 'Collar Strategy' definition. While the basic information provided would be moderately helpful to a user seeking an introduction to options trading, the gaps and fabricated content limit its overall value."
+    },
+    {
+      "id": 94,
+      "question": "What Options trading instruments does Upstream support?",
+      "accuracy": 5,
+      "completeness": 2,
+      "helpfulness": 3,
+      "hallucination": false,
+      "reasoning": "The response accurately lists the four supported options instruments (Long Call, Long Put, Covered Call, Short Put) from the source material. However, it's incomplete as it omits important context about naked options restrictions, margin trading restrictions, and immediate settlement upon exercise. The response is moderately helpful as it directly answers what was asked, but lacks the fuller context that would make it more useful to traders."
+    },
+    {
+      "id": 95,
+      "question": "What Warrants trading instrument does Upstream support?",
+      "accuracy": 2,
+      "completeness": 2,
+      "helpfulness": 2,
+      "hallucination": true,
+      "reasoning": "The response contains significant inaccuracies and fabrications. While it correctly mentions Long Call as a warrant type, it incorrectly describes the mechanics (buying when price falls below strike vs. speculating on rise above strike). More critically, it fabricates 'Short Put' as a second warrant type, which doesn't exist in the source material. The source only mentions Long Call and explicitly states Upstream doesn't permit naked option selling. The response misses key information about immediate settlement and trading restrictions."
+    },
+    {
+      "id": 97,
+      "question": "What’s a Long Call (Option Holder)?",
+      "accuracy": 5,
+      "completeness": 2,
+      "helpfulness": 3,
+      "hallucination": false,
+      "reasoning": "The response is factually accurate - all claims about long calls being bullish, risk-defined, having limited risk (premium) and unlimited profit potential are correct. However, it covers only basic overview information and omits substantial content including setup details, payoff specifics, exit strategies, and hedging. The response provides a helpful but basic introduction that would give a user fundamental understanding but lacks the comprehensive detail available in the source material."
+    },
+    {
+      "id": 98,
+      "question": "What’s a Long Put (Option Holder)?",
+      "accuracy": 5,
+      "completeness": 3,
+      "helpfulness": 4,
+      "hallucination": false,
+      "reasoning": "The response is fully accurate - correctly defines long puts as single-leg options giving the right to sell at strike price, mentions limited risk to premium cost, and unlimited profit potential until stock reaches zero. However, it's incomplete as it omits key information like market outlook, setup process, exit strategies, and hedging. Despite the brevity, it's quite helpful for a user wanting a basic understanding of what a long put is, covering the essential definition and key risk/reward characteristics."
+    },
+    {
+      "id": 100,
+      "question": "What’s a Short Put (Option Holder)?",
+      "accuracy": 4,
+      "completeness": 2,
+      "helpfulness": 2,
+      "helpfulness_reasoning": "The response provides accurate but very basic information that doesn't adequately address what the user likely wants to know about short puts",
+      "hallucination": false,
+      "reasoning": "The response is factually accurate - it correctly states that a short put is a single-leg bullish strategy with undefined risk and limited profit potential, and accurately describes it as a leveraged alternative to buying stock with profit limited to credit received. However, it's quite incomplete, missing key information like market outlook, setup process, payoff structure, entry/exit mechanics, and assignment risk. The response is only slightly helpful as it provides very basic facts but doesn't give the user a comprehensive understanding of short puts. There are no hallucinations - all statements are supported by the source material."
+    },
+    {
+      "id": 101,
+      "question": "What are Options Strategies?",
+      "accuracy": 5,
+      "completeness": 3,
+      "helpfulness": 4,
+      "hallucination": false,
+      "reasoning": "The response is fully accurate - all statements about options strategies, their purposes, and the two examples (Married Puts and Collar) are correct and directly supported by the source material. However, it's incomplete as it omits the three primary reasons for trading options (hedge, generate income, speculate) and provides minimal detail about the strategies. Despite this, it's very helpful as it gives a clear, concise answer to what options strategies are with concrete examples, which would satisfy most users asking this introductory question."
+    },
+    {
+      "id": 102,
+      "question": "What are Market Pools?",
+      "accuracy": 4,
+      "completeness": 3,
+      "helpfulness": 4,
+      "hallucination": true,
+      "reasoning": "The response accurately explains what Market Pools are - liquidity mechanisms where traders deposit securities and USD to serve as counterparties with guaranteed liquidity and discoverable pricing. However, it contains a significant hallucination by directing users to https://trader.upstream.exchange/marketdata for price evaluation, which is not mentioned anywhere in the source material. The completeness is moderate as it covers the core concept but misses several key details like withdrawal flexibility, balance fluctuations, and management under the 'Investor' tab. Despite the hallucination, it remains helpful for understanding the basic concept of Market Pools."
+    },
+    {
+      "id": 103,
+      "question": "What happens to my shares when I deposit them into a Market Pool?",
+      "accuracy": 4,
+      "completeness": 3,
+      "helpfulness": 4,
+      "hallucination": true,
+      "reasoning": "The response correctly states that deposited shares remain owned by the MP contributor and cannot be offered for sale in the Upstream order book. However, it contains hallucinated information about not being able to use 'this money' to buy securities or withdraw it - the source material doesn't mention money, buying securities, or withdrawal restrictions. The response misses the important detail about liens being placed on shares to prevent double-selling. Despite the hallucination, it's still helpful as it addresses the core question about what happens to deposited shares."
+    },
+    {
+      "id": 104,
+      "question": "What happens to my money when I deposit it into a Market Pool?",
+      "accuracy": 5,
+      "completeness": 4,
+      "helpfulness": 5,
+      "hallucination": false,
+      "reasoning": "The response accurately captures all key facts: lien placement, prevention of double-spending, inability to use deposited funds for purchases/withdrawals, reduction in available balance, and unchanged overall balance until execution. It's missing only the minor detail about money remaining owned by the MP contributor, but covers all essential information a user would need to understand what happens to their deposit. Very helpful for answering the user's question."
+    },
+    {
+      "id": 108,
+      "question": "How do I evaluate the price my trade would get when a Market Pool is the counterparty?",
+      "accuracy": 2,
+      "completeness": 2,
+      "helpfulness": 2,
+      "hallucination": false,
+      "reasoning": "The response is mostly incorrect because it oversimplifies the process significantly. It suggests simply dividing CPF by Cash Volume, but the actual process requires first adding your trade amount to the existing volume, then dividing CPF by that sum. The response misses critical steps: visiting the market data service, searching for the ticker, the different formulas for buying vs selling, the specific examples, and information about fees. While it mentions the core concept of using CPF and volumes, the incorrect formula makes it unhelpful for users trying to calculate trade prices. No hallucination detected - all information comes from the source, just incorrectly simplified."
+    },
+    {
+      "id": 111,
+      "question": "What happens if I try to bulk-sell my shares into a Market Pool?",
+      "accuracy": 4,
+      "completeness": 3,
+      "helpfulness": 3,
+      "hallucination": false,
+      "reasoning": "The response accurately describes the core partial-fill and cancel mechanism and the price adjustment behavior. However, it's incomplete - missing key details like the specific -10% threshold trigger, the $0.01 price floor protection, the fact that buy orders continue to be accepted at the floor, and the important conclusion that all money in an MP can never be paid to a bulk-seller. The response is moderately helpful as it covers the basic concept but lacks the full operational details a user would need to understand the complete protection mechanism."
+    },
+    {
+      "id": 112,
+      "question": "What is impermanent loss?",
+      "accuracy": 1,
+      "completeness": 1,
+      "helpfulness": 1,
+      "hallucination": true,
+      "reasoning": "The response completely misdefines impermanent loss as 'a loss that cannot be recovered or reversed' when the source shows it's related to MP contributors having more shares and less money. Additionally, the entire section about 'Downside Risk and Auto-Liquidation for Short Sellers' appears nowhere in the source material and is completely fabricated. The response fails to accurately explain what impermanent loss is based on the provided source."
+    },
+    {
+      "id": 113,
+      "question": "What is a Collectible?",
+      "accuracy": 5,
+      "completeness": 3,
+      "helpfulness": 4,
+      "hallucination": false,
+      "reasoning": "The response is fully accurate, correctly defining collectibles and stating key criteria from the source. It covers about half the criteria (electronic delivery, non-fungible basis, marketplace auction) but omits token-identifier, foreign ownership restrictions, and transferability restrictions. Despite being incomplete, it provides a solid foundational understanding that would help most users grasp what a collectible is. No fabricated information is present."
+    },
+    {
+      "id": 114,
+      "question": "What is the Upstream Collectibles Marketplace?",
+      "accuracy": 4,
+      "completeness": 4,
+      "helpfulness": 4,
+      "hallucination": true,
+      "reasoning": "The response accurately captures the core elements from the source: secure platform, authenticated collectibles, and the buying/selling functionality. However, it adds unsupported claims about 'managing collectibles' and 'connecting with other collectors and enthusiasts' which aren't mentioned in the source material. The response is mostly complete and helpful for users wanting to understand the marketplace, but the additional claims constitute hallucination."
+    },
+    {
+      "id": 115,
+      "question": "What are Collectibles on Upstream versus Collectibles on other platforms?",
+      "accuracy": 3,
+      "completeness": 2,
+      "helpfulness": 2,
+      "helpfulness_reasoning": "The response acknowledges Upstream's unique Collectible integrations but admits uncertainty about key details and doesn't provide a meaningful comparison to other platforms as requested.",
+      "hallucination": true,
+      "reasoning": "The response contains hallucination by introducing the ERC-721 standard claim ('it suggests that Upstream Collectibles adhere to the Ethereum ERC-721 standard') which is not mentioned in the source material. The accuracy is partially correct as it mentions Upstream's unique integrations but loses points for the unsupported technical claim. Completeness is low because it doesn't provide the comparison requested and has major gaps in explaining what makes Upstream different. Helpfulness is low because the user specifically wanted to understand differences between platforms but got minimal useful information."
+    },
+    {
+      "id": 116,
+      "question": "What are Upstream's unique Collectible integrations?",
+      "accuracy": 2,
+      "completeness": 1,
+      "helpfulness": 1,
+      "hallucination": true,
+      "reasoning": "The response is mostly incorrect and contains hallucinated information. It claims Upstream's collectibles focus on 'integrating and maintaining specific NFT collections' which is not mentioned in the source. The source actually describes 8 specific types of collectibles (Phygital, Airdrop, Redeemable, Membership, Sponsorship, Donation, Ticket, and Geofence) with detailed use cases. The response completely misses all this content, making it unhelpful to the user who asked about Upstream's unique collectible integrations."
+    },
+    {
+      "id": 117,
+      "question": "How do I Claim a Collectible?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "reasoning": "The response accurately covers all three steps from the source material: downloading Upstream and signing up, the claiming process (tap investor, Collectible, claim, enter code), and mentions holding/trading options. All information is factually correct and directly supported by the source. The response is complete, covering every relevant step, and would be very helpful to a user trying to claim a collectible."
+    },
+    {
+      "id": 118,
+      "question": "How can I purchase a Collectible?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "reasoning": "The response accurately captures all steps from the source material in a well-organized format. It correctly outlines the process from downloading the app through purchasing and holding collectibles. All information is directly supported by the source, with no fabricated details. The step-by-step presentation makes it very helpful for users wanting to purchase collectibles."
+    },
+    {
+      "id": 120,
+      "question": "How can I redeem an Collectible?",
+      "accuracy": 3,
+      "completeness": 3,
+      "helpfulness": 3,
+      "hallucination": true,
+      "reasoning": "The response gets the basic redemption flow mostly right (open app, navigate to redeem, select ticker, tap redeem) but contains a significant error in Step 4 - it says to 'enter the unique redemption code in the message center' when actually the code is generated upon redemption and shown to the user, not entered by them. The response misses key information like prerequisites (must own the Collectible first), what to do with the redemption code (supply it to the creator), and where to find it later (message center for retrieval, not entry). The hallucination about entering a code that doesn't exist yet makes this partially inaccurate and potentially confusing."
+    },
+    {
+      "id": 121,
+      "question": "What are Collectible Transactions?",
+      "accuracy": 4,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": true,
+      "reasoning": "The response accurately covers all three types of Collectible Transactions from the source material with correct information. However, it contains a minor hallucination by adding 'by selecting the option in the app' for creating collectibles, which is not mentioned in the source. The response is complete, covering all key points, and very helpful with clear formatting and explanations that would assist users in understanding Collectible Transactions."
+    },
+    {
+      "id": 122,
+      "question": "How can I sell a Collectible?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "reasoning": "The response accurately follows all steps from the source material with only minor paraphrasing (e.g., 'minimum sell price acceptable to you, as seller' simplified to 'minimum sell price'). It covers all key information including the selling process, notification system, and options for unsold collectibles. The response is well-structured and would effectively help users complete the task. No fabricated information is present."
+    },
+    {
+      "id": 123,
+      "question": "What is a collectible auction?",
+      "accuracy": 2,
+      "completeness": 2,
+      "helpfulness": 2,
+      "hallucination": true,
+      "reasoning": "The response contains several fabricated claims not in the source: 'Collectibles that they have already purchased', 'highest bid is the final price paid', and 'must review suitability and ownership objectives'. The source only explains bidding mechanics, not what a collectible auction fundamentally is. The response misses key details like bid cancellation restrictions and fund blocking while adding unsupported information."
+    },
+    {
+      "id": 124,
+      "question": "What if I am the highest bidder when the Collectible Auction closes?",
+      "accuracy": 2,
+      "completeness": 2,
+      "helpfulness": 2,
+      "hallucination": true,
+      "reasoning": "The chatbot fundamentally misunderstands the context. The source material discusses sellers receiving payment when their reserve price is met, but the chatbot treats this as if the user is a buyer who will 'be paid' for winning an auction. This creates a factually incorrect response. The chatbot also fails to address the core question about what happens when you're the highest bidder. While it correctly mentions no upper limit on bidding, the main content is wrong and unhelpful."
+    },
+    {
+      "id": 125,
+      "question": "What happens if nobody bids at or above my reserve price?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "reasoning": "The response accurately answers the user's question by correctly stating that unsold collectibles (those that don't meet reserve price) will appear in the Portfolio screen and can be re-auctioned at any time. It covers all relevant information from the source material and directly addresses what the user wanted to know. No fabricated information is present."
+    },
+    {
+      "id": 126,
+      "question": "Can I cancel an auction before the close?",
+      "accuracy": 2,
+      "completeness": 1,
+      "helpfulness": 1,
+      "hallucination": false,
+      "reasoning": "The chatbot correctly identifies that the passage doesn't directly address cancellation, but incorrectly concludes 'the answer is no' when it should acknowledge uncertainty. It completely misses the relevant information about auctions only closing on stated dates, which indirectly suggests no cancellation ability. The response is unhelpful as it fails to provide the available information that could help the user understand auction mechanics. No hallucination since it doesn't fabricate specific claims beyond the logical inference."
+    },
+    {
+      "id": 127,
+      "question": "How do I place a bid?",
+      "accuracy": 3,
+      "completeness": 4,
+      "helpfulness": 3,
+      "helpfulness_reasoning": "The response provides a step-by-step process but creates confusion with redundant/incorrect steps",
+      "hallucination": true,
+      "reasoning": "The response covers most key information but has accuracy issues with the sequence of steps. The source says to 'tap Bid and enter the maximum price', but the chatbot creates a confusing flow where you enter the price twice (steps 4 and 6) and has the bid button appearing twice (steps 5 and 7). The chatbot also adds unsupported details like selecting a 'Collectible tab' when the source mentions tapping a 'Collectible' label. These fabricated steps and the incorrect sequencing constitute hallucination, though the core bidding concept is covered."
+    },
+    {
+      "id": 128,
+      "question": "What is Upstream's digital rewards program?",
+      "accuracy": 2,
+      "completeness": 2,
+      "helpfulness": 2,
+      "hallucination": false,
+      "reasoning": "The response contains some accurate elements (creators launching collectibles, fans purchasing, free collectibles being gifted) but significantly misrepresents the process flow. It incorrectly states that 'fans then engage sponsors who can gift them free collectibles' when the source shows creators gift free collectibles to sponsors, not fans engaging sponsors. The response misses most of the key details including the 4-step process, the role of sponsors as buyers, creator outreach via email/social media, and delivery through the Upstream app. While not hallucinating new information, the confused explanation of roles and process makes it only marginally helpful to users."
+    },
+    {
+      "id": 129,
+      "question": "What is Upstream's Carbon Removal Program? Race Without A Trace ™",
+      "accuracy": 4,
+      "completeness": 2,
+      "helpfulness": 3,
+      "hallucination": true,
+      "reasoning": "The response accurately captures core elements like Frontier partnership, 1:1 carbon unit sales, digital racecar linking, and QR code scanning. However, it has major completeness gaps - missing blockchain receipts, 'My Cars' feature, fleet management, and the step-by-step process. Contains hallucination about 'investors' purchasing digital racecars when the source only mentions racers. The response provides a basic overview but lacks detail for full user understanding."
+    },
+    {
+      "id": 130,
+      "question": "Where can I read the full Terms and Conditions for Collectible Auctions?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "reasoning": "The response accurately provides the exact URL from the source material and correctly identifies it as the Upstream Participation Agreement containing the Terms and Conditions. It fully answers the user's question with the precise location where they can find what they're looking for. No information is fabricated - the response is entirely supported by the source material."
+    },
+    {
+      "id": 131,
+      "question": "What technical standard do Upstream Collectibles follow?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 4,
+      "hallucination": true,
+      "reasoning": "The core answer is perfectly accurate and complete - Upstream Collectibles do follow ERC-721. However, the response adds explanatory information about ERC-721 being 'a technical specification for non-fungible tokens (NFTs) that ensures their authenticity and transparency' which is not present in the source material. While this additional context is factually correct and helpful to users, it constitutes hallucination since it goes beyond what's provided in the source."
+    },
+    {
+      "id": 132,
+      "question": "How do I report objectionable Collectible media?",
+      "accuracy": 5,
+      "completeness": 4,
+      "helpfulness": 5,
+      "hallucination": false,
+      "reasoning": "The response is fully accurate, providing the correct contact email and process. It covers the key information but omits the detail about Upstream's 'sole discretion' in making decisions. However, it directly answers the user's question in a clear, actionable way that would help them resolve their issue."
+    },
+    {
+      "id": 133,
+      "question": "How do I report copyright infringements of Collectible media offered for auction?",
+      "accuracy": 4,
+      "completeness": 2,
+      "helpfulness": 3,
+      "hallucination": true,
+      "reasoning": "The response accurately captures the key requirements from the source (statement of ownership/authorization and accuracy declaration), but it's incomplete as it only covers 2 of the 4 requirements mentioned in the source material. The response contains hallucinated information not found in the source, specifically the email address 'servicedesk@upstream.exchange' and details about contacting them for auction reviews and withdrawals. This procedural information appears nowhere in the provided source material."
+    },
+    {
+      "id": 134,
+      "question": "When I own a Collectibles, what are my rights?",
+      "accuracy": 4,
+      "completeness": 2,
+      "helpfulness": 2,
+      "hallucination": false,
+      "reasoning": "The response is mostly accurate - it correctly states information about risks, suitability review requirements, and past performance disclaimers from the source. However, it fundamentally misses the point of the user's question about ownership rights and instead focuses on pre-purchase considerations and risks. The response provides accurate but irrelevant information, making it unhelpful for someone asking specifically about their rights as a current owner of Collectibles. No hallucination detected as all claims are supported by the source material."
+    },
+    {
+      "id": 136,
+      "question": "How can I “see” my exported Collectible in MetaMask?",
+      "accuracy": 4,
+      "completeness": 2,
+      "helpfulness": 2,
+      "hallucination": false,
+      "reasoning": "The response is accurate but extremely incomplete. It correctly states that users need to connect their Upstream Keystore to MetaMask, which is supported by the source. However, it omits all the crucial step-by-step details (clicking profile picture, choosing Import Account, selecting JSON file, browsing for Keystore file, entering password, clicking Import). While the high-level concept is right, the response provides insufficient detail to actually help a user complete the task."
+    },
+    {
+      "id": 137,
+      "question": "What might Upstream consider objectionable Collectible material?",
+      "accuracy": 1,
+      "completeness": 1,
+      "helpfulness": 1,
+      "hallucination": false,
+      "reasoning": "The chatbot incorrectly claims the context doesn't provide information about objectionable collectible material, when the source actually contains detailed criteria (racist/discriminatory content, violence/cruelty, obscene material, defamatory content, unlawful material, etc.). This is a complete refusal despite relevant information being available, resulting in zero helpfulness and completeness. However, no hallucination occurred since it made no fabricated claims."
+    },
+    {
+      "id": 138,
+      "question": "Are trades solicited on Upstream?",
+      "accuracy": 5,
+      "completeness": 3,
+      "helpfulness": 4,
+      "hallucination": false,
+      "reasoning": "The response correctly answers that trades are not solicited and accurately states that trades must be based on your own investing judgement, which directly matches the source material. However, it misses additional relevant context like the SEC compliance requirements for US investors and the detailed investment considerations mentioned in the source. Despite being incomplete, it provides a clear, direct answer that would adequately help most users understand Upstream's non-solicitation policy. No fabricated information is present."
+    },
+    {
+      "id": 139,
+      "question": "Who is Upstream’s Cash Custodian?",
+      "accuracy": 3,
+      "completeness": 3,
+      "helpfulness": 3,
+      "hallucination": true,
+      "reasoning": "The response correctly identifies Digital Trust as the Cash Custodian and its location in Las Vegas, NV. However, it contains significant hallucinations: it claims Digital Trust's 'primary function is to facilitate the Pay Me and I Pay processes' when the source shows these are Upstream app features, not custodian functions. The entire second paragraph about Upstream being a 'global stock trading app built on blockchain-powered Horizon platform' is completely fabricated - none of this information exists in the source material."
+    },
+    {
+      "id": 140,
+      "question": "What is a Prospectus?",
+      "accuracy": 4,
+      "completeness": 2,
+      "helpfulness": 4,
+      "helpfulness_reasoning": "Provides a clear, accessible definition that would help a user understand what a prospectus is",
+      "hallucination": true,
+      "reasoning": "The response correctly identifies that a prospectus provides detailed information about IPOs and protects against non-disclosure claims. However, it adds specific details not in the source (company history, financial situation, future plans, terms and conditions) and misses key information from the source about risk disclosures, company age, management experience/involvement, and capitalization details. The completeness score is low due to these significant omissions."
+    },
+    {
+      "id": 141,
+      "question": "What are the major differences between common and preferred stock?",
+      "accuracy": 2,
+      "completeness": 3,
+      "helpfulness": 2,
+      "hallucination": false,
+      "reasoning": "The response contains a major factual error - it states that common stockholders have greater claim to assets/earnings than preferred stockholders, which directly contradicts the source material. However, it correctly states that preferred stockholders receive higher/different dividends. It covers some key points from the source but the significant inaccuracy severely undermines its helpfulness to users."
+    },
+    {
+      "id": 142,
+      "question": "What is a PIPE, private placement or secondary offering?",
+      "accuracy": 2,
+      "completeness": 2,
+      "helpfulness": 2,
+      "hallucination": false,
+      "reasoning": "The response is mostly incorrect because it treats PIPE, private placement, and secondary offering as a single concept when they are three distinct financial instruments. The definition given only applies to PIPE. Major gaps exist as it omits the specific definitions of private placement (unregistered securities offering) and secondary offering (post-IPO share issuance). While the PIPE definition is accurate, the fundamental misunderstanding of the question structure makes this only slightly helpful to users seeking to understand these different concepts."
+    },
+    {
+      "id": 144,
+      "question": "What is an Unaccredited investor?",
+      "accuracy": 3,
+      "completeness": 2,
+      "helpfulness": 2,
+      "hallucination": true,
+      "reasoning": "The response correctly defines an unaccredited investor as someone not deemed 'accredited' (matching the source). However, it contains a significant hallucination by stating unaccredited investors 'are not eligible to trade securities on Upstream' - the source actually says 'U.S. persons may not trade' but doesn't restrict unaccredited investors specifically. The response also misses important context about high-growth private companies historically being reserved for the ultra-wealthy. While the core definition is accurate, the trading eligibility claim is fabricated and the response lacks helpful context."
+    },
+    {
+      "id": 145,
+      "question": "Where is Upstream located?",
+      "accuracy": 1,
+      "completeness": 1,
+      "helpfulness": 1,
+      "hallucination": true,
+      "reasoning": "The response is completely inaccurate - it treats an email address (servicedesk@upstream.exchange) as a physical location and adds unsupported claims that Upstream is a 'global stock trading app'. The source material only provides a support email address, not location information. The response fails to address that the source doesn't contain location information, making it unhelpful to the user asking about physical location."
+    },
+    {
+      "id": 146,
+      "question": "What annual & semi-annual disclosures are required?",
+      "accuracy": 1,
+      "completeness": 1,
+      "helpfulness": 1,
+      "hallucination": false,
+      "reasoning": "The chatbot simply lists document titles that appear to be from the source material, but completely fails to answer the user's question about what annual & semi-annual disclosures are actually required. While the response isn't factually incorrect or hallucinated, it provides no substantive information about disclosure requirements, making it unhelpful and incomplete despite being technically accurate in listing source documents."
+    },
+    {
+      "id": 148,
+      "question": "How do I know that I can trust Upstream with my assets?",
+      "accuracy": 4,
+      "completeness": 4,
+      "helpfulness": 4,
+      "hallucination": true,
+      "reasoning": "The response accurately conveys most key information from the source about MERJ's regulatory status and memberships, with minor typos ('Upstreem'). It covers the main trust-building elements well. However, it contains hallucinated content about investment risks and considerations that appears nowhere in the source material, making it a clear hallucination despite the otherwise solid response."
+    },
+    {
+      "id": 149,
+      "question": "How do I use my Upstream wallet on mainnet?",
+      "accuracy": 5,
+      "completeness": 2,
+      "helpfulness": 2,
+      "hallucination": false,
+      "reasoning": "The response is factually correct - it accurately states that you need to export your Upstream wallet and import it into Metamask to use it on Ethereum mainnet. However, it's extremely brief and missing all the detailed steps provided in the source material (the specific export process using 'Manage Signing Key' -> 'Export Signing Key', and the detailed Metamask import steps). While technically accurate, this high-level summary alone would not adequately help a user actually complete the process."
+    },
+    {
+      "id": 150,
+      "question": "Where can I find a breakdown of Upstream's fees?",
+      "accuracy": 4,
+      "completeness": 2,
+      "helpfulness": 3,
+      "hallucination": true,
+      "reasoning": "The response is mostly accurate for what it covers, but has significant completeness issues. It correctly states the securities trading fee (1%), collectible fees (0% buy, 2% sell), and auction fee ($1). However, it completely omits major fee categories like withdrawal/wire transfer fees, PayPal fees, funding fees, and USDC fees. The response contains hallucination in the 'Free Sign-Up' section where it mentions 'no minimum dollar amounts to maintain an account' - this specific claim about minimum dollar amounts is not found in the source material. The source only states 'no fees to maintain your account.' While moderately helpful for basic trading fees, it fails to provide the comprehensive fee breakdown the user requested."
+    },
+    {
+      "id": 151,
+      "question": "Where can I download the Upstream App?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "reasoning": "The response accurately states that Upstream can be downloaded from Apple App Store and Google Play, and correctly mentions that links are available on the website at upstream.exchange. All information directly matches the source material. The response fully covers all relevant information and would be extremely helpful to a user looking to download the app. No fabricated information is present."
+    },
+    {
+      "id": 156,
+      "question": "Can a stock lender recall their shares early on Upstream?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "reasoning": "The response correctly states that stock lenders cannot recall shares early on Upstream, directly matching the source material. It accurately explains that lenders must wait for the short seller to buy back shares or for the loan to expire. The response covers all key information from the source and provides a clear, helpful answer to the user's question. No fabricated information is present."
+    },
+    {
+      "id": 157,
+      "question": "What is the Borrower Margin requirement for short sellers?",
+      "accuracy": 4,
+      "completeness": 4,
+      "helpfulness": 4,
+      "hallucination": false,
+      "reasoning": "The response accurately states the 20% requirement and blocking conditions. It's missing the specific detail that the percentage is 'calculated from the cash proceeds of your short sale' but captures all other key information. The response directly answers the user's question about borrower margin requirements in a clear, helpful manner without adding unsupported information."
+    },
+    {
+      "id": 158,
+      "question": "What happens immediately after a short seller borrows shares?",
+      "accuracy": 5,
+      "completeness": 4,
+      "helpfulness": 5,
+      "hallucination": false,
+      "reasoning": "The response accurately captures that borrowed shares are automatically sold 'at market' into the Market Pool. It correctly explains this means selling at current market price. The only minor completeness gap is not explicitly mentioning this is a 'guaranteed sell execution,' but the core information is complete. Very helpful for users understanding the immediate consequence of borrowing shares. No hallucination - all claims are supported by the source material."
+    },
+    {
+      "id": 159,
+      "question": "What is the Downside Risk and Auto-Liquidation process for short sellers?",
+      "accuracy": 5,
+      "completeness": 5,
+      "helpfulness": 5,
+      "hallucination": false,
+      "reasoning": "The response accurately captures all key information from the source material: downside risk is not unlimited due to auto-liquidation, the 10% price rise trigger, automatic buy-in using initial proceeds plus 20% margin cash, and the worst-case loss of just under 20%. The response is well-organized with clear headings that directly address the user's question about both downside risk and auto-liquidation processes. All claims are fully supported by the source material with no fabricated information."
+    },
+    {
+      "id": 160,
+      "question": "How can a short seller mitigate downside risk?",
+      "accuracy": 3,
+      "completeness": 3,
+      "helpfulness": 3,
+      "hallucination": true,
+      "reasoning": "The response correctly mentions buying long call options and writing/selling put options, but inaccurately describes their purposes - it says both protect against upward movements when writing puts actually earns premium with obligation risk. The response also adds substantial unsupported information about auto-liquidation services and 10%/20% loss figures that aren't in the source material, constituting clear hallucination."
+    },
+    {
+      "id": 163,
+      "question": "How does Upstream guarantee the return of a lender's shares (no borrower-default risk)?",
+      "accuracy": 5,
+      "completeness": 4,
+      "helpfulness": 4,
+      "hallucination": false,
+      "reasoning": "The response is fully accurate, correctly explaining that Upstream guarantees share return through sufficient Market Pool depth and the 10% Short-Liquidation Trigger mechanism. It covers the core mechanism well but misses the initial condition that lending is only allowed when sufficient depth exists. The response directly answers the user's question about borrower-default risk protection in clear terms."
+    },
+    {
+      "id": 164,
+      "question": "What Upstream fees are charged during a short sale?",
+      "accuracy": 5,
+      "completeness": 4,
+      "helpfulness": 5,
+      "hallucination": false,
+      "reasoning": "The response accurately identifies the two fees charged during short sales: 1% on initial short sale proceeds and 1% on cover trades. It's factually correct and directly answers the user's question. Completeness is slightly reduced because it doesn't mention that lenders and short sellers aren't charged fees for offering/executing loan offers, but this omission doesn't affect the core answer about fees that ARE charged. The response is extremely helpful as it clearly and concisely addresses exactly what the user asked. No hallucination - all information comes directly from the source material."
+    },
+    {
+      "id": 4,
+      "question": "What is MERJ Exchange?",
+      "accuracy": 5,
+      "completeness": 3,
+      "helpfulness": 4,
+      "hallucination": true,
+      "reasoning": "The response accurately captures the core definition from the source material. However, it adds extensive membership information (WFE, ASEA, CoSSE, ANNA, OTC Markets qualification) that is not present in the source, constituting hallucination. It misses some source content about security tokens/digital assets expansion and the website reference, affecting completeness. Despite the hallucination, the response would be helpful to users seeking to understand what MERJ Exchange is."
+    },
+    {
+      "id": 9,
+      "question": "Can a U.S.-based investor trade on Upstream?",
+      "accuracy": 4,
+      "completeness": 5,
+      "helpfulness": 4,
+      "helpfulness_reasoning": "The response directly answers the user's question about trading while providing important clarifying details about what U.S. persons can and cannot do on the platform.",
+      "hallucination": false,
+      "reasoning": "The response correctly states that U.S. persons cannot trade securities on Upstream and accurately mentions they can engage with Collectibles. The opening 'No' is slightly imprecise since U.S. persons can trade Collectibles, but this is a minor interpretive issue rather than factual error. All information comes directly from the source material with no fabricated claims."
+    },
+    {
+      "id": 23,
+      "question": "Is USDC a cryptocurrency?",
+      "accuracy": 3,
+      "completeness": 5,
+      "helpfulness": 3,
+      "reasoning": "The response correctly answers 'Yes' to match the source material, achieving full completeness. However, it contains a confusing and circular statement about USDC being 'pegged to the price of USDC token' which is factually problematic - USDC is actually pegged to the US Dollar, not to itself. This additional explanation goes beyond the simple 'Yes' in the source material and introduces confusion, constituting a hallucination. The accuracy is partially correct due to the right answer but wrong explanation, and helpfulness is moderate since the core answer is right but the explanation could confuse users.",
+      "hallucination": true
+    },
+    {
+      "id": 29,
+      "question": "How are my USDC funds kept safe?",
+      "accuracy": 3,
+      "completeness": 2,
+      "helpfulness": 3,
+      "hallucination": true,
+      "reasoning": "The response contains some accurate information about balance thresholds and rebalancing, but makes unsupported claims like 'cannot be withdrawn by external parties' and 'safeguards to prevent hackers from taking advantage of vulnerabilities.' It misses critical security details like the 3-of-5 multisig requirement, the restriction to bridge-service wallet for initiations, and the audited/public nature of the code. The vague language about 'safeguards' without explaining the actual multisig mechanism makes it moderately helpful but incomplete."
+    },
+    {
+      "id": 30,
+      "question": "How long does it take for KYC identity verification to be verified?",
+      "accuracy": 5,
+      "completeness": 3,
+      "helpfulness": 4,
+      "hallucination": false,
+      "reasoning": "The response is fully accurate, directly quoting the source material about KYC approval times (15 minutes to 48 hours, Monday-Friday). However, it's incomplete as it omits the additional information about potential 2-week delays when more info is required or during high submission volumes. Despite this omission, it's still very helpful as it provides the core timeframe users need to know. No hallucination present - all information comes directly from the source."
+    },
+    {
+      "id": 39,
+      "question": "How do I disable Two-Factor Authentication?",
+      "accuracy": 5,
+      "completeness": 3,
+      "helpfulness": 4,
+      "hallucination": false,
+      "reasoning": "The response accurately provides the correct steps from the source material (click setting icon, tap 'Unlink Authenticator'). However, it misses the important security warning about disabling 2FA not being recommended. The format is clear and helpful for users wanting to perform this action, but the omission of the security caveat reduces completeness. No fabricated information is present."
+    },
+    {
+      "id": 66,
+      "question": "Does Upstream solicit trades?",
+      "accuracy": 5,
+      "completeness": 3,
+      "helpfulness": 4,
+      "hallucination": false,
+      "reasoning": "The response correctly states that Upstream does not solicit trades, which directly matches the source material. The explanation about trades being based on user's own judgment is a reasonable paraphrase of the source's statement that users 'make their own trading and investment decisions.' However, completeness is moderate as it doesn't mention the broader context about no investment advice, recommendations, or endorsements. The response is helpful for answering the specific question asked, though it could be more comprehensive."
+    },
+    {
+      "id": 109,
+      "question": "Can Upstreams’ trading circuit-breakers affect Market Pool trades?",
+      "accuracy": 2,
+      "completeness": 3,
+      "helpfulness": 2,
+      "hallucination": false,
+      "reasoning": "The response contains a fundamental error in answering 'Yes' to whether circuit-breakers affect Market Pool trades, when the source clearly states that only non-MP counterparty orders trigger circuit-breakers and MP trades have special protections. However, the chatbot does include the correct technical details about the 10% protection mechanism. It covers some key points but misses the crucial detail about partial fills and order cancellation. The contradictory answer makes it confusing and not very helpful to users."
+    },
+    {
+      "id": 110,
+      "question": "What happens if I try to buy all the shares inside a Market Pool?",
+      "accuracy": 4,
+      "completeness": 2,
+      "helpfulness": 3,
+      "hallucination": false,
+      "reasoning": "The response is mostly accurate - it correctly states that prices increase due to the constant-product formula and that all shares cannot be purchased due to price approaching infinity. However, it has major completeness gaps by omitting the key mechanism: the automatic partial-fill and cancel system that triggers at +10% price movement. This missing detail significantly reduces helpfulness as users don't understand HOW the system prevents complete purchases. No hallucination detected - all claims are supported by source material."
+    },
+    {
+      "id": 135,
+      "question": "How do I export my Collectible, is not in the list, it cannot be exported.",
+      "accuracy": 2,
+      "completeness": 2,
+      "helpfulness": 2,
+      "hallucination": true,
+      "reasoning": "The response contains a significant hallucination by claiming the collectible 'cannot be exported because it is not listed in the supported export address' - this concept doesn't exist in the source material. The response does correctly mention the 1000 ETH transfer requirement and Upstream Wallet address, but misses critical details like the specific transfer address, timestamp, and correct contact email (servicedesk vs support). The fabricated explanation about 'supported export address' makes this misleading rather than helpful."
+    },
+    {
+      "id": 147,
+      "question": "WHAT IS UPSTREAM Advertising?",
+      "accuracy": 4,
+      "completeness": 2,
+      "helpfulness": 3,
+      "hallucination": true,
+      "reasoning": "The response accurately captures that Upstream is a decentralized Web3 advertising service that gives users control over their data and doesn't share personal information with advertisers. However, it has major completeness gaps - missing key details about user payment for attention, wallet-based anonymity, ad threshold settings, and the broader context about data collection problems. The hallucination flag is triggered by the unsupported claim about 'curated ads based on their interests' - the source mentions curated ads but based on payment thresholds, not user interests. The response is moderately helpful as a basic overview but lacks the specific mechanics that would fully answer the user's question."
+    },
+    {
+      "id": 152,
+      "question": "Is Short Selling Allowsed on Upstream?",
+      "accuracy": 3,
+      "completeness": 4,
+      "helpfulness": 4,
+      "hallucination": true,
+      "reasoning": "The core claim that short selling is allowed but not naked short selling is accurate and complete based on the source. However, the response adds unsupported information about 'selling shares you don't own or haven't borrowed' and 'cannot be simultaneously long and short the same stock' which are not in the source material. Despite the hallucination, the response would be helpful to users as it directly answers their question with the key information."
+    },
+    {
+      "id": 153,
+      "question": "What is Short Selling on Upstream?",
+      "accuracy": 1,
+      "completeness": 1,
+      "helpfulness": 1,
+      "hallucination": true,
+      "reasoning": "The response starts correctly by defining short selling as borrowing securities and selling them in anticipation of price decline. However, it then makes a completely false and contradictory claim that 'short selling is not allowed on Upstream because it is not a naked short position,' which directly contradicts the source material that explains how short selling works on Upstream and its benefits. This fabricated restriction is not mentioned anywhere in the source. The response also misses all the key information about short selling's benefits on Upstream (price discovery, market efficiency, liquidity via Market Pools, portfolio management). The hallucinated incorrect information makes this response actively misleading rather than helpful."
+    },
+    {
+      "id": 162,
+      "question": "What is Upstream's Alternative Uptick Rule?",
+      "accuracy": 1,
+      "completeness": 2,
+      "helpfulness": 1,
+      "hallucination": true,
+      "reasoning": "The response completely misrepresents the Alternative Uptick Rule. The source states that Upstream PREVENTS short selling during circuit breaker periods, but the chatbot incorrectly claims the rule ALLOWS short selling during these periods - this is the exact opposite. While it correctly mentions the 10% decline trigger and circuit breaker delay duration, the fundamental misunderstanding of what the rule does makes it factually wrong and unhelpful. The response also omits key context about Upstream not restricting short selling during normal price declines."
+    },
+    {
+      "id": 1,
+      "question": "What is Upstream?",
+      "accuracy": 5,
+      "completeness": 3,
+      "helpfulness": 4,
+      "hallucination": false,
+      "reasoning": "The response is fully accurate, containing only information directly supported by the source material. It covers the key aspects of what Upstream is (global stock trading app, blockchain-powered, tradeable assets, funding methods) but omits some details like being part of MERJ Exchange and the specific Horizon technology specifications. Despite these omissions, it provides a helpful overview that would adequately answer a user's basic question about what Upstream is. No hallucination detected - all claims are supported by the source."
+    },
+    {
+      "id": 6,
+      "question": "Who can trade on Upstream?",
+      "accuracy": 4,
+      "completeness": 2,
+      "helpfulness": 2,
+      "hallucination": false,
+      "reasoning": "The response is mostly accurate - it correctly states that U.S. persons cannot trade securities but can participate in Collectibles. However, it has major completeness gaps, missing information about age requirements, custodial accounts for minors, Canadian restrictions, general eligibility criteria, and funding requirements. The response only addresses one restriction (U.S. persons) when the question asks broadly about who can trade. No hallucination detected as the claims made are supported by the source material."
+    },
+    {
+      "id": 14,
+      "question": "How do I open an Upstream account?",
+      "accuracy": 3,
+      "completeness": 2,
+      "helpfulness": 2,
+      "hallucination": true,
+      "reasoning": "The response contains several inaccuracies and fabricated details. It incorrectly states that KYC verification is in the 'top right of the navigation menu' when the source says it's under the 'profile icon'. It falsely claims you can 'claim your free Collectible by tapping on the Collectible icon in the top right' and that you 'hold or trade Collectibles in the Orders tab' - neither of these details exist in the source. The response also presents optional steps (KYC, funding, purchasing) as required parts of opening an account, when the source clearly shows these are additional steps for specific purposes. While it correctly mentions downloading the app and signing up, the fabricated navigation details and misrepresented workflow constitute hallucination."
+    },
+    {
+      "id": 15,
+      "question": "When would you require my identification?",
+      "accuracy": 5,
+      "completeness": 3,
+      "helpfulness": 4,
+      "hallucination": false,
+      "reasoning": "The response is fully accurate - it correctly states that KYC is required when the account balance reaches $500 or more. However, it's not completely comprehensive as it doesn't mention the specific documents needed, the regulatory reasons, or what capabilities are unlocked after completion. The response is still very helpful as it directly answers the user's question about when identification would be required. No hallucination detected - all information comes directly from the source material."
+    },
+    {
+      "id": 26,
+      "question": "How do I fund my Upstream account with USDT?",
+      "accuracy": 5,
+      "completeness": 3,
+      "helpfulness": 4,
+      "hallucination": false,
+      "reasoning": "The response accurately presents the 4-step process exactly as outlined in the source material. However, it omits important context like the requirement that the Ethereum mainnet sender address must match the Upstream app user address, details about finding the Upstream address (0x followed by 40 characters), and background information about the bridge smart contract. No hallucination detected - all information comes directly from the source."
+    },
+    {
+      "id": 28,
+      "question": "HOW DO I WITHDRAW DIGITAL CURRENCY FUNDS?",
+      "accuracy": 3,
+      "completeness": 2,
+      "helpfulness": 2,
+      "hallucination": true,
+      "reasoning": "The response contains hallucinated information not in the source: it claims users need to 'create a Metamask wallet and connect it to your Upstream app' and mentions receiving 'a notification when funds are transferred.' The source actually states users should 'export Upstream app wallet & import to Metamask.' The response also omits critical eligibility requirements (only USDC/USDT-funded users can withdraw digital currency), the multi-signature approval process, gas fee requirements, and specific steps like tapping profile icon and 'Manage Account.' While some basic steps are correct, the inaccuracies and major omissions significantly limit its usefulness."
+    },
+    {
+      "id": 33,
+      "question": "Is there a minimum funding requirement?",
+      "accuracy": 3,
+      "completeness": 4,
+      "helpfulness": 3,
+      "hallucination": true,
+      "reasoning": "The response correctly states there are no minimum funding requirements, but contains a critical error in the second sentence where it says 'maximum amount you can trade in an amount greater than your account is funded' - this is grammatically broken and contradicts the source which states you 'may not trade in an amount greater than your account is funded.' This misstatement constitutes hallucination as it provides incorrect information not supported by the source. The response covers the main points but the error significantly impacts accuracy and helpfulness."
+    },
+    {
+      "id": 34,
+      "question": "How do I withdraw funds from my Upstream account?",
+      "accuracy": 3,
+      "completeness": 3,
+      "helpfulness": 3,
+      "hallucination": false,
+      "reasoning": "The response accurately covers the basic withdrawal steps and mentions PayPal/banking partner processing, but contains a significant error about when PayPal vs API processing occurs (states PayPal is used when amount doesn't exceed original deposit, but source says withdrawals ABOVE that amount use the API). Missing important details like processing times, security note about bank account restrictions, and some processing details. No hallucinations detected - all information has basis in source material, just some inaccuracy in explanation."
+    },
+    {
+      "id": 37,
+      "question": "What is a Signing Key and why is it so important?",
+      "accuracy": 4,
+      "completeness": 3,
+      "helpfulness": 4,
+      "hallucination": false,
+      "reasoning": "The response accurately explains what a Signing Key is and its importance in the non-custodial environment. It correctly covers the key concepts like password protection, public/private keys, device control, and backup necessity. However, it misses some specific details from the source like the ATM pin code analogy, biometric unlocking, and the specific transaction types (buy, sell, bid, auction, withdrawal). No hallucination detected - all claims are supported by the source material."
+    },
+    {
+      "id": 49,
+      "question": "How are the securities in my Upstream account protected?",
+      "accuracy": 2,
+      "completeness": 2,
+      "helpfulness": 2,
+      "hallucination": true,
+      "reasoning": "The response contains hallucination by stating 'The company has a dedicated team that will assist you' when the source says 'Upstream will assist you' - it's Upstream, not the issuing company, that provides this assistance. The response also omits critical information about market value not being insured, market risks, and U.S. person restrictions. It oversimplifies the protection mechanisms and misattributes the recovery process."
+    },
+    {
+      "id": 52,
+      "question": "Where do I go on the app to buy and sell securities from the market?",
+      "accuracy": 4,
+      "completeness": 3,
+      "helpfulness": 3,
+      "hallucination": true,
+      "reasoning": "The response correctly identifies navigating to the market and selecting securities, which aligns with the source. However, it contains a hallucination by referencing 'steps outlined in the documentation' which is not mentioned in the source material. The response misses some details like viewing current share price, share history, and orderbook functionality, making it incomplete but still moderately helpful for basic navigation."
+    },
+    {
+      "id": 63,
+      "question": "How can I see the blockchain details for my orders?",
+      "accuracy": 4,
+      "completeness": 3,
+      "helpfulness": 4,
+      "hallucination": false,
+      "reasoning": "The response is mostly accurate and covers the main steps (Orders tab, Order ID/Trade Reports links, Dora block explorer, types of details shown). However, it misses some specifics like the 'All' sub-tab and the important privacy note about public blockchain visibility vs. account anonymity. No hallucination detected - all information comes from the source material."
+    },
+    {
+      "id": 68,
+      "question": "What is a dividend?",
+      "accuracy": 3,
+      "completeness": 3,
+      "helpfulness": 2,
+      "hallucination": true,
+      "reasoning": "The basic definition of dividend is correct and matches the source. However, the response contains a clear hallucination: it claims dividends 'are received by the buyers of short-sold shares,' which is not mentioned anywhere in the source material and appears to be fabricated information about short-selling. The response covers the basic definition but misses that Upstream specifically manages U.S. Dollar dividends, and the added incorrect information makes it potentially confusing for users."
+    },
+    {
+      "id": 78,
+      "question": "HOW DO I CLAIM A DIGITAL COUPON?",
+      "accuracy": 5,
+      "completeness": 3,
+      "helpfulness": 4,
+      "hallucination": false,
+      "reasoning": "The response is fully accurate with all steps correctly stated from the source material. However, it misses several important details: the eligibility requirement (shareholders as of record date), KYC review timeframe (48 hours Monday-Friday), additional options after claiming (sell or redeem), and the brokerage account statement verification process. Despite these omissions, the core steps are clear and would help most users complete the claiming process. No hallucination detected - all information provided is directly supported by the source."
+    },
+    {
+      "id": 85,
+      "question": "When can I trade following the IPO?",
+      "accuracy": 5,
+      "completeness": 3,
+      "helpfulness": 4,
+      "hallucination": false,
+      "reasoning": "The response accurately states that trading is available the next trading day following the IPO close, which directly matches the source material. However, it's incomplete as it omits the important restriction that U.S. persons may not trade securities on Upstream, and doesn't mention that these are registered, unrestricted securities. Despite the incompleteness, it's helpful as it directly answers the user's specific question about timing. No hallucination detected - all information provided is supported by the source."
+    },
+    {
+      "id": 87,
+      "question": "How long does it take for IPO orders to settle on Upstream?",
+      "accuracy": 5,
+      "completeness": 4,
+      "helpfulness": 5,
+      "hallucination": false,
+      "reasoning": "The response is fully accurate, directly stating that IPO orders settle immediately upon IPO close, which matches the source exactly. It's extremely helpful as it directly answers the user's question. Completeness is rated 4 rather than 5 because while it answers the core question perfectly, it doesn't mention related context like funding requirements or U.S. person restrictions, though these weren't directly asked about. No hallucination detected - all claims are supported by the source material."
+    },
+    {
+      "id": 88,
+      "question": "What is a spinoff share distribution?",
+      "accuracy": 5,
+      "completeness": 4,
+      "helpfulness": 4,
+      "hallucination": false,
+      "reasoning": "The response is factually accurate and directly answers the user's question about spinoff share distributions. It covers the key elements: parent company distributing subsidiary shares to shareholders, record date requirements, and equal proportion distribution. Minor completeness deduction for not mentioning that a spinoff creates a 'new company' or the specific timing detail about shares needing to be held '2 days or more' prior to record date. No hallucination detected - all information comes directly from the source material."
+    },
+    {
+      "id": 91,
+      "question": "When can I trade my shares if they’re restricted?",
+      "accuracy": 4,
+      "completeness": 3,
+      "helpfulness": 4,
+      "hallucination": true,
+      "reasoning": "The response correctly states the six-month timeframe after share distribution date, but contains hallucination when it claims 'the exact date may vary depending on the specific requirements of the company.' The source only mentions that certain requirements must be met for eligibility, not that company-specific requirements affect the timing. The response misses the important detail about eligibility requirements needing to be met."
+    },
+    {
+      "id": 96,
+      "question": "What are the fees for trading Options on Upstream?",
+      "accuracy": 5,
+      "completeness": 4,
+      "helpfulness": 4,
+      "hallucination": false,
+      "reasoning": "The response accurately covers all four fee scenarios mentioned in the source material with correct percentages and conditions. It's missing the explicit mention that writing/offering options contracts has no fee, which prevents full completeness. No hallucination detected - all claims are directly supported by the source material. The response is well-structured and would help users understand the fee structure."
+    },
+    {
+      "id": 99,
+      "question": "What’s a Covered Call (Option Holder)?",
+      "accuracy": 5,
+      "completeness": 3,
+      "helpfulness": 3,
+      "hallucination": false,
+      "reasoning": "The response is factually accurate, correctly defining covered calls as combining long stock with short call options, requiring 100+ shares, and being used for income generation and cost basis reduction. However, it covers only basic information and omits many details from the source like risk characteristics, assignment risks, dividend considerations, exit strategies, and hedging options. No hallucination detected - all claims are supported by the source material."
+    },
+    {
+      "id": 105,
+      "question": "Do Market Pools pay liquidity providers a fee?",
+      "accuracy": 5,
+      "completeness": 3,
+      "helpfulness": 4,
+      "hallucination": false,
+      "reasoning": "The response is fully accurate - it correctly states that Market Pools pay liquidity providers a fee of 0.16% of trade value, distributed pro rata. However, it's incomplete as it omits the helpful examples and information about viewing accrued fees in the app. Despite this, it directly answers the user's question and would be quite helpful for someone seeking this basic information. No hallucination detected - all claims are directly supported by the source material."
+    },
+    {
+      "id": 106,
+      "question": "How can I withdraw my Market Pool earnings?",
+      "accuracy": 2,
+      "completeness": 3,
+      "helpfulness": 2,
+      "reasoning": "The response correctly mentions removing the entire MP contribution from the 'Investor' tab and 'Market Pools', but contains a significant error by stating 'remove your account' instead of accessing the 'Remove from Pool' screen. It also omits the key detail that earnings are withdrawn from the US Dollar account. Hallucination detected due to the fabricated 'remove your account' instruction which has no basis in the source material.",
+      "hallucination": true
+    },
+    {
+      "id": 107,
+      "question": "How does Market Pool trading work?",
+      "accuracy": 4,
+      "completeness": 2,
+      "helpfulness": 3,
+      "hallucination": true,
+      "reasoning": "The response accurately captures key concepts like MPs serving as counterparties, 'best price' determination, and how buying/selling affects prices. However, it contains hallucinated information about 'users depositing securities and US Dollars into a smart contract' and MPs offering 'freely discoverable pricing and guaranteed liquidity' - these specific claims are not in the source material. The response also has major completeness gaps, missing the core mathematical formula (x)*(y)=k and the detailed numerical examples that demonstrate how the pricing mechanism actually works."
+    },
+    {
+      "id": 119,
+      "question": "What’s a redeemable Collectible?",
+      "accuracy": 3,
+      "completeness": 2,
+      "helpfulness": 3,
+      "hallucination": true,
+      "reasoning": "The response captures some basic concepts correctly (redeemable collectibles allow redemption and can be held as collector's items) but misses key details like the burning/evolution process. It contains a significant hallucination by claiming redemption requires 'providing a unique redemption code to the Collectible creator' - this specific mechanism is not mentioned anywhere in the source material."
+    },
+    {
+      "id": 143,
+      "question": "What is a Registration Statement?",
+      "accuracy": 4,
+      "completeness": 4,
+      "helpfulness": 4,
+      "hallucination": true,
+      "reasoning": "The response accurately captures the core definition from the source material about Registration Statements being documents that disclose financial information and include a prospectus filed with regulators. However, it adds information not present in the source - specifically that the document 'provides transparency about the company's financial standing and intentions to investors.' The source only mentions that shares can be sold under certain conditions, not the transparency/investor information aspect. The response is otherwise helpful and mostly complete."
+    },
+    {
+      "id": 154,
+      "question": "What are the key features and restrictions of Upstream's Short Selling service?",
+      "accuracy": 4,
+      "completeness": 3,
+      "helpfulness": 4,
+      "hallucination": false,
+      "reasoning": "The response accurately covers the main restrictions: no naked short selling and no simultaneous long/short positions. However, it has some structural issues - lending information appears under 'Key Features' when it's more of a separate service detail, and it misses the specific detail that only Upstream traders (not market makers) can lend shares. The information provided is factually correct but incompletely covers the source material. No hallucination detected - all claims are supported by the source."
+    },
+    {
+      "id": 155,
+      "question": "How is the Lending Fee determined on Upstream?",
+      "accuracy": 5,
+      "completeness": 3,
+      "helpfulness": 3,
+      "hallucination": false,
+      "reasoning": "The response is fully accurate - it correctly states that the lending fee is determined on a per-share basis by the stock lender and that the short seller pays this fee when entering their position. However, it omits important details from the source material: that the fee is paid in full upfront, that the lender receives payment regardless of how long shares are actually lent, and that payment occurs even if the borrower covers early. No hallucination detected as all claims are supported by the source material."
+    },
+    {
+      "id": 161,
+      "question": "Who receives Dividend Distributions and Voting Entitlements on short sold shares?",
+      "accuracy": 5,
+      "completeness": 3,
+      "helpfulness": 4,
+      "hallucination": false,
+      "reasoning": "The response is fully accurate - it correctly identifies that the buyer of short-sold shares receives dividend distributions and voting entitlements. However, it's incomplete as it omits the important clarification that neither the stock lender nor borrower receives these benefits. No hallucination detected - all claims are directly supported by the source material."
+    }
+  ]
+}

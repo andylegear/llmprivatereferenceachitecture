@@ -14,38 +14,125 @@
 
 ```
 reproducibility-pack/
-├── README.md                          # This file
+├── README.md                                          # This file
+├── EVALUATION_REPORT.md                               # Full companion analysis document
 ├── evaluation-data/
-│   ├── latency_benchmark.csv          # Raw end-to-end response times (N=50)
-│   ├── quality_evaluation_summary.csv # Aggregated quality metrics across 3 methods
-│   ├── cost_comparison.csv            # Monthly cost data for deployment options
-│   └── cache_performance.csv          # Response times by query type (hit/miss)
+│   ├── dataset.json                                   # Complete 164-item dataset (questions,
+│   │                                                  #   ground truth, chatbot responses, latency)
+│   ├── automated_metrics.json                         # Per-item ROUGE/BERTScore (N=164)
+│   ├── faithfulness_scores.json                       # Per-item Claude faithfulness scores (N=164)
+│   ├── claude_review_scores.json                      # Per-item Claude accuracy/completeness/
+│   │                                                  #   helpfulness/hallucination scores (N=164)
+│   ├── evaluation-Andy-2026-03-23.json                # Human Reviewer A per-item scores (N=50)
+│   ├── evaluation-TimLovett-2026-03-24.json           # Human Reviewer B per-item scores (N=50)
+│   ├── latency_benchmark.csv                          # Raw end-to-end response times (N=50)
+│   ├── quality_evaluation_summary.csv                 # Aggregated quality metrics
+│   ├── cost_comparison.csv                            # Monthly cost data for deployment options
+│   └── cache_performance.csv                          # Response times by query type (hit/miss)
+├── expert-review-dashboard/
+│   ├── index.html                                     # Expert review web app (open in browser)
+│   ├── app.js                                         # Dashboard application logic
+│   └── style.css                                      # Dashboard styling
+├── scripts/
+│   ├── build_dataset.py                               # Script to rebuild dataset from live endpoint
+│   ├── analyze_hallucinations.py                      # Hallucination categorisation analysis
+│   ├── requirements.txt                               # Python dependencies for data collection
+│   └── automated-metrics/
+│       ├── compute_metrics.py                         # ROUGE/BERTScore computation
+│       ├── compute_faithfulness.py                    # Claude faithfulness scoring
+│       ├── compute_claude_review.py                   # Claude multi-dimensional review
+│       ├── compute_agreement.py                       # Inter-rater agreement analysis
+│       ├── deep_analysis.py                           # Correlation and pattern analysis
+│       └── requirements.txt                           # Python dependencies
 ├── knowledge-base/
-│   └── README.md                      # Description of the 164 Q&A corpus structure
-└── scripts/
-    └── README.md                      # Placeholder for analysis scripts
+│   └── README.md                                      # Description of the 164 Q&A corpus
+└── (see also: sources/implementation/ at repo root)   # Reference implementation source code
 ```
 
 ## Overview
 
-This pack contains the evaluation data supporting the three-dimensional assessment of the CPU-only LLM reference architecture described in the paper:
+This pack contains the complete evaluation data, analysis scripts, expert review dashboard, and companion analysis document supporting the paper. The evaluation covers three dimensions:
 
-1. **Latency benchmark** — End-to-end response times for 50 paraphrased queries against a live deployment
-2. **Output quality evaluation** — Multi-method quality assessment (automated metrics, LLM-as-judge, human expert review) across 164 Q&A pairs
+1. **Latency benchmark** — End-to-end response times for 50 paraphrased queries
+2. **Output quality evaluation** — Multi-method assessment (automated metrics, LLM-as-judge, human expert review) across 164 Q&A pairs
 3. **Financial cost analysis** — Azure pricing comparison of CPU vs. GPU deployment options
+
+## Evaluation Data
+
+### Full Dataset (`evaluation-data/dataset.json`)
+
+The complete evaluation dataset containing all 164 FAQ items with:
+- Original question from the knowledge base
+- Ground-truth answer from the knowledge base
+- Chatbot-generated response from the live system
+- End-to-end response time in seconds
+
+This dataset was built by querying the live production endpoint on March 23, 2026 using `scripts/build_dataset.py`.
+
+### Human Expert Review Data (`evaluation-data/evaluation-*.json`)
+
+Two domain experts independently evaluated random subsets of 50 items each:
+
+| File | Reviewer | Items Rated | Date |
+|------|----------|-------------|------|
+| `evaluation-Andy-2026-03-23.json` | Reviewer A (Andy) | 50 | 2026-03-23 |
+| `evaluation-TimLovett-2026-03-24.json` | Reviewer B (Tim Lovett) | 50 | 2026-03-24 |
+
+Each file contains per-item ratings on:
+- **Accuracy** (1–5 Likert scale)
+- **Completeness** (1–5 Likert scale)
+- **Helpfulness** (1–5 Likert scale)
+- **Hallucination** (boolean flag)
+- **Comment** (optional free-text)
+
+15 items overlap between reviewers for inter-rater agreement analysis. Items were presented in randomised order.
+
+### LLM-as-Judge Results (`evaluation-data/`)
+
+| File | Description | Items |
+|------|-------------|-------|
+| `automated_metrics.json` | Per-item ROUGE-1/2/L and BERTScore F₁ | 164 |
+| `faithfulness_scores.json` | Per-item faithfulness score (1–5), unsupported claims list, reasoning | 164 |
+| `claude_review_scores.json` | Per-item accuracy/completeness/helpfulness (1–5), hallucination flag, reasoning | 164 |
+
+All LLM-as-judge evaluations used Claude Sonnet 4 (`claude-sonnet-4-20250514`).
+
+### Expert Review Dashboard (`expert-review-dashboard/`)
+
+A self-contained web application used to collect human expert ratings:
+
+- Open `index.html` in a browser (no server required \u2014 pure client-side)
+- Loads the dataset from `../evaluation-data/dataset.json`
+- Presents items in randomised order with ground truth side-by-side
+- Supports configurable sample sizes (30, 50, or all 164)
+- Saves progress to browser localStorage; exports results as JSON
+- Follows Van der Lee et al. (2021) best practices for human evaluation of generated text
+
+### Companion Analysis Document (`EVALUATION_REPORT.md`)
+
+A comprehensive companion report (~17 sections) providing:
+
+- Full methodology for all four evaluation methods
+- Complete per-method results with distribution analyses
+- Inter-rater agreement analysis (Cohen's κ, Krippendorff's α)
+- Deep correlation analysis (automated metrics vs. human scores, latency vs. quality, response length effects)
+- Worst/best item analysis
+- Hallucination categorisation (fabrication, overgeneralisation, refusal/deflection)
+- Limitations and threats to validity
+- Reproducibility guide
 
 ## Prerequisites
 
 To reproduce the evaluation:
 
-- **Python 3.10+** with the following packages:
-  - `sentence-transformers` (for embedding generation)
-  - `faiss-cpu` (for vector similarity search)
-  - `llama-cpp-python` (for CPU-based LLM inference)
-  - `rouge-score`, `bert-score` (for automated quality metrics)
-- **Model file**: `gemma-2b-it.Q4_K_M.gguf` (4-bit quantized Gemma 2B, available from HuggingFace)
-- **Embedding model**: `sentence-transformers/all-MiniLM-L6-v2` (downloaded automatically)
-- A machine with at least 8 vCPUs and 32 GB RAM (or an Azure P3v3 App Service Plan)
+- **Python 3.10+** with packages listed in `scripts/automated-metrics/requirements.txt`:
+  - `rouge-score`, `bert-score` (automated quality metrics)
+  - `scikit-learn`, `krippendorff`, `scipy`, `numpy` (agreement analysis)
+  - `anthropic` (LLM-as-judge evaluations — requires `ANTHROPIC_API_KEY`)
+- For dataset rebuilding: `requests` (listed in `scripts/requirements.txt`)
+- **Model file**: `gemma-2b-it.Q4_K_M.gguf` (4-bit quantized Gemma 2B)
+- **Embedding model**: `sentence-transformers/all-MiniLM-L6-v2` (auto-downloaded)
+- A machine with at least 8 vCPUs and 32 GB RAM (or Azure P3v3 App Service Plan)
 
 ## Reproduction Steps
 
@@ -53,57 +140,76 @@ To reproduce the evaluation:
 
 The latency benchmark was conducted on February 8, 2026 against the live production deployment.
 
-1. Prepare 50 paraphrased questions derived from the knowledge base (semantic variants, not keyword matches) plus 10 out-of-scope questions.
+1. Prepare 50 paraphrased questions (semantic variants, not keyword matches) plus 10 out-of-scope questions.
 2. Submit each query to the system endpoint and record the end-to-end response time.
-3. Raw response times are provided in `evaluation-data/latency_benchmark.csv`.
-4. Summary statistics (mean, median, P95, IQR) can be computed from the raw data.
+3. Raw response times are in `reproducibility-pack/evaluation-data/latency_benchmark.csv`.
 
-**Key result**: Mean response time of 21.0s, P95 of 29.0s, 100% success rate.
+**Key result**: Mean 21.0s, P95 29.0s, 100% success rate.
 
-### 2. Output Quality Evaluation
+### 2. Dataset Construction
 
-The quality evaluation used three complementary methods:
+```bash
+cd scripts
+pip install -r requirements.txt
+python build_dataset.py --endpoint <YOUR_ENDPOINT>
+```
 
-**a) Automated Metrics (N=164)**
-1. Generate responses for all 164 knowledge base items.
-2. Compute ROUGE-1/2/L and BERTScore F₁ against ground-truth answers.
-3. Results are summarised in `evaluation-data/quality_evaluation_summary.csv`.
+This queries the live chatbot for all 164 knowledge base items and saves `dataset.json`. The script has resume capability — it saves after each item and skips already-answered questions if interrupted.
 
-**b) LLM-as-Judge (N=164)**
-1. Submit each response + ground-truth pair to Claude Sonnet 4 with a structured evaluation prompt.
-2. Collect accuracy ratings (1–5) and hallucination flags.
-3. Aggregate results are in the summary CSV.
+### 3. Automated Quality Metrics
 
-**c) Human Expert Review (N=50 per reviewer, 15 overlap)**
-1. Two domain experts independently rated subsets of 50 items each on accuracy (1–5) and flagged hallucinations.
-2. 15 items overlapped for inter-rater agreement (Cohen's κ).
-3. Aggregate results are in the summary CSV.
+```bash
+cd scripts/automated-metrics
+pip install -r requirements.txt
+python compute_metrics.py           # ROUGE + BERTScore
+python compute_faithfulness.py      # Claude faithfulness (requires ANTHROPIC_API_KEY)
+python compute_claude_review.py     # Claude multi-dimensional review
+```
 
-**Key results**: Human accuracy 4.49–4.76/5, hallucination rates 2–6%, Cohen's κ = 0.531 (accuracy), 0.571 (hallucination).
+All scripts have resume capability and save results incrementally to `evaluation-data/`.
 
-### 3. Financial Cost Analysis
+### 4. Human Expert Review
 
-1. Cost data was sourced from Microsoft Azure official pricing pages (accessed January 29, 2026).
-2. All prices reflect 3-year commitment pricing for the Central US region.
-3. Comparison data is in `evaluation-data/cost_comparison.csv`.
+1. Open `expert-review-dashboard/index.html` in a web browser.
+2. Enter a reviewer name and select sample size (50 recommended).
+3. Rate each item on accuracy, completeness, helpfulness (1–5) and flag hallucinations.
+4. Click "Finish & Export" to download the results JSON.
+5. Place the exported file in `evaluation-data/`.
 
-**Key result**: CPU-only deployment (P3v3) at $203.67/month vs. V100 GPU VM at $1,188.61/month (5.8× saving).
+### 5. Inter-Rater Agreement & Deep Analysis
 
-## Data File Descriptions
+```bash
+python compute_agreement.py         # Cohen's κ, Krippendorff's α
+python deep_analysis.py             # Correlation and pattern analysis
+```
 
-| File | Contents | Format |
-|------|----------|--------|
-| `latency_benchmark.csv` | Per-query response times, query type (in-scope/out-of-scope), HTTP status | CSV, 60 rows |
-| `quality_evaluation_summary.csv` | Aggregated quality metrics across all 3 evaluation methods | CSV, summary |
-| `cost_comparison.csv` | Deployment option specifications and monthly costs | CSV, 3 rows |
-| `cache_performance.csv` | Mean/median response times split by cache hit vs. miss | CSV, 2 rows |
+### 6. Financial Cost Analysis
+
+Cost data was sourced from Microsoft Azure pricing pages (accessed January 29, 2026). All prices reflect 3-year commitment pricing for Central US region. Data is in `reproducibility-pack/evaluation-data/cost_comparison.csv`.
+
+**Key result**: CPU-only (P3v3) $203.67/month vs. V100 GPU $1,188.61/month (5.8× saving).
+
+## Summary of Key Results
+
+| Dimension | Key Metric | Value |
+|-----------|-----------|-------|
+| Latency | Mean response time | 21.0s |
+| Latency | P95 response time | 29.0s |
+| Quality | Human accuracy (Reviewer A) | 4.76 / 5 |
+| Quality | Human accuracy (Reviewer B) | 4.49 / 5 |
+| Quality | Human hallucination rate | 2–6% |
+| Quality | BERTScore F₁ | 0.81 |
+| Quality | Inter-rater agreement (accuracy) | κ = 0.531 |
+| Quality | Inter-rater agreement (hallucination) | κ = 0.571 |
+| Cost | CPU monthly cost (P3v3) | $203.67 |
+| Cost | V100 GPU monthly cost | $1,188.61 |
 
 ## Limitations
 
-- The latency benchmark reflects a specific point-in-time measurement (February 8, 2026) on the production system. Results may vary under different load conditions.
-- Human evaluation scores are inherently subjective. The inter-rater agreement statistics (Cohen's κ ≈ 0.53–0.57) indicate moderate agreement.
-- Cost data reflects Azure pricing at the time of access and may change.
-- The knowledge base content (164 Q&A pairs) is proprietary to the Upstream platform and cannot be redistributed. The structure and categories are described in `knowledge-base/README.md`.
+- Latency benchmark reflects a point-in-time measurement (Feb 8, 2026). Results may vary under different load.
+- Human evaluation scores are subjective. Inter-rater agreement (κ ≈ 0.53–0.57) indicates moderate agreement.
+- Cost data reflects Azure pricing at time of access and may change.
+- The API key in dataset metadata has been redacted (`<REDACTED>`). To rebuild the dataset, supply your own endpoint.
 
 ## Citation
 
