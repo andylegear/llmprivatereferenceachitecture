@@ -75,8 +75,8 @@ Two domain experts independently evaluated random subsets of 50 items each:
 
 | File | Reviewer | Items Rated | Date |
 |------|----------|-------------|------|
-| `evaluation-Andy-2026-03-23.json` | Reviewer A (Andy) | 50 | 2026-03-23 |
-| `evaluation-TimLovett-2026-03-24.json` | Reviewer B (Tim Lovett) | 50 | 2026-03-24 |
+| `evaluation-Andy-2026-03-23.json` | Reviewer A  | 50 | 2026-03-23 |
+| `evaluation-TimLovett-2026-03-24.json` | Reviewer B | 50 | 2026-03-24 |
 
 Each file contains per-item ratings on:
 - **Accuracy** (1–5 Likert scale)
