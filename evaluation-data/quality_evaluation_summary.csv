@@ -1,0 +1,13 @@
+evaluation_method,metric,value,n
+Automated Metrics,BERTScore F1,0.81,164
+Automated Metrics,ROUGE-1 F1,0.45,164
+Automated Metrics,ROUGE-L F1,0.37,164
+Human Expert Review,Mean Accuracy (Reviewer A),4.76,50
+Human Expert Review,Mean Accuracy (Reviewer B),4.49,50
+Human Expert Review,Hallucination Rate (Reviewer A),0.02,50
+Human Expert Review,Hallucination Rate (Reviewer B),0.06,50
+Human Expert Review,Cohen Kappa Accuracy,0.531,15
+Human Expert Review,Cohen Kappa Hallucination,0.571,15
+LLM-as-Judge,Mean Accuracy (Claude Sonnet 4),3.81,164
+LLM-as-Judge,Hallucination Flag Rate,0.445,164
+LLM-as-Judge,Flagged AND Inaccurate Rate,0.128,164

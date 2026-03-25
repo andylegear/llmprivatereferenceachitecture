@@ -1,0 +1,3 @@
+query_type,n,mean_response_time_seconds,median_response_time_seconds
+Related (Cache Hit),40,21.4,20.6
+Unrelated (Cache Miss),10,19.3,18.3

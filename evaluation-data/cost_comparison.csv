@@ -1,0 +1,4 @@
+deployment_option,vcpus,ram_gb,gpu,monthly_cost_usd,commitment_years,region,pricing_date
+Our Implementation (P3v3 App Service),8,32,None,203.67,3,Central US,2026-01-29
+GPU VM (NC4as T4 v3),4,28,1x NVIDIA T4,180.62,3,Central US,2026-01-29
+GPU VM (NC6s v3),6,112,1x NVIDIA V100,1188.61,3,Central US,2026-01-29
